@@ -62,6 +62,21 @@
     errDescShort: { fr: "La description doit contenir au moins 10 caractères.", en: "Description must be at least 10 characters.", nl: "De beschrijving moet minstens 10 tekens bevatten.", de: "Die Beschreibung muss mindestens 10 Zeichen enthalten.", it: "La descrizione deve contenere almeno 10 caratteri.", es: "La descripción debe tener al menos 10 caracteres.", pl: "Opis musi mieć co najmniej 10 znaków.", ar: "يجب أن يتكون الوصف من 10 أحرف على الأقل.", zh: "描述至少需要 10 个字符。", ja: "説明は10文字以上で入力してください。" },
     errTimeout: { fr: "Délai dépassé. Vérifiez votre connexion ou réessayez.", en: "Request timed out. Check your connection or try again.", nl: "Time-out. Controleer uw verbinding of probeer opnieuw.", de: "Zeitüberschreitung. Verbindung prüfen oder erneut versuchen.", it: "Timeout. Controlla la connessione o riprova.", es: "Tiempo agotado. Comprueba la conexión o inténtalo de nuevo.", pl: "Przekroczono limit czasu. Sprawdź połączenie lub spróbuj ponownie.", ar: "انتهت المهلة. تحقق من الاتصال أو أعد المحاولة.", zh: "请求超时。请检查网络后重试。", ja: "タイムアウトしました。接続を確認して再試行してください。" },
     errBadResponse: { fr: "Réponse serveur invalide. Utilisez la version déployée sur Netlify ou netlify dev.", en: "Invalid server response. Use the Netlify deployment or netlify dev.", nl: "Ongeldig serverantwoord. Gebruik de Netlify-versie of netlify dev.", de: "Ungültige Serverantwort. Nutzen Sie das Netlify-Deployment oder netlify dev.", it: "Risposta server non valida. Usa il deploy Netlify o netlify dev.", es: "Respuesta del servidor no válida. Usa el despliegue en Netlify o netlify dev.", pl: "Nieprawidłowa odpowiedź serwera. Użyj wersji Netlify lub netlify dev.", ar: "استجابة خادم غير صالحة. استخدم نسخة Netlify أو netlify dev.", zh: "服务器响应无效。请使用 Netlify 部署或 netlify dev。", ja: "サーバー応答が無効です。Netlify デプロイまたは netlify dev を使用してください。" },
+    errFunctionMissing: {
+      fr: "Service d'envoi indisponible (fonction Netlify absente). Réessayez après le prochain déploiement.",
+      en: "Submission service unavailable (Netlify function missing). Try again after the next deployment.",
+      nl: "Verzendservice niet beschikbaar (Netlify-functie ontbreekt). Probeer opnieuw na de volgende deploy.",
+      de: "Sende-Dienst nicht verfügbar (Netlify-Funktion fehlt). Nach dem nächsten Deploy erneut versuchen.",
+      it: "Servizio di invio non disponibile (funzione Netlify assente). Riprova dopo il prossimo deploy.",
+      es: "Servicio de envío no disponible (falta la función Netlify). Vuelve a intentarlo tras el próximo despliegue.",
+      pl: "Usługa wysyłki niedostępna (brak funkcji Netlify). Spróbuj ponownie po następnym wdrożeniu.",
+      ar: "خدمة الإرسال غير متاحة (دالة Netlify مفقودة). أعد المحاولة بعد النشر التالي.",
+      zh: "提交服务不可用（缺少 Netlify 函数）。请在下次部署后重试。",
+      ja: "送信サービスが利用できません（Netlify 関数がありません）。次のデプロイ後に再試行してください。",
+    },
+    pickPhoto: { fr: "Choisir une photo", en: "Choose a photo", nl: "Foto kiezen", de: "Foto wählen", it: "Scegli una foto", es: "Elegir una foto", pl: "Wybierz zdjęcie", ar: "اختر صورة", zh: "选择照片", ja: "写真を選ぶ" },
+    errPhotoRequired: { fr: "Photo requise (JPG, PNG ou HEIC).", en: "Photo required (JPG, PNG or HEIC).", nl: "Foto verplicht (JPG, PNG of HEIC).", de: "Foto erforderlich (JPG, PNG oder HEIC).", it: "Foto obbligatoria (JPG, PNG o HEIC).", es: "Foto obligatoria (JPG, PNG o HEIC).", pl: "Zdjęcie wymagane (JPG, PNG lub HEIC).", ar: "الصورة مطلوبة (JPG أو PNG أو HEIC).", zh: "需要照片（JPG、PNG 或 HEIC）。", ja: "写真が必要です（JPG、PNG、HEIC）。" },
+    errPhotoConvert: { fr: "Impossible de lire cette photo. Essayez JPG ou une autre image.", en: "Could not read this photo. Try JPG or another image.", nl: "Kan deze foto niet lezen. Probeer JPG of een andere afbeelding.", de: "Foto konnte nicht gelesen werden. Versuchen Sie JPG oder ein anderes Bild.", it: "Impossibile leggere la foto. Prova JPG o un'altra immagine.", es: "No se pudo leer la foto. Prueba JPG u otra imagen.", pl: "Nie można odczytać zdjęcia. Spróbuj JPG lub inny obraz.", ar: "تعذر قراءة الصورة. جرّب JPG أو صورة أخرى.", zh: "无法读取该照片。请尝试 JPG 或其他图片。", ja: "写真を読み取れません。JPG など別の画像をお試しください。" },
     errCoordsInvalid: { fr: "Latitude ou longitude invalide.", en: "Invalid latitude or longitude.", nl: "Ongeldige breedte- of lengtegraad.", de: "Ungültiger Breiten- oder Längengrad.", it: "Latitudine o longitudine non valida.", es: "Latitud o longitud inválida.", pl: "Nieprawidłowa szerokość lub długość geograficzna.", ar: "خط العرض أو الطول غير صالح.", zh: "纬度或经度无效。", ja: "緯度または経度が無効です。" },
     errCoords: { fr: "Coordonnées hors région.", en: "Coordinates outside the region.", nl: "Coördinaten buiten de regio.", de: "Koordinaten außerhalb der Region.", it: "Coordinate fuori regione.", es: "Coordenadas fuera de la región.", pl: "Współrzędne poza regionem.", ar: "الإحداثيات خارج المنطقة.", zh: "坐标超出区域。", ja: "座標が対象地域外です。" },
     pickMapActive: { fr: "Cliquez sur la carte ci-dessous pour placer le point.", en: "Click the map below to set the location.", nl: "Klik op de kaart hieronder om de locatie te plaatsen.", de: "Klicken Sie auf die Karte unten, um den Punkt zu setzen.", it: "Clicca sulla mappa qui sotto per posizionare il punto.", es: "Haz clic en el mapa inferior para colocar el punto.", pl: "Kliknij mapę poniżej, aby ustawić punkt.", ar: "انقر على الخريطة أدناه لتحديد النقطة.", zh: "点击下方地图放置地点。", ja: "下の地図をクリックして地点を設定してください。" },
@@ -71,6 +86,7 @@
   let mapPickListener = null;
   let miniMap = null;
   let miniMapMarker = null;
+  let selectedPhotoFile = null;
 
   function lang() {
     let l = (localStorage.getItem("selectedLanguage") || FALLBACK).toLowerCase();
@@ -98,6 +114,7 @@
     set("poi-propose-desc-label", "descLabel");
     set("poi-propose-email-label", "emailLabel");
     set("poi-propose-photo-label", "photoLabel");
+    set("poi-propose-photo-btn", "pickPhoto");
     set("poi-propose-pick-map", "pickMap");
     set("poi-propose-my-pos", "myPos");
     set("poi-propose-submit", "submit");
@@ -116,6 +133,11 @@
     const ok = document.getElementById("poi-propose-success");
     if (err) err.style.display = "none";
     if (ok) ok.style.display = "none";
+    selectedPhotoFile = null;
+    const photoName = document.getElementById("poi-propose-photo-name");
+    if (photoName) photoName.textContent = "";
+    const photoInput = document.getElementById("poi-propose-photo");
+    if (photoInput) photoInput.value = "";
     disableMapPick();
   }
 
@@ -241,6 +263,33 @@
     });
   }
 
+  function drawBitmapToJpegDataUrl(bitmap, maxW, quality) {
+    let w = bitmap.width;
+    let h = bitmap.height;
+    if (w > maxW) {
+      h = Math.round((h * maxW) / w);
+      w = maxW;
+    }
+    const canvas = document.createElement("canvas");
+    canvas.width = w;
+    canvas.height = h;
+    canvas.getContext("2d").drawImage(bitmap, 0, 0, w, h);
+    if (typeof bitmap.close === "function") bitmap.close();
+    return canvas.toDataURL("image/jpeg", quality);
+  }
+
+  async function fileToJpegDataUrl(file, maxW, quality) {
+    if (typeof createImageBitmap === "function") {
+      try {
+        const bitmap = await createImageBitmap(file);
+        return drawBitmapToJpegDataUrl(bitmap, maxW, quality);
+      } catch {
+        /* fallback Image() */
+      }
+    }
+    return resizeJpeg(file, maxW, quality);
+  }
+
   function resizeJpeg(file, maxW, quality) {
     return new Promise((resolve, reject) => {
       const img = new Image();
@@ -315,8 +364,23 @@
     errEl.scrollIntoView({ block: "nearest", behavior: "smooth" });
   }
 
+  function getSelectedPhotoFile() {
+    return selectedPhotoFile || document.getElementById("poi-propose-photo")?.files?.[0] || null;
+  }
+
+  function onPhotoSelected(evt) {
+    const file = evt.target?.files?.[0] || null;
+    selectedPhotoFile = file;
+    const nameEl = document.getElementById("poi-propose-photo-name");
+    if (nameEl) nameEl.textContent = file ? file.name : "";
+  }
+
+  function pickPhotoFile() {
+    document.getElementById("poi-propose-photo")?.click();
+  }
+
   async function submitForm(evt) {
-    evt.preventDefault();
+    if (evt) evt.preventDefault();
     const errEl = document.getElementById("poi-propose-error");
     const okEl = document.getElementById("poi-propose-success");
     const btn = document.getElementById("poi-propose-submit");
@@ -328,34 +392,39 @@
     const lng = parseCoord(document.getElementById("poi-propose-lng").value);
     const description = document.getElementById("poi-propose-desc").value.trim();
     const submitterEmail = document.getElementById("poi-propose-email").value.trim();
-    const file = document.getElementById("poi-propose-photo")?.files?.[0];
+    const file = getSelectedPhotoFile();
 
     if (!name) return showError(errEl, t("errRequired"));
     if (!Number.isFinite(lat) || !Number.isFinite(lng)) return showError(errEl, t("errCoordsInvalid"));
     if (description.length < 10) return showError(errEl, t("errDescShort"));
-    if (!isImageFile(file)) return showError(errEl, lang() === "fr" ? "Photo requise (JPG de préférence)." : "Photo required (JPG preferred).");
+    if (!isImageFile(file)) return showError(errEl, t("errPhotoRequired"));
 
     btn.disabled = true;
     const prevLabel = btn.textContent;
     btn.textContent = t("sending");
 
     try {
-      const photoBase64 = await resizeJpeg(file, 1200, 0.85);
+      const photoBase64 = await fileToJpegDataUrl(file, 1200, 0.85);
       const res = await fetchWithTimeout(proposeEndpoint(), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, lat, lng, cityKey: CITY_KEY, description, submitterEmail, sourceLang: lang(), photoBase64 }),
       });
       const { parseError, data } = await readJsonResponse(res);
-      if (parseError) return showError(errEl, t("errBadResponse"));
+      if (res.status === 404 || parseError) {
+        return showError(errEl, res.status === 404 ? t("errFunctionMissing") : t("errBadResponse"));
+      }
       if (!res.ok) return showError(errEl, messageForServerError(data.error));
       okEl.textContent = t("success");
       okEl.style.display = "block";
       document.getElementById("poi-propose-form").reset();
+      selectedPhotoFile = null;
+      const photoName = document.getElementById("poi-propose-photo-name");
+      if (photoName) photoName.textContent = "";
       miniMapMarker = null;
       setTimeout(closeModal, 3500);
     } catch (err) {
-      showError(errEl, err?.name === "AbortError" ? t("errTimeout") : t("errGeneric"));
+      showError(errEl, err?.name === "AbortError" ? t("errTimeout") : (err?.message === "image" ? t("errPhotoConvert") : t("errGeneric")));
     } finally {
       btn.disabled = false;
       btn.textContent = prevLabel;
@@ -388,7 +457,10 @@
     document.querySelector("#poi-propose-modal .poi-propose-backdrop")?.addEventListener("click", closeModal);
     document.getElementById("poi-propose-pick-map")?.addEventListener("click", enableMapPick);
     document.getElementById("poi-propose-my-pos")?.addEventListener("click", useMyPosition);
+    document.getElementById("poi-propose-photo-btn")?.addEventListener("click", pickPhotoFile);
+    document.getElementById("poi-propose-photo")?.addEventListener("change", onPhotoSelected);
     document.getElementById("poi-propose-form")?.addEventListener("submit", submitForm);
+    document.getElementById("poi-propose-submit")?.addEventListener("click", submitForm);
     document.getElementById("poi-propose-lat")?.addEventListener("blur", normalizeCoordInput);
     document.getElementById("poi-propose-lng")?.addEventListener("blur", normalizeCoordInput);
     document.addEventListener("languageChanged", applyLabels);

@@ -15,7 +15,7 @@ function readSiteId() {
 }
 
 const siteId = readSiteId();
-const args = ["deploy", "--prod", "--dir=dist", "--no-build"];
+const args = ["deploy", "--prod", "--dir=dist", "--functions=netlify/functions", "--no-build"];
 if (siteId) args.push("--site", siteId);
 
 const result = spawnSync("netlify", args, { stdio: "inherit", shell: true });
