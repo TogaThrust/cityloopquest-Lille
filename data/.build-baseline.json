@@ -1,6 +1,6 @@
 {
-  "version": "26.06.50",
-  "savedAt": "2026-06-25T15:51:48.801Z",
+  "version": "26.06.51",
+  "savedAt": "2026-06-25T16:01:38.669Z",
   "citySummary": {
     "cityName": "Lille",
     "appTitle": "CityLoop Quest Lille",
@@ -102,6 +102,6 @@
     "circuit.html": "606dc2662aaaa41cbfe1951a7ebc4c0535cc52d320cd05def2e513682d64c591",
     "circuit-data.js": "258b462eeb4f64446a087d9d861e59cc90b80aa4cbdfff882ce025d176c66c5a",
     "service-worker.js": "98fd60624ed6b183b739dc6ef7d2703b8c061155ec4b738102fab7c3b2157b43",
-    "instructions.html": "2fc7a9f72eb361e02b87826f2d833faca8d711c66cac2c65776c3df83233e7dd"
+    "instructions.html": "5fc22024d61454b35918c68d3bc915a30e05ee4da55952c3cd5b06307c0de607"
   }
 }
