@@ -1,0 +1,124 @@
+CityLoop Quest Lille - Release notes
+Version 26.06.39
+----------------------------------------
+- Initial release for Lille.
+- Includes 41 tour stop(s) across 3 route(s).
+- Includes 8 Explorer POI(s).
+- Includes 7 museum(s).
+- Includes quizzes for 20 tour stop(s).
+
+CityLoop Quest Lille - Release notes
+Version 26.06.38
+----------------------------------------
+
+CityLoop Quest Lille - Release notes
+Version 26.06.37
+----------------------------------------
+
+CityLoop Quest Lille - Release notes
+Version 26.06.36
+----------------------------------------
+
+CityLoop Quest Lille - Release notes
+Version 26.06.35
+----------------------------------------
+
+CityLoop Quest Lille - Release notes
+Version 26.06.34
+----------------------------------------
+
+CityLoop Quest Lille - Release notes
+Version 26.06.33
+----------------------------------------
+
+CityLoop Quest Lille - Release notes
+Version 26.06.32
+----------------------------------------
+
+CityLoop Quest Lille - Release notes
+Version 26.06.31
+----------------------------------------
+
+CityLoop Quest Lille - Release notes
+Version 26.06.30
+----------------------------------------
+
+CityLoop Quest Lille - Release notes
+Version 26.06.29
+----------------------------------------
+
+CityLoop Quest Lille - Release notes
+Version 26.06.28
+----------------------------------------
+
+CityLoop Quest Lille - Release notes
+Version 26.06.27
+----------------------------------------
+
+CityLoop Quest Lille - Release notes
+Version 26.06.26
+----------------------------------------
+
+précision clic et centrage page parcours
+
+CityLoop Quest Lille - Release notes
+Version 26.06.01
+----------------------------------------
+
+précision clic et centrage page parcours
+
+CityLoop Quest Lille - Release notes
+Version 26.02.03
+----------------------------------------
+
+new popup and removal of debug window
+
+CityLoop Quest Lille - Release notes
+Version 26.01.02
+----------------------------------------
+
+Fix Stripe webhook: idempotency + correct status codes
+Update mailer configuration
+Fix webhook idempotence + root GET
+Webhook: idempotence on session_id
+Invoice label: add city name
+Polish invoice PDF layout (A4 one-page)
+
+CityLoop Quest Lille - Release notes
+Version 25.12.05
+----------------------------------------
+
+implémentation email
+implémentation boutons Train/Tram/Bus et Uber
+Correction de bugs mineurs
+
+CityLoop Quest Lille - Release notes
+Version 25.11.04
+----------------------------------------
+
+
+Mise en place de la version Android avec carte fixe
+Bugs dûs à Android en carte mobile en mode web non natif
+
+CityLoop Quest Lille - Release notes
+Version 25.11.03
+----------------------------------------
+
+Modification description Gare de Lille
+
+CityLoop Quest Lille - Release notes
+Version 25.11.02
+----------------------------------------
+
+Mise en place de la Version
+Alerte de géolocalisation, contrôle des paramètres navigateur et appareil
+Modification page d'aide
+Modification page install/web
+
+CityLoop Quest Lille - Release notes
+Version 25.11.1
+----------------------------------------
+
+- Version initiale publiée
+
+

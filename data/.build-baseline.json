@@ -1,0 +1,107 @@
+{
+  "version": "26.06.39",
+  "savedAt": "2026-06-25T14:01:05.403Z",
+  "citySummary": {
+    "cityName": "Lille",
+    "appTitle": "CityLoop Quest Lille",
+    "routeCount": 3,
+    "enabledCircuits": [
+      "grand",
+      "moyen",
+      "petit"
+    ],
+    "routePois": {
+      "petit": [
+        "Cathédrale Notre Dame de la treille",
+        "Grand-Place — Place du Général-de-Gaulle",
+        "Hospice Comtesse",
+        "Opéra de Lille",
+        "Palais Rihour",
+        "Place aux Oignons",
+        "Rue de la Monnaie",
+        "Vieille Bourse"
+      ],
+      "moyen": [
+        "Beffroi de Lille",
+        "Cathédrale Notre Dame de la treille",
+        "Église Saint-Maurice",
+        "Gare Lille-Flandres",
+        "Grand-Place — Place du Général-de-Gaulle",
+        "Hospice Comtesse",
+        "Opéra de Lille",
+        "Palais des Beaux Arts",
+        "Palais Rihour",
+        "Place aux Oignons",
+        "Porte de Paris",
+        "Rue de la Monnaie",
+        "Vieille Bourse"
+      ],
+      "grand": [
+        "Beffroi de Lille",
+        "Cathédrale Notre Dame de la treille",
+        "Citadelle de Lille",
+        "Église Saint-Maurice",
+        "Gare Lille-Flandres",
+        "Gare Saint-Sauveur",
+        "Grand-Place — Place du Général-de-Gaulle",
+        "Halles de Wazemmes",
+        "Hospice Comtesse",
+        "Jardin Vauban",
+        "Maison Coilliot",
+        "Muséum d’Histoire Naturelle",
+        "Opéra de Lille",
+        "Palais des Beaux Arts",
+        "Palais Rihour",
+        "Place aux Oignons",
+        "Porte de Paris",
+        "Quai du Wault",
+        "Rue de la Monnaie",
+        "Vieille Bourse"
+      ]
+    },
+    "explorationNames": [
+      "Fort de Seclin",
+      "La Piscine — Musée d’art et d’industrie André Diligent",
+      "LaM — Musée d’art moderne, contemporain et d’art brut",
+      "Louvre-Lens",
+      "Mémorial National de Canada",
+      "Parc mémorial australien de Fromelles",
+      "Villa Cavrois",
+      "Wambrechies et la distillerie Claeyssens"
+    ],
+    "museumNames": [
+      "La Piscine — Musée d’art et d’industrie André Diligent",
+      "LaM — Lille Métropole Musée d’art moderne, contemporain et d’art brut",
+      "Maison natale Charles de Gaulle",
+      "Musée de l’Hospice Comtesse",
+      "Muséum d’Histoire Naturelle de Lille",
+      "Palais des Beaux Arts",
+      "Villa Cavrois"
+    ],
+    "culturePageTitles": [
+      "Anecdotes fiables et intéressantes",
+      "Architecture lilloise",
+      "Conseils famille et accessibilité",
+      "Grandes périodes historiques",
+      "Lieux et habitudes gourmandes",
+      "Meilleurs moments de visite",
+      "Origines et développement",
+      "Personnages marquants",
+      "Quartiers et ambiances",
+      "Se déplacer",
+      "Spécialités locales",
+      "Traditions et événements"
+    ],
+    "quizPoiCount": 20,
+    "sourceLanguage": "fr"
+  },
+  "files": {
+    "app.js": "ac2168bdacd80c428443cd32398d00dd03c6514b75318e57e8d2992707f612fc",
+    "main.html": "e2dcea7bb6ee5b2c927cb936e21e5e1dfb58e5a102009584d0a120ff94fa5e01",
+    "parcours.html": "1ca31296ed5b9fc369a81de7342abef8b3d253d2848d0ce48c9da829b9f9880f",
+    "circuit.html": "606dc2662aaaa41cbfe1951a7ebc4c0535cc52d320cd05def2e513682d64c591",
+    "circuit-data.js": "258b462eeb4f64446a087d9d861e59cc90b80aa4cbdfff882ce025d176c66c5a",
+    "service-worker.js": "98fd60624ed6b183b739dc6ef7d2703b8c061155ec4b738102fab7c3b2157b43",
+    "instructions.html": "2fc7a9f72eb361e02b87826f2d833faca8d711c66cac2c65776c3df83233e7dd"
+  }
+}

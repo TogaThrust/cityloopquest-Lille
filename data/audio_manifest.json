@@ -1,0 +1,1607 @@
+{
+  "files": {
+    "audio/Grand_Place_Place_du_General_de_Gaulle_fr.mp3": {
+      "hash": "a9c3dce32f8408377a52b9752f911400a5e7ff14",
+      "lang": "fr",
+      "label": "POI parcours (Parcours court): Grand-Place — Place du Général-de-Gaulle",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.682Z"
+    },
+    "audio/Grand_Place_Place_du_General_de_Gaulle_nl.mp3": {
+      "hash": "3ba3ddf4691309ec63b85f7cecf46434ea47310d",
+      "lang": "nl",
+      "label": "POI parcours (Grand parcours): Grand-Place — Place du Général-de-Gaulle",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.682Z"
+    },
+    "audio/Grand_Place_Place_du_General_de_Gaulle_en.mp3": {
+      "hash": "92df2a8a0dee804a9cd9c574f87e77801dd5687c",
+      "lang": "en",
+      "label": "POI parcours (Grand parcours): Grand-Place — Place du Général-de-Gaulle",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.682Z"
+    },
+    "audio/Grand_Place_Place_du_General_de_Gaulle_de.mp3": {
+      "hash": "34eb7cc4254c8c0764328b9f94b4e9e9fe56c59f",
+      "lang": "de",
+      "label": "POI parcours (Grand parcours): Grand-Place — Place du Général-de-Gaulle",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.682Z"
+    },
+    "audio/Grand_Place_Place_du_General_de_Gaulle_it.mp3": {
+      "hash": "4c9a496ec4b54371458ffaa994b9ac06ab73c282",
+      "lang": "it",
+      "label": "POI parcours (Grand parcours): Grand-Place — Place du Général-de-Gaulle",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.682Z"
+    },
+    "audio/Grand_Place_Place_du_General_de_Gaulle_es.mp3": {
+      "hash": "2bd042b36c9221a9eb5d06d39fd42158f23e82eb",
+      "lang": "es",
+      "label": "POI parcours (Grand parcours): Grand-Place — Place du Général-de-Gaulle",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.682Z"
+    },
+    "audio/Grand_Place_Place_du_General_de_Gaulle_pl.mp3": {
+      "hash": "4b89abafb399507b08bda93f9fcd593b4b04c79a",
+      "lang": "pl",
+      "label": "POI parcours (Grand parcours): Grand-Place — Place du Général-de-Gaulle",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.683Z"
+    },
+    "audio/Grand_Place_Place_du_General_de_Gaulle_ar.mp3": {
+      "hash": "42142f4bdae7480fff54ac937810b5a39a020de8",
+      "lang": "ar",
+      "label": "POI parcours (Grand parcours): Grand-Place — Place du Général-de-Gaulle",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.683Z"
+    },
+    "audio/Grand_Place_Place_du_General_de_Gaulle_cn.mp3": {
+      "hash": "fd3882bfc43c41546afc40ba58b28e3e6d14ddf7",
+      "lang": "cn",
+      "label": "POI parcours (Grand parcours): Grand-Place — Place du Général-de-Gaulle",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.683Z"
+    },
+    "audio/Grand_Place_Place_du_General_de_Gaulle_ja.mp3": {
+      "hash": "86a131584224e4a0887901dd32a890e11f3cc7a8",
+      "lang": "ja",
+      "label": "POI parcours (Grand parcours): Grand-Place — Place du Général-de-Gaulle",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.683Z"
+    },
+    "audio/Vieille_Bourse_fr.mp3": {
+      "hash": "6de0fa837ebd4e2ce1c621b14b884d7da4f9af43",
+      "lang": "fr",
+      "label": "POI parcours (Parcours court): Vieille Bourse",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.683Z"
+    },
+    "audio/Vieille_Bourse_nl.mp3": {
+      "hash": "85ccd688f9d3174234b007b1d7e6c7d7744a43e8",
+      "lang": "nl",
+      "label": "POI parcours (Grand parcours): Vieille Bourse",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.683Z"
+    },
+    "audio/Vieille_Bourse_en.mp3": {
+      "hash": "b4648d9d0b84f375dd84a6a1590cb12163f894bb",
+      "lang": "en",
+      "label": "POI parcours (Grand parcours): Vieille Bourse",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.683Z"
+    },
+    "audio/Vieille_Bourse_de.mp3": {
+      "hash": "685f40ecbf2df0f6dabd804a105daaddd874004e",
+      "lang": "de",
+      "label": "POI parcours (Grand parcours): Vieille Bourse",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.683Z"
+    },
+    "audio/Vieille_Bourse_it.mp3": {
+      "hash": "6724fac321faf71d6867d2706ab36c51dbacc4f2",
+      "lang": "it",
+      "label": "POI parcours (Grand parcours): Vieille Bourse",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.683Z"
+    },
+    "audio/Vieille_Bourse_es.mp3": {
+      "hash": "2f93495c91957740a9330da27d6f6a02061497c6",
+      "lang": "es",
+      "label": "POI parcours (Grand parcours): Vieille Bourse",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.683Z"
+    },
+    "audio/Vieille_Bourse_pl.mp3": {
+      "hash": "e1333fe487f59359477679caa063b04bf5f916b6",
+      "lang": "pl",
+      "label": "POI parcours (Grand parcours): Vieille Bourse",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.683Z"
+    },
+    "audio/Vieille_Bourse_ar.mp3": {
+      "hash": "3cb301da3fe1dba9c6257963c1d29a37ad4e76b4",
+      "lang": "ar",
+      "label": "POI parcours (Grand parcours): Vieille Bourse",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.683Z"
+    },
+    "audio/Vieille_Bourse_cn.mp3": {
+      "hash": "3d2830dc65667d7e4edc3be8428f13850550b419",
+      "lang": "cn",
+      "label": "POI parcours (Grand parcours): Vieille Bourse",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.683Z"
+    },
+    "audio/Vieille_Bourse_ja.mp3": {
+      "hash": "e6d7d2f2edc9ff035e8cc9b5736b81dce5dd7e3c",
+      "lang": "ja",
+      "label": "POI parcours (Grand parcours): Vieille Bourse",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.683Z"
+    },
+    "audio/Opera_de_Lille_fr.mp3": {
+      "hash": "cf2783044a0c5f5fc06e38da667609e79bc722cb",
+      "lang": "fr",
+      "label": "POI parcours (Parcours court): Opéra de Lille",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.683Z"
+    },
+    "audio/Opera_de_Lille_nl.mp3": {
+      "hash": "b62905a4ba2fb21a51b6c2c04d3a24d1f5ae1fac",
+      "lang": "nl",
+      "label": "POI parcours (Grand parcours): Opéra de Lille",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.684Z"
+    },
+    "audio/Opera_de_Lille_en.mp3": {
+      "hash": "75f20c97945803836de4239670fe0fee5af23e0f",
+      "lang": "en",
+      "label": "POI parcours (Grand parcours): Opéra de Lille",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.684Z"
+    },
+    "audio/Opera_de_Lille_de.mp3": {
+      "hash": "46223a474b0dd2ada655e97c747012f59e138b41",
+      "lang": "de",
+      "label": "POI parcours (Grand parcours): Opéra de Lille",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.684Z"
+    },
+    "audio/Opera_de_Lille_it.mp3": {
+      "hash": "ccf0d60788bbe2e5d8878382e6efbfe430a2392d",
+      "lang": "it",
+      "label": "POI parcours (Grand parcours): Opéra de Lille",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.684Z"
+    },
+    "audio/Opera_de_Lille_es.mp3": {
+      "hash": "ee63643bf13995ab529acd8f0c66419d87169a0e",
+      "lang": "es",
+      "label": "POI parcours (Grand parcours): Opéra de Lille",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.684Z"
+    },
+    "audio/Opera_de_Lille_pl.mp3": {
+      "hash": "ea05d2f2685af30cd27cd5a00a90ccf9e4bfa714",
+      "lang": "pl",
+      "label": "POI parcours (Grand parcours): Opéra de Lille",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.684Z"
+    },
+    "audio/Opera_de_Lille_ar.mp3": {
+      "hash": "81dff24c54a5b5a45b51a366ebc39f3841f9d7f7",
+      "lang": "ar",
+      "label": "POI parcours (Grand parcours): Opéra de Lille",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.684Z"
+    },
+    "audio/Opera_de_Lille_cn.mp3": {
+      "hash": "9875285ea07bcf8d86067b383455630e3fd2ab4a",
+      "lang": "cn",
+      "label": "POI parcours (Grand parcours): Opéra de Lille",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.684Z"
+    },
+    "audio/Opera_de_Lille_ja.mp3": {
+      "hash": "a623a43c642d5cd07fc6ffe280504b11b11ab3d2",
+      "lang": "ja",
+      "label": "POI parcours (Grand parcours): Opéra de Lille",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.684Z"
+    },
+    "audio/Rue_de_la_Monnaie_fr.mp3": {
+      "hash": "0ec41c2cc54cd99c82107851454ead517845711e",
+      "lang": "fr",
+      "label": "POI parcours (Parcours court): Rue de la Monnaie",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.684Z"
+    },
+    "audio/Rue_de_la_Monnaie_nl.mp3": {
+      "hash": "35fe91ce43400ba967182a5b59d61e1cc460ee29",
+      "lang": "nl",
+      "label": "POI parcours (Grand parcours): Rue de la Monnaie",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.684Z"
+    },
+    "audio/Rue_de_la_Monnaie_en.mp3": {
+      "hash": "d349b1d3fb49f47a2a267c3d70fdd1c07bcd56be",
+      "lang": "en",
+      "label": "POI parcours (Grand parcours): Rue de la Monnaie",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.684Z"
+    },
+    "audio/Rue_de_la_Monnaie_de.mp3": {
+      "hash": "3f8a071342bde2f383c828123b215c78c3102df1",
+      "lang": "de",
+      "label": "POI parcours (Grand parcours): Rue de la Monnaie",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.684Z"
+    },
+    "audio/Rue_de_la_Monnaie_it.mp3": {
+      "hash": "aea61caa1db2944ba5b7f7ea986191db56e4f504",
+      "lang": "it",
+      "label": "POI parcours (Grand parcours): Rue de la Monnaie",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.684Z"
+    },
+    "audio/Rue_de_la_Monnaie_es.mp3": {
+      "hash": "f2eeb7e5b73d8e65ddfcb6b185d3024861e3dada",
+      "lang": "es",
+      "label": "POI parcours (Grand parcours): Rue de la Monnaie",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.684Z"
+    },
+    "audio/Rue_de_la_Monnaie_pl.mp3": {
+      "hash": "7bbb6329c6b29072dd3098d6e87e76e642f64ca0",
+      "lang": "pl",
+      "label": "POI parcours (Grand parcours): Rue de la Monnaie",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.684Z"
+    },
+    "audio/Rue_de_la_Monnaie_ar.mp3": {
+      "hash": "896fa57ecd32d3c3621301fa33dc8e30b8ecc232",
+      "lang": "ar",
+      "label": "POI parcours (Grand parcours): Rue de la Monnaie",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.684Z"
+    },
+    "audio/Rue_de_la_Monnaie_cn.mp3": {
+      "hash": "f6a1e4598fe7b43e3cc89f647c60159630579413",
+      "lang": "cn",
+      "label": "POI parcours (Grand parcours): Rue de la Monnaie",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.684Z"
+    },
+    "audio/Rue_de_la_Monnaie_ja.mp3": {
+      "hash": "fcf0cc72933a8b697726d3d8802464ab900c2369",
+      "lang": "ja",
+      "label": "POI parcours (Grand parcours): Rue de la Monnaie",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.684Z"
+    },
+    "audio/Cathedrale_Notre_Dame_de_la_treille_fr.mp3": {
+      "hash": "de2f385c29786b71639349d34df8f72412fad21d",
+      "lang": "fr",
+      "label": "POI parcours (Parcours court): Cathédrale Notre Dame de la treille",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.685Z"
+    },
+    "audio/Cathedrale_Notre_Dame_de_la_treille_nl.mp3": {
+      "hash": "9c4d6a31f6043c0dc075dba663d9ff292502c75d",
+      "lang": "nl",
+      "label": "POI parcours (Grand parcours): Cathédrale Notre Dame de la treille",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.685Z"
+    },
+    "audio/Cathedrale_Notre_Dame_de_la_treille_en.mp3": {
+      "hash": "1714f8f4882ddc2d360b0a47014851714e888886",
+      "lang": "en",
+      "label": "POI parcours (Grand parcours): Cathédrale Notre Dame de la treille",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.685Z"
+    },
+    "audio/Cathedrale_Notre_Dame_de_la_treille_de.mp3": {
+      "hash": "c4c2fcde823c644a32b860c5b289757abc116e0e",
+      "lang": "de",
+      "label": "POI parcours (Grand parcours): Cathédrale Notre Dame de la treille",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.685Z"
+    },
+    "audio/Cathedrale_Notre_Dame_de_la_treille_it.mp3": {
+      "hash": "3a659e33ca4b725885a7ad1d2694833919a1a8a7",
+      "lang": "it",
+      "label": "POI parcours (Grand parcours): Cathédrale Notre Dame de la treille",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.685Z"
+    },
+    "audio/Cathedrale_Notre_Dame_de_la_treille_es.mp3": {
+      "hash": "74c053c4cedb50bbee3da7fba4b1eb97b8489f59",
+      "lang": "es",
+      "label": "POI parcours (Grand parcours): Cathédrale Notre Dame de la treille",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.685Z"
+    },
+    "audio/Cathedrale_Notre_Dame_de_la_treille_pl.mp3": {
+      "hash": "f57e99929d2865fa9c65dfe055258ce529d067e6",
+      "lang": "pl",
+      "label": "POI parcours (Grand parcours): Cathédrale Notre Dame de la treille",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.685Z"
+    },
+    "audio/Cathedrale_Notre_Dame_de_la_treille_ar.mp3": {
+      "hash": "e59f001628c979219cced32017cb7d0472162b68",
+      "lang": "ar",
+      "label": "POI parcours (Grand parcours): Cathédrale Notre Dame de la treille",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.685Z"
+    },
+    "audio/Cathedrale_Notre_Dame_de_la_treille_cn.mp3": {
+      "hash": "b19fa6c20598d9bf99e8df0c9b5150b90b07c72a",
+      "lang": "cn",
+      "label": "POI parcours (Grand parcours): Cathédrale Notre Dame de la treille",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.685Z"
+    },
+    "audio/Cathedrale_Notre_Dame_de_la_treille_ja.mp3": {
+      "hash": "82068f1f2d81270ebdf6965349e021cb91349a21",
+      "lang": "ja",
+      "label": "POI parcours (Grand parcours): Cathédrale Notre Dame de la treille",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.685Z"
+    },
+    "audio/Hospice_Comtesse_fr.mp3": {
+      "hash": "186cf6fd889119f517931c66b9dc7d4c544407f4",
+      "lang": "fr",
+      "label": "POI parcours (Parcours court): Hospice Comtesse",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.685Z"
+    },
+    "audio/Hospice_Comtesse_nl.mp3": {
+      "hash": "58636491777d01717857eda32128ac500d956cce",
+      "lang": "nl",
+      "label": "POI parcours (Grand parcours): Hospice Comtesse",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.685Z"
+    },
+    "audio/Hospice_Comtesse_en.mp3": {
+      "hash": "e8d9e3af982ec2623943c44df53f10b366d717af",
+      "lang": "en",
+      "label": "POI parcours (Grand parcours): Hospice Comtesse",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.685Z"
+    },
+    "audio/Hospice_Comtesse_de.mp3": {
+      "hash": "c2506681b9f6167779a14d56d83408f40803f9cd",
+      "lang": "de",
+      "label": "POI parcours (Grand parcours): Hospice Comtesse",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.685Z"
+    },
+    "audio/Hospice_Comtesse_it.mp3": {
+      "hash": "9261a24733e2a1ced2fb499b3f4345fb89d2145a",
+      "lang": "it",
+      "label": "POI parcours (Grand parcours): Hospice Comtesse",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.685Z"
+    },
+    "audio/Hospice_Comtesse_es.mp3": {
+      "hash": "58b54e7a61a539ad5192b7a1ffda1598cd97c5bc",
+      "lang": "es",
+      "label": "POI parcours (Grand parcours): Hospice Comtesse",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.686Z"
+    },
+    "audio/Hospice_Comtesse_pl.mp3": {
+      "hash": "7ab53c7498d8180c5cafd57b5045ea4b16b251da",
+      "lang": "pl",
+      "label": "POI parcours (Grand parcours): Hospice Comtesse",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.686Z"
+    },
+    "audio/Hospice_Comtesse_ar.mp3": {
+      "hash": "bc9dee700a466d8513cbe4916ce36de6532af347",
+      "lang": "ar",
+      "label": "POI parcours (Grand parcours): Hospice Comtesse",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.686Z"
+    },
+    "audio/Hospice_Comtesse_cn.mp3": {
+      "hash": "87a56956c68aa324bb779cdda324c0a3da525f29",
+      "lang": "cn",
+      "label": "POI parcours (Grand parcours): Hospice Comtesse",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.686Z"
+    },
+    "audio/Hospice_Comtesse_ja.mp3": {
+      "hash": "5785051f5cc09423954a2e461e59f3870ed16470",
+      "lang": "ja",
+      "label": "POI parcours (Grand parcours): Hospice Comtesse",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.686Z"
+    },
+    "audio/Place_aux_Oignons_fr.mp3": {
+      "hash": "85a18322c35536f3b4da92913e82bf265ce95743",
+      "lang": "fr",
+      "label": "POI parcours (Parcours court): Place aux Oignons",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.686Z"
+    },
+    "audio/Place_aux_Oignons_nl.mp3": {
+      "hash": "8ce39f87af79bce437cc35f1fdbeb7f1467e4b11",
+      "lang": "nl",
+      "label": "POI parcours (Grand parcours): Place aux Oignons",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.686Z"
+    },
+    "audio/Place_aux_Oignons_en.mp3": {
+      "hash": "9da83342efb3f7f557e2eaf94abb0b614bb55dd8",
+      "lang": "en",
+      "label": "POI parcours (Grand parcours): Place aux Oignons",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.686Z"
+    },
+    "audio/Place_aux_Oignons_de.mp3": {
+      "hash": "d3ee7056c420eb201a19cee6b4daf7abecec36f0",
+      "lang": "de",
+      "label": "POI parcours (Grand parcours): Place aux Oignons",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.686Z"
+    },
+    "audio/Place_aux_Oignons_it.mp3": {
+      "hash": "db4555971d02195a3bf4dcb57cc1eb9691ace0d9",
+      "lang": "it",
+      "label": "POI parcours (Grand parcours): Place aux Oignons",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.686Z"
+    },
+    "audio/Place_aux_Oignons_es.mp3": {
+      "hash": "e14be4bc69e38dbcce9633f53a8484196f264d88",
+      "lang": "es",
+      "label": "POI parcours (Grand parcours): Place aux Oignons",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.686Z"
+    },
+    "audio/Place_aux_Oignons_pl.mp3": {
+      "hash": "39b523fe2504f677eeaae5f14f97be38216ba7f8",
+      "lang": "pl",
+      "label": "POI parcours (Grand parcours): Place aux Oignons",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.686Z"
+    },
+    "audio/Place_aux_Oignons_ar.mp3": {
+      "hash": "2633d614d3192fb268ca0b6ac58493946333a662",
+      "lang": "ar",
+      "label": "POI parcours (Grand parcours): Place aux Oignons",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.686Z"
+    },
+    "audio/Place_aux_Oignons_cn.mp3": {
+      "hash": "d6dffda5a5e773b77a129165cf1ccac329ae376f",
+      "lang": "cn",
+      "label": "POI parcours (Grand parcours): Place aux Oignons",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.686Z"
+    },
+    "audio/Place_aux_Oignons_ja.mp3": {
+      "hash": "5c691e64bcab5e2f8b08552d8a594dc94ea4b674",
+      "lang": "ja",
+      "label": "POI parcours (Grand parcours): Place aux Oignons",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.686Z"
+    },
+    "audio/Palais_Rihour_fr.mp3": {
+      "hash": "5ef8366453f4bd57adfe693fdc424257b44220ac",
+      "lang": "fr",
+      "label": "POI parcours (Parcours court): Palais Rihour",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.686Z"
+    },
+    "audio/Palais_Rihour_nl.mp3": {
+      "hash": "4ce847fe64d6e3d1d0ea0ec38504d58fdd4a4998",
+      "lang": "nl",
+      "label": "POI parcours (Grand parcours): Palais Rihour",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.687Z"
+    },
+    "audio/Palais_Rihour_en.mp3": {
+      "hash": "d1216e6fa32fdfcc1839f84615360a4a0b1108c0",
+      "lang": "en",
+      "label": "POI parcours (Grand parcours): Palais Rihour",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.687Z"
+    },
+    "audio/Palais_Rihour_de.mp3": {
+      "hash": "cc29280aea469c9fdd7d488c831d739712d8219e",
+      "lang": "de",
+      "label": "POI parcours (Grand parcours): Palais Rihour",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.687Z"
+    },
+    "audio/Palais_Rihour_it.mp3": {
+      "hash": "3030b6cef0745f690e0272a1815de9a2a7555b2a",
+      "lang": "it",
+      "label": "POI parcours (Grand parcours): Palais Rihour",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.687Z"
+    },
+    "audio/Palais_Rihour_es.mp3": {
+      "hash": "ff361576e8a1c955fd69ae2c628d842d0d2c9ba2",
+      "lang": "es",
+      "label": "POI parcours (Grand parcours): Palais Rihour",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.687Z"
+    },
+    "audio/Palais_Rihour_pl.mp3": {
+      "hash": "1269bb02fc579ef50c73857384c1cd2e8729c6ad",
+      "lang": "pl",
+      "label": "POI parcours (Grand parcours): Palais Rihour",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.687Z"
+    },
+    "audio/Palais_Rihour_ar.mp3": {
+      "hash": "187fb819372cd84a6fc398da0cfbed799d30d515",
+      "lang": "ar",
+      "label": "POI parcours (Grand parcours): Palais Rihour",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.687Z"
+    },
+    "audio/Palais_Rihour_cn.mp3": {
+      "hash": "1f7708bdc46d03b351be50cadd31870b965fda2c",
+      "lang": "cn",
+      "label": "POI parcours (Grand parcours): Palais Rihour",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.687Z"
+    },
+    "audio/Palais_Rihour_ja.mp3": {
+      "hash": "9cf668de209fb29dd23c9d2530795664062bc2a5",
+      "lang": "ja",
+      "label": "POI parcours (Grand parcours): Palais Rihour",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.687Z"
+    },
+    "audio/Eglise_Saint_Maurice_fr.mp3": {
+      "hash": "988bf9faa7a303dd702c5bac614245096fbd1e14",
+      "lang": "fr",
+      "label": "POI parcours (Parcours moyen): Église Saint-Maurice",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.691Z"
+    },
+    "audio/Eglise_Saint_Maurice_nl.mp3": {
+      "hash": "46b0fed39d2400afd585026ee95a675494d900a9",
+      "lang": "nl",
+      "label": "POI parcours (Grand parcours): Église Saint-Maurice",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.691Z"
+    },
+    "audio/Eglise_Saint_Maurice_en.mp3": {
+      "hash": "a8f8fce26086bcaee1dc337f158aa7faf2c8e33c",
+      "lang": "en",
+      "label": "POI parcours (Grand parcours): Église Saint-Maurice",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.691Z"
+    },
+    "audio/Eglise_Saint_Maurice_de.mp3": {
+      "hash": "4c21074a990fc1280bc9be79ccdd800da540804b",
+      "lang": "de",
+      "label": "POI parcours (Grand parcours): Église Saint-Maurice",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.691Z"
+    },
+    "audio/Eglise_Saint_Maurice_it.mp3": {
+      "hash": "50c6e0aaf825da35acbbe810dc01d691d6fba7e5",
+      "lang": "it",
+      "label": "POI parcours (Grand parcours): Église Saint-Maurice",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.691Z"
+    },
+    "audio/Eglise_Saint_Maurice_es.mp3": {
+      "hash": "7ff067e740f7fdcf291372f08fbdebfd648967c7",
+      "lang": "es",
+      "label": "POI parcours (Grand parcours): Église Saint-Maurice",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.691Z"
+    },
+    "audio/Eglise_Saint_Maurice_pl.mp3": {
+      "hash": "0acb38623f70f17a9955255945e6b7f868989a5e",
+      "lang": "pl",
+      "label": "POI parcours (Grand parcours): Église Saint-Maurice",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.691Z"
+    },
+    "audio/Eglise_Saint_Maurice_ar.mp3": {
+      "hash": "4677285e7045b9085349cd3e918a9f74053ec436",
+      "lang": "ar",
+      "label": "POI parcours (Grand parcours): Église Saint-Maurice",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.691Z"
+    },
+    "audio/Eglise_Saint_Maurice_cn.mp3": {
+      "hash": "463a69577cf6611c4d105c7175e7bd4574957f16",
+      "lang": "cn",
+      "label": "POI parcours (Grand parcours): Église Saint-Maurice",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.691Z"
+    },
+    "audio/Eglise_Saint_Maurice_ja.mp3": {
+      "hash": "6e3eb8dd1db4acfa6796c5e88d9ec63d9a93bfa2",
+      "lang": "ja",
+      "label": "POI parcours (Grand parcours): Église Saint-Maurice",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.691Z"
+    },
+    "audio/Gare_Lille_Flandres_fr.mp3": {
+      "hash": "d702d20bb22f04bd662a0ada2b965886236d204a",
+      "lang": "fr",
+      "label": "POI parcours (Parcours moyen): Gare Lille-Flandres",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.691Z"
+    },
+    "audio/Gare_Lille_Flandres_nl.mp3": {
+      "hash": "4d5bc5e67df5c040c3b463ae3c438ee63be586b4",
+      "lang": "nl",
+      "label": "POI parcours (Grand parcours): Gare Lille-Flandres",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.692Z"
+    },
+    "audio/Gare_Lille_Flandres_en.mp3": {
+      "hash": "d24a65023e6ed16b9923873e74bfc92eb8413c3c",
+      "lang": "en",
+      "label": "POI parcours (Grand parcours): Gare Lille-Flandres",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.692Z"
+    },
+    "audio/Gare_Lille_Flandres_de.mp3": {
+      "hash": "4322437e46ed7b0780ce14d89bb903abc0dfe2d1",
+      "lang": "de",
+      "label": "POI parcours (Grand parcours): Gare Lille-Flandres",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.692Z"
+    },
+    "audio/Gare_Lille_Flandres_it.mp3": {
+      "hash": "e0ee9812e7d11ec9428eb4d8610528d6836e7e7e",
+      "lang": "it",
+      "label": "POI parcours (Grand parcours): Gare Lille-Flandres",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.692Z"
+    },
+    "audio/Gare_Lille_Flandres_es.mp3": {
+      "hash": "4b07fc4c116ed1abbeaebca98c5c919604801931",
+      "lang": "es",
+      "label": "POI parcours (Grand parcours): Gare Lille-Flandres",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.692Z"
+    },
+    "audio/Gare_Lille_Flandres_pl.mp3": {
+      "hash": "2e44e147705b576022729f262a2b22f9458ffd8d",
+      "lang": "pl",
+      "label": "POI parcours (Grand parcours): Gare Lille-Flandres",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.692Z"
+    },
+    "audio/Gare_Lille_Flandres_ar.mp3": {
+      "hash": "66d5c32b07e826615c9f27ac72f2aba8d5160fd0",
+      "lang": "ar",
+      "label": "POI parcours (Grand parcours): Gare Lille-Flandres",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.692Z"
+    },
+    "audio/Gare_Lille_Flandres_cn.mp3": {
+      "hash": "626078e5d147bb6b1bc7801709783d7b5a670291",
+      "lang": "cn",
+      "label": "POI parcours (Grand parcours): Gare Lille-Flandres",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.692Z"
+    },
+    "audio/Gare_Lille_Flandres_ja.mp3": {
+      "hash": "9db05b46b113bf104f1f06bf2cb04b6eed25c3fb",
+      "lang": "ja",
+      "label": "POI parcours (Grand parcours): Gare Lille-Flandres",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.692Z"
+    },
+    "audio/Porte_de_Paris_fr.mp3": {
+      "hash": "e5b8c5f0ccd65e5cf3c8b7c21eeb0c9a25462e62",
+      "lang": "fr",
+      "label": "POI parcours (Parcours moyen): Porte de Paris",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.692Z"
+    },
+    "audio/Porte_de_Paris_nl.mp3": {
+      "hash": "dd344bd21b2ea87be868bf70652be7b992266420",
+      "lang": "nl",
+      "label": "POI parcours (Grand parcours): Porte de Paris",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.692Z"
+    },
+    "audio/Porte_de_Paris_en.mp3": {
+      "hash": "ff073abd3afbc9922110d0dccf572d245cef4695",
+      "lang": "en",
+      "label": "POI parcours (Grand parcours): Porte de Paris",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.692Z"
+    },
+    "audio/Porte_de_Paris_de.mp3": {
+      "hash": "af0574c3aef970529001533bab5cc8bbd3c0f05c",
+      "lang": "de",
+      "label": "POI parcours (Grand parcours): Porte de Paris",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.692Z"
+    },
+    "audio/Porte_de_Paris_it.mp3": {
+      "hash": "4ef679c3ec1c820ea0a25faaf054f7bb9fa45101",
+      "lang": "it",
+      "label": "POI parcours (Grand parcours): Porte de Paris",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.692Z"
+    },
+    "audio/Porte_de_Paris_es.mp3": {
+      "hash": "32cf26f681d0998b8bd807b0ee0c4aa135780e0e",
+      "lang": "es",
+      "label": "POI parcours (Grand parcours): Porte de Paris",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.692Z"
+    },
+    "audio/Porte_de_Paris_pl.mp3": {
+      "hash": "e3f879c1cc5b072b97327a951e4f8c0e0a5c4f38",
+      "lang": "pl",
+      "label": "POI parcours (Grand parcours): Porte de Paris",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.692Z"
+    },
+    "audio/Porte_de_Paris_ar.mp3": {
+      "hash": "ff5a193b001a31a5dce77190aedf2553a0ab2fa4",
+      "lang": "ar",
+      "label": "POI parcours (Grand parcours): Porte de Paris",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.692Z"
+    },
+    "audio/Porte_de_Paris_cn.mp3": {
+      "hash": "203598b9099ed078b1dbb0cf4b54ef5ebdc213f0",
+      "lang": "cn",
+      "label": "POI parcours (Grand parcours): Porte de Paris",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.693Z"
+    },
+    "audio/Porte_de_Paris_ja.mp3": {
+      "hash": "59323b4275a34f2cfdb3cd48f4356457c5a18edb",
+      "lang": "ja",
+      "label": "POI parcours (Grand parcours): Porte de Paris",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.693Z"
+    },
+    "audio/Beffroi_de_Lille_fr.mp3": {
+      "hash": "e5c6d36b0ee158538258697b9ac2e0775006a682",
+      "lang": "fr",
+      "label": "POI parcours (Parcours moyen): Beffroi de Lille",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.693Z"
+    },
+    "audio/Beffroi_de_Lille_nl.mp3": {
+      "hash": "1a060230c30e7585744a505242b074df155dbd12",
+      "lang": "nl",
+      "label": "POI parcours (Grand parcours): Beffroi de Lille",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.693Z"
+    },
+    "audio/Beffroi_de_Lille_en.mp3": {
+      "hash": "e160cd11171d73610d5636cac66b9a4149de4c29",
+      "lang": "en",
+      "label": "POI parcours (Grand parcours): Beffroi de Lille",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.693Z"
+    },
+    "audio/Beffroi_de_Lille_de.mp3": {
+      "hash": "b493a985674c045e8005099a53fb23b24c4994d4",
+      "lang": "de",
+      "label": "POI parcours (Grand parcours): Beffroi de Lille",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.693Z"
+    },
+    "audio/Beffroi_de_Lille_it.mp3": {
+      "hash": "45903072cb1decef71f0f67f0931e1a518dec790",
+      "lang": "it",
+      "label": "POI parcours (Grand parcours): Beffroi de Lille",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.693Z"
+    },
+    "audio/Beffroi_de_Lille_es.mp3": {
+      "hash": "b98a6d3b9d1068748a198e6b22fa1ba51405321f",
+      "lang": "es",
+      "label": "POI parcours (Grand parcours): Beffroi de Lille",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.693Z"
+    },
+    "audio/Beffroi_de_Lille_pl.mp3": {
+      "hash": "61b1f61434638b129318f21a2d3105fe3f5c1322",
+      "lang": "pl",
+      "label": "POI parcours (Grand parcours): Beffroi de Lille",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.693Z"
+    },
+    "audio/Beffroi_de_Lille_ar.mp3": {
+      "hash": "de6602e7ea36d874c3e3627b7cd1eee547ac222d",
+      "lang": "ar",
+      "label": "POI parcours (Grand parcours): Beffroi de Lille",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.693Z"
+    },
+    "audio/Beffroi_de_Lille_cn.mp3": {
+      "hash": "e91e91d780e0b865e69ea3b1cc75b6996874883e",
+      "lang": "cn",
+      "label": "POI parcours (Grand parcours): Beffroi de Lille",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.693Z"
+    },
+    "audio/Beffroi_de_Lille_ja.mp3": {
+      "hash": "a6503a1a5adb43df3c252fd256f24fbf0e4747ae",
+      "lang": "ja",
+      "label": "POI parcours (Grand parcours): Beffroi de Lille",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.693Z"
+    },
+    "audio/Palais_des_Beaux_Arts_fr.mp3": {
+      "hash": "c6fe4644e33404f47bdededb794be916f344fe37",
+      "lang": "fr",
+      "label": "POI parcours (Parcours moyen): Palais des Beaux Arts",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.693Z"
+    },
+    "audio/Palais_des_Beaux_Arts_nl.mp3": {
+      "hash": "7dbab6770bce242d0771f4878fea8a5c790d837e",
+      "lang": "nl",
+      "label": "POI parcours (Grand parcours): Palais des Beaux Arts",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.693Z"
+    },
+    "audio/Palais_des_Beaux_Arts_en.mp3": {
+      "hash": "5ad2c033ab48b006098df635abbc821e6803b5c3",
+      "lang": "en",
+      "label": "POI parcours (Grand parcours): Palais des Beaux Arts",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.693Z"
+    },
+    "audio/Palais_des_Beaux_Arts_de.mp3": {
+      "hash": "8cecaa33d0c51d3b0a5169161d47791b5dddea51",
+      "lang": "de",
+      "label": "POI parcours (Grand parcours): Palais des Beaux Arts",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.693Z"
+    },
+    "audio/Palais_des_Beaux_Arts_it.mp3": {
+      "hash": "5a2e3ffdb5c76a609785a9981083076fff5393e2",
+      "lang": "it",
+      "label": "POI parcours (Grand parcours): Palais des Beaux Arts",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.693Z"
+    },
+    "audio/Palais_des_Beaux_Arts_es.mp3": {
+      "hash": "ac737d63e187cbd3186569d2a3716b57039a2ac5",
+      "lang": "es",
+      "label": "POI parcours (Grand parcours): Palais des Beaux Arts",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.693Z"
+    },
+    "audio/Palais_des_Beaux_Arts_pl.mp3": {
+      "hash": "668f18a7d8f0830fc1dcc191b4824ee4aebf6296",
+      "lang": "pl",
+      "label": "POI parcours (Grand parcours): Palais des Beaux Arts",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.693Z"
+    },
+    "audio/Palais_des_Beaux_Arts_ar.mp3": {
+      "hash": "ac0b50fa8d8016d64ff8bdfdfddc89e6fcf1a5aa",
+      "lang": "ar",
+      "label": "POI parcours (Grand parcours): Palais des Beaux Arts",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.693Z"
+    },
+    "audio/Palais_des_Beaux_Arts_cn.mp3": {
+      "hash": "ce39efe4e91b3cdfcda9a67823b0cdf8eb799ea1",
+      "lang": "cn",
+      "label": "POI parcours (Grand parcours): Palais des Beaux Arts",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.693Z"
+    },
+    "audio/Palais_des_Beaux_Arts_ja.mp3": {
+      "hash": "82cf81f4ba04fa04615a5ae18c8b97eef5ea3107",
+      "lang": "ja",
+      "label": "POI parcours (Grand parcours): Palais des Beaux Arts",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.694Z"
+    },
+    "audio/Museum_d_Histoire_Naturelle_fr.mp3": {
+      "hash": "389e1cc6e609edfc4f70340636a99f9119020615",
+      "lang": "fr",
+      "label": "POI parcours (Grand parcours): Muséum d’Histoire Naturelle",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.700Z"
+    },
+    "audio/Museum_d_Histoire_Naturelle_nl.mp3": {
+      "hash": "0536b4b8905e1e78c05491aaa41e54a8936c9692",
+      "lang": "nl",
+      "label": "POI parcours (Grand parcours): Muséum d’Histoire Naturelle",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.700Z"
+    },
+    "audio/Museum_d_Histoire_Naturelle_en.mp3": {
+      "hash": "b369204a0f365ed3c7fe55ba3b194b76815ee77e",
+      "lang": "en",
+      "label": "POI parcours (Grand parcours): Muséum d’Histoire Naturelle",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.700Z"
+    },
+    "audio/Museum_d_Histoire_Naturelle_de.mp3": {
+      "hash": "ef37af3f21dc684d0097c2c8b34491acdbea72a9",
+      "lang": "de",
+      "label": "POI parcours (Grand parcours): Muséum d’Histoire Naturelle",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.700Z"
+    },
+    "audio/Museum_d_Histoire_Naturelle_it.mp3": {
+      "hash": "7d4a3feafcb6460ff6950ecefee2bd58f9104c77",
+      "lang": "it",
+      "label": "POI parcours (Grand parcours): Muséum d’Histoire Naturelle",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.700Z"
+    },
+    "audio/Museum_d_Histoire_Naturelle_es.mp3": {
+      "hash": "9969c8686d50010b575575551ebf559d28d80826",
+      "lang": "es",
+      "label": "POI parcours (Grand parcours): Muséum d’Histoire Naturelle",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.700Z"
+    },
+    "audio/Museum_d_Histoire_Naturelle_pl.mp3": {
+      "hash": "036f6c2e95c13d2cc272f0226f88c14c8448a1e2",
+      "lang": "pl",
+      "label": "POI parcours (Grand parcours): Muséum d’Histoire Naturelle",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.700Z"
+    },
+    "audio/Museum_d_Histoire_Naturelle_ar.mp3": {
+      "hash": "4388ebc52fd4e74e6a46545d4e0b9a7c29b8798c",
+      "lang": "ar",
+      "label": "POI parcours (Grand parcours): Muséum d’Histoire Naturelle",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.700Z"
+    },
+    "audio/Museum_d_Histoire_Naturelle_cn.mp3": {
+      "hash": "df67d07a3ffff377cd32e81b5263d6d93c3569d9",
+      "lang": "cn",
+      "label": "POI parcours (Grand parcours): Muséum d’Histoire Naturelle",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.700Z"
+    },
+    "audio/Museum_d_Histoire_Naturelle_ja.mp3": {
+      "hash": "73981cbdaf840e6f5dc6d8375ba779a18403c2df",
+      "lang": "ja",
+      "label": "POI parcours (Grand parcours): Muséum d’Histoire Naturelle",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.700Z"
+    },
+    "audio/Gare_Saint_Sauveur_fr.mp3": {
+      "hash": "d399e08503589246f99bc773f6421ca5a49a74d1",
+      "lang": "fr",
+      "label": "POI parcours (Grand parcours): Gare Saint-Sauveur",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.700Z"
+    },
+    "audio/Gare_Saint_Sauveur_nl.mp3": {
+      "hash": "5b222ea029706dec2f5b5e01c7da01cedafcda86",
+      "lang": "nl",
+      "label": "POI parcours (Grand parcours): Gare Saint-Sauveur",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.701Z"
+    },
+    "audio/Gare_Saint_Sauveur_en.mp3": {
+      "hash": "c1fae93c111337c08c8bb84805e7dfe69753efc6",
+      "lang": "en",
+      "label": "POI parcours (Grand parcours): Gare Saint-Sauveur",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.701Z"
+    },
+    "audio/Gare_Saint_Sauveur_de.mp3": {
+      "hash": "f52aa15d69ca17977576acbdabdab003e8bc3497",
+      "lang": "de",
+      "label": "POI parcours (Grand parcours): Gare Saint-Sauveur",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.701Z"
+    },
+    "audio/Gare_Saint_Sauveur_it.mp3": {
+      "hash": "33d23198d32688717ab6cd7ead37f88dc14e163c",
+      "lang": "it",
+      "label": "POI parcours (Grand parcours): Gare Saint-Sauveur",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.701Z"
+    },
+    "audio/Gare_Saint_Sauveur_es.mp3": {
+      "hash": "b06c4b8b63863781e5790774cba28e4e509d4286",
+      "lang": "es",
+      "label": "POI parcours (Grand parcours): Gare Saint-Sauveur",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.701Z"
+    },
+    "audio/Gare_Saint_Sauveur_pl.mp3": {
+      "hash": "22e311db50ed5297d450143d674884ee491c851d",
+      "lang": "pl",
+      "label": "POI parcours (Grand parcours): Gare Saint-Sauveur",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.701Z"
+    },
+    "audio/Gare_Saint_Sauveur_ar.mp3": {
+      "hash": "0355c5d8660170ab9f3d55937608f7ffd09081a1",
+      "lang": "ar",
+      "label": "POI parcours (Grand parcours): Gare Saint-Sauveur",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.701Z"
+    },
+    "audio/Gare_Saint_Sauveur_cn.mp3": {
+      "hash": "c6e0d115ff6e1acd759fca96978643237979fbfa",
+      "lang": "cn",
+      "label": "POI parcours (Grand parcours): Gare Saint-Sauveur",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.701Z"
+    },
+    "audio/Gare_Saint_Sauveur_ja.mp3": {
+      "hash": "acf3c8b52ed0a132b003592f42c6a9eee3db2395",
+      "lang": "ja",
+      "label": "POI parcours (Grand parcours): Gare Saint-Sauveur",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.701Z"
+    },
+    "audio/Maison_Coilliot_fr.mp3": {
+      "hash": "a7f7a7925f3adc446c941d29a77f0fdb1afecb36",
+      "lang": "fr",
+      "label": "POI parcours (Grand parcours): Maison Coilliot",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.701Z"
+    },
+    "audio/Maison_Coilliot_nl.mp3": {
+      "hash": "9345c38b0330f7481375d0c9e25b0600718cee25",
+      "lang": "nl",
+      "label": "POI parcours (Grand parcours): Maison Coilliot",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.702Z"
+    },
+    "audio/Maison_Coilliot_en.mp3": {
+      "hash": "b49c4d4a42de82007cc3025d9c660e9e62fed444",
+      "lang": "en",
+      "label": "POI parcours (Grand parcours): Maison Coilliot",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.702Z"
+    },
+    "audio/Maison_Coilliot_de.mp3": {
+      "hash": "d20cad2bce21c017e96708f74329a2ef97bcc6d3",
+      "lang": "de",
+      "label": "POI parcours (Grand parcours): Maison Coilliot",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.702Z"
+    },
+    "audio/Maison_Coilliot_it.mp3": {
+      "hash": "4d6aec92761a997434a1c18bebc6401b0ff07763",
+      "lang": "it",
+      "label": "POI parcours (Grand parcours): Maison Coilliot",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.702Z"
+    },
+    "audio/Maison_Coilliot_es.mp3": {
+      "hash": "7dd3e5cbda0fd817ec293a11cea631aacc066a09",
+      "lang": "es",
+      "label": "POI parcours (Grand parcours): Maison Coilliot",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.702Z"
+    },
+    "audio/Maison_Coilliot_pl.mp3": {
+      "hash": "9bb7a0655dbd2c177fd3f53d7b00cb2e4b21a880",
+      "lang": "pl",
+      "label": "POI parcours (Grand parcours): Maison Coilliot",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.702Z"
+    },
+    "audio/Maison_Coilliot_ar.mp3": {
+      "hash": "43b7311304e3fac5116db36206bce01186eac69a",
+      "lang": "ar",
+      "label": "POI parcours (Grand parcours): Maison Coilliot",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.702Z"
+    },
+    "audio/Maison_Coilliot_cn.mp3": {
+      "hash": "081e39fd1ae8374dc149aec8e03e2c71fb00c114",
+      "lang": "cn",
+      "label": "POI parcours (Grand parcours): Maison Coilliot",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.702Z"
+    },
+    "audio/Maison_Coilliot_ja.mp3": {
+      "hash": "30cefa1103de528f83b950990c48e0a94cced3f0",
+      "lang": "ja",
+      "label": "POI parcours (Grand parcours): Maison Coilliot",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.702Z"
+    },
+    "audio/Halles_de_Wazemmes_fr.mp3": {
+      "hash": "11f3ec02ac4ad956267b1dcff29d317d528f4c86",
+      "lang": "fr",
+      "label": "POI parcours (Grand parcours): Halles de Wazemmes",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.702Z"
+    },
+    "audio/Halles_de_Wazemmes_nl.mp3": {
+      "hash": "d9d1ff6e8465dc40609ad56665791869f113c780",
+      "lang": "nl",
+      "label": "POI parcours (Grand parcours): Halles de Wazemmes",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.703Z"
+    },
+    "audio/Halles_de_Wazemmes_en.mp3": {
+      "hash": "888ae1215cf44920e8a690e3e626fae3326eaf7f",
+      "lang": "en",
+      "label": "POI parcours (Grand parcours): Halles de Wazemmes",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.703Z"
+    },
+    "audio/Halles_de_Wazemmes_de.mp3": {
+      "hash": "54dc356c3dfe3ca6d86ced46d2dca2f265b78d04",
+      "lang": "de",
+      "label": "POI parcours (Grand parcours): Halles de Wazemmes",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.703Z"
+    },
+    "audio/Halles_de_Wazemmes_it.mp3": {
+      "hash": "328b170670e4a625242cdfa1632803cd05cfefb1",
+      "lang": "it",
+      "label": "POI parcours (Grand parcours): Halles de Wazemmes",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.703Z"
+    },
+    "audio/Halles_de_Wazemmes_es.mp3": {
+      "hash": "715556966fd71b73d1f6bd73815aacf07f6adc97",
+      "lang": "es",
+      "label": "POI parcours (Grand parcours): Halles de Wazemmes",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.703Z"
+    },
+    "audio/Halles_de_Wazemmes_pl.mp3": {
+      "hash": "5f6688f96a49f2d3f0214ceb55f0ef410ca4fae7",
+      "lang": "pl",
+      "label": "POI parcours (Grand parcours): Halles de Wazemmes",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.703Z"
+    },
+    "audio/Halles_de_Wazemmes_ar.mp3": {
+      "hash": "b23533a43701263c0e29b2bc360d653389a705da",
+      "lang": "ar",
+      "label": "POI parcours (Grand parcours): Halles de Wazemmes",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.703Z"
+    },
+    "audio/Halles_de_Wazemmes_cn.mp3": {
+      "hash": "0967b6a3dba6b6d729b0a7c638d4fecdb89d8ea0",
+      "lang": "cn",
+      "label": "POI parcours (Grand parcours): Halles de Wazemmes",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.703Z"
+    },
+    "audio/Halles_de_Wazemmes_ja.mp3": {
+      "hash": "3f8c2ce05dd69ade4b4ebca928170b7f81c4b2be",
+      "lang": "ja",
+      "label": "POI parcours (Grand parcours): Halles de Wazemmes",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.703Z"
+    },
+    "audio/Jardin_Vauban_fr.mp3": {
+      "hash": "682db4a50981834e17d6f83019b0f7c8c6e05d79",
+      "lang": "fr",
+      "label": "POI parcours (Grand parcours): Jardin Vauban",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.703Z"
+    },
+    "audio/Jardin_Vauban_nl.mp3": {
+      "hash": "6f0902ed6b1f7b4648baaacbf6ef9828444616d4",
+      "lang": "nl",
+      "label": "POI parcours (Grand parcours): Jardin Vauban",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.704Z"
+    },
+    "audio/Jardin_Vauban_en.mp3": {
+      "hash": "d2b5ba28bb4a5caa4cd1354ecaed2257a3618a17",
+      "lang": "en",
+      "label": "POI parcours (Grand parcours): Jardin Vauban",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.704Z"
+    },
+    "audio/Jardin_Vauban_de.mp3": {
+      "hash": "d8fd47e4252b5fd2c680aa54aaf8175120b42ac1",
+      "lang": "de",
+      "label": "POI parcours (Grand parcours): Jardin Vauban",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.704Z"
+    },
+    "audio/Jardin_Vauban_it.mp3": {
+      "hash": "69ee6b58fa99a2714ce56d0edc2e24f734d98557",
+      "lang": "it",
+      "label": "POI parcours (Grand parcours): Jardin Vauban",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.704Z"
+    },
+    "audio/Jardin_Vauban_es.mp3": {
+      "hash": "0d223399fe583aee3da5964c5bbe14869b641845",
+      "lang": "es",
+      "label": "POI parcours (Grand parcours): Jardin Vauban",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.704Z"
+    },
+    "audio/Jardin_Vauban_pl.mp3": {
+      "hash": "6fae7a5460273abb7711564c60176ed46a77d1b0",
+      "lang": "pl",
+      "label": "POI parcours (Grand parcours): Jardin Vauban",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.704Z"
+    },
+    "audio/Jardin_Vauban_ar.mp3": {
+      "hash": "2292cf55c9d1818c33ea8bcd3fa7fe36ad2a28f1",
+      "lang": "ar",
+      "label": "POI parcours (Grand parcours): Jardin Vauban",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.704Z"
+    },
+    "audio/Jardin_Vauban_cn.mp3": {
+      "hash": "28a0eb9db497d7405f5fb9c6ba4196d578b3ee23",
+      "lang": "cn",
+      "label": "POI parcours (Grand parcours): Jardin Vauban",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.704Z"
+    },
+    "audio/Jardin_Vauban_ja.mp3": {
+      "hash": "015c913ddff0aad93ac1d8193bb9afe0aa047905",
+      "lang": "ja",
+      "label": "POI parcours (Grand parcours): Jardin Vauban",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.704Z"
+    },
+    "audio/Citadelle_de_Lille_fr.mp3": {
+      "hash": "c6047df88ec1be227b695ecdf98166bbf7c7d6b9",
+      "lang": "fr",
+      "label": "POI parcours (Grand parcours): Citadelle de Lille",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.704Z"
+    },
+    "audio/Citadelle_de_Lille_nl.mp3": {
+      "hash": "6f1080c0e49336138149abc2afab7662552de28f",
+      "lang": "nl",
+      "label": "POI parcours (Grand parcours): Citadelle de Lille",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.704Z"
+    },
+    "audio/Citadelle_de_Lille_en.mp3": {
+      "hash": "1f267f063a979a6ba747ee9dc0acd576a6f30bd7",
+      "lang": "en",
+      "label": "POI parcours (Grand parcours): Citadelle de Lille",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.705Z"
+    },
+    "audio/Citadelle_de_Lille_de.mp3": {
+      "hash": "cbd75b816a2d80c930cf6b3b59b62beb76af38d1",
+      "lang": "de",
+      "label": "POI parcours (Grand parcours): Citadelle de Lille",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.705Z"
+    },
+    "audio/Citadelle_de_Lille_it.mp3": {
+      "hash": "4f11042154556b7677f21aa40d1805bb7682928d",
+      "lang": "it",
+      "label": "POI parcours (Grand parcours): Citadelle de Lille",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.705Z"
+    },
+    "audio/Citadelle_de_Lille_es.mp3": {
+      "hash": "e4725356b354549d8aedc1c36d4d5abe3e47f81e",
+      "lang": "es",
+      "label": "POI parcours (Grand parcours): Citadelle de Lille",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.705Z"
+    },
+    "audio/Citadelle_de_Lille_pl.mp3": {
+      "hash": "88a34193e41181a8695b6d5424ffe49ac118e9a8",
+      "lang": "pl",
+      "label": "POI parcours (Grand parcours): Citadelle de Lille",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.705Z"
+    },
+    "audio/Citadelle_de_Lille_ar.mp3": {
+      "hash": "85d1d8ebad85fd8d72e5813ae104e064467355d4",
+      "lang": "ar",
+      "label": "POI parcours (Grand parcours): Citadelle de Lille",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.705Z"
+    },
+    "audio/Citadelle_de_Lille_cn.mp3": {
+      "hash": "f847c3886602d3d847fedf89e378197d64440316",
+      "lang": "cn",
+      "label": "POI parcours (Grand parcours): Citadelle de Lille",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.705Z"
+    },
+    "audio/Citadelle_de_Lille_ja.mp3": {
+      "hash": "4c297999ad6d72cffa22b232cbe50cee1f463841",
+      "lang": "ja",
+      "label": "POI parcours (Grand parcours): Citadelle de Lille",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.706Z"
+    },
+    "audio/Quai_du_Wault_fr.mp3": {
+      "hash": "cb1679c3ce8f4e1667ad3eed0be5b010e953a2c9",
+      "lang": "fr",
+      "label": "POI parcours (Grand parcours): Quai du Wault",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.706Z"
+    },
+    "audio/Quai_du_Wault_nl.mp3": {
+      "hash": "cf0f17f55c512ffb719508a5da9708d42aa620c6",
+      "lang": "nl",
+      "label": "POI parcours (Grand parcours): Quai du Wault",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.706Z"
+    },
+    "audio/Quai_du_Wault_en.mp3": {
+      "hash": "5075c4ab2e0be7b675c6364e63b62fe015183d83",
+      "lang": "en",
+      "label": "POI parcours (Grand parcours): Quai du Wault",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.706Z"
+    },
+    "audio/Quai_du_Wault_de.mp3": {
+      "hash": "83a80d54e08cad9b6a60dc8edc62290a9d94365c",
+      "lang": "de",
+      "label": "POI parcours (Grand parcours): Quai du Wault",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.706Z"
+    },
+    "audio/Quai_du_Wault_it.mp3": {
+      "hash": "4da99ff6846ddec65af000e40a11b0dc2c3a46af",
+      "lang": "it",
+      "label": "POI parcours (Grand parcours): Quai du Wault",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.706Z"
+    },
+    "audio/Quai_du_Wault_es.mp3": {
+      "hash": "31a362f082dcb7c5a5a3e8eceef20dbebf8ef32a",
+      "lang": "es",
+      "label": "POI parcours (Grand parcours): Quai du Wault",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.706Z"
+    },
+    "audio/Quai_du_Wault_pl.mp3": {
+      "hash": "29a79ba63ce0e6390cfef6b4c75aba15c23397d6",
+      "lang": "pl",
+      "label": "POI parcours (Grand parcours): Quai du Wault",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.706Z"
+    },
+    "audio/Quai_du_Wault_ar.mp3": {
+      "hash": "fb696cfaadb165fbcf75e58ad716f4f3c91efc3e",
+      "lang": "ar",
+      "label": "POI parcours (Grand parcours): Quai du Wault",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.706Z"
+    },
+    "audio/Quai_du_Wault_cn.mp3": {
+      "hash": "0204279aa604193e877565287d65bcffa1a4364f",
+      "lang": "cn",
+      "label": "POI parcours (Grand parcours): Quai du Wault",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.706Z"
+    },
+    "audio/Quai_du_Wault_ja.mp3": {
+      "hash": "68cdef74bae1275ebc74d5ec58f7717f4815a2b1",
+      "lang": "ja",
+      "label": "POI parcours (Grand parcours): Quai du Wault",
+      "model": "gpt-4o-mini-tts",
+      "voice": "alloy",
+      "generatedAt": "2026-06-25T13:15:48.706Z"
+    }
+  },
+  "generatedAt": "2026-06-25T13:15:48.706Z",
+  "model": "gpt-4o-mini-tts",
+  "voice": "alloy"
+}

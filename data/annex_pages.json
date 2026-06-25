@@ -1,0 +1,314 @@
+[
+  {
+    "id": "annex-origines",
+    "title": "Origines et développement",
+    "titleI18n": {
+      "fr": "Origines et développement",
+      "nl": "Oorsprong en ontwikkeling",
+      "en": "Origins and development",
+      "de": "Ursprünge und Entwicklung",
+      "it": "Origini e sviluppo",
+      "es": "Orígenes y desarrollo",
+      "pl": "Początki i rozwój",
+      "ar": "الأصول والتطور",
+      "cn": "起源与发展",
+      "ja": "起源と発展"
+    },
+    "icon": "📜",
+    "showOnMainPage": true,
+    "order": 1,
+    "file": "annex-Origines_et_developpement.html",
+    "parentFile": "culture.html",
+    "isHub": false,
+    "externalLinks": {
+      "googleMaps": true
+    },
+    "isLeaf": true
+  },
+  {
+    "id": "annex-grandes-periodes",
+    "title": "Grandes périodes historiques",
+    "titleI18n": {
+      "fr": "Grandes périodes historiques",
+      "nl": "Grote historische periodes",
+      "en": "Major historical periods",
+      "de": "Große historische Epochen",
+      "it": "Grandi periodi storici",
+      "es": "Grandes periodos históricos",
+      "pl": "Wielkie okresy historyczne",
+      "ar": "الفترات التاريخية الكبرى",
+      "cn": "重要历史时期",
+      "ja": "大きな歴史の時代"
+    },
+    "icon": "🏰",
+    "showOnMainPage": true,
+    "order": 2,
+    "file": "annex-Grandes_periodes_historiques.html",
+    "parentFile": "culture.html",
+    "isHub": false,
+    "externalLinks": {
+      "googleMaps": true
+    },
+    "isLeaf": true
+  },
+  {
+    "id": "annex-personnages",
+    "title": "Personnages marquants",
+    "titleI18n": {
+      "fr": "Personnages marquants",
+      "nl": "Markante figuren",
+      "en": "Notable figures",
+      "de": "Prägende Persönlichkeiten",
+      "it": "Personaggi significativi",
+      "es": "Personajes destacados",
+      "pl": "Ważne postacie",
+      "ar": "شخصيات بارزة",
+      "cn": "重要人物",
+      "ja": "ゆかりの人物"
+    },
+    "icon": "👤",
+    "showOnMainPage": true,
+    "order": 3,
+    "file": "annex-Personnages_marquants.html",
+    "parentFile": "culture.html",
+    "isHub": false,
+    "externalLinks": {
+      "googleMaps": true
+    },
+    "isLeaf": true
+  },
+  {
+    "id": "annex-traditions",
+    "title": "Traditions et événements",
+    "titleI18n": {
+      "fr": "Traditions et événements",
+      "nl": "Tradities en evenementen",
+      "en": "Traditions and events",
+      "de": "Traditionen und Veranstaltungen",
+      "it": "Tradizioni ed eventi",
+      "es": "Tradiciones y eventos",
+      "pl": "Tradycje i wydarzenia",
+      "ar": "التقاليد والفعاليات",
+      "cn": "传统与活动",
+      "ja": "伝統とイベント"
+    },
+    "icon": "🎉",
+    "showOnMainPage": true,
+    "order": 4,
+    "file": "annex-Traditions_et_evenements.html",
+    "parentFile": "culture.html",
+    "isHub": false,
+    "externalLinks": {
+      "googleMaps": true
+    },
+    "isLeaf": true
+  },
+  {
+    "id": "annex-architecture",
+    "title": "Architecture lilloise",
+    "titleI18n": {
+      "fr": "Architecture lilloise",
+      "nl": "Rijselse architectuur",
+      "en": "Lille architecture",
+      "de": "Architektur in Lille",
+      "it": "Architettura di Lille",
+      "es": "Arquitectura de Lille",
+      "pl": "Architektura Lille",
+      "ar": "عمارة ليل",
+      "cn": "里尔建筑",
+      "ja": "リールの建築"
+    },
+    "icon": "🏛️",
+    "showOnMainPage": true,
+    "order": 5,
+    "file": "annex-Architecture_lilloise.html",
+    "parentFile": "culture.html",
+    "isHub": false,
+    "externalLinks": {
+      "googleMaps": true
+    },
+    "isLeaf": true
+  },
+  {
+    "id": "annex-quartiers",
+    "title": "Quartiers et ambiances",
+    "titleI18n": {
+      "fr": "Quartiers et ambiances",
+      "nl": "Wijken en sferen",
+      "en": "Neighbourhoods and atmospheres",
+      "de": "Viertel und Stimmungen",
+      "it": "Quartieri e atmosfere",
+      "es": "Barrios y ambientes",
+      "pl": "Dzielnice i nastroje",
+      "ar": "الأحياء والأجواء",
+      "cn": "街区与氛围",
+      "ja": "地区と雰囲気"
+    },
+    "icon": "🧭",
+    "showOnMainPage": true,
+    "order": 6,
+    "file": "annex-Quartiers_et_ambiances.html",
+    "parentFile": "culture.html",
+    "isHub": false,
+    "externalLinks": {
+      "googleMaps": true
+    },
+    "isLeaf": true
+  },
+  {
+    "id": "annex-specialites",
+    "title": "Spécialités locales",
+    "titleI18n": {
+      "fr": "Spécialités locales",
+      "nl": "Lokale specialiteiten",
+      "en": "Local specialities",
+      "de": "Lokale Spezialitäten",
+      "it": "Specialità locali",
+      "es": "Especialidades locales",
+      "pl": "Lokalne specjały",
+      "ar": "التخصصات المحلية",
+      "cn": "当地特色美食",
+      "ja": "地元の名物料理"
+    },
+    "icon": "🍽️",
+    "showOnMainPage": true,
+    "order": 7,
+    "file": "annex-Specialites_locales.html",
+    "parentFile": "culture.html",
+    "isHub": false,
+    "externalLinks": {
+      "googleMaps": true
+    },
+    "isLeaf": true
+  },
+  {
+    "id": "annex-habitudes",
+    "title": "Lieux et habitudes gourmandes",
+    "titleI18n": {
+      "fr": "Lieux et habitudes gourmandes",
+      "nl": "Smakelijke plekken en gewoonten",
+      "en": "Food places and habits",
+      "de": "Kulinarische Orte und Gewohnheiten",
+      "it": "Luoghi e abitudini gastronomiche",
+      "es": "Lugares y costumbres gastronómicas",
+      "pl": "Kulinarne miejsca i zwyczaje",
+      "ar": "أماكن وعادات الطعام",
+      "cn": "美食地点与习惯",
+      "ja": "食の場所と習慣"
+    },
+    "icon": "☕",
+    "showOnMainPage": true,
+    "order": 8,
+    "file": "annex-Lieux_et_habitudes_gourmandes.html",
+    "parentFile": "culture.html",
+    "isHub": false,
+    "externalLinks": {
+      "googleMaps": true
+    },
+    "isLeaf": true
+  },
+  {
+    "id": "annex-deplacements",
+    "title": "Se déplacer",
+    "titleI18n": {
+      "fr": "Se déplacer",
+      "nl": "Zich verplaatsen",
+      "en": "Getting around",
+      "de": "Sich fortbewegen",
+      "it": "Spostarsi",
+      "es": "Moverse",
+      "pl": "Poruszanie się",
+      "ar": "التنقل",
+      "cn": "交通出行",
+      "ja": "移動する"
+    },
+    "icon": "🚶",
+    "showOnMainPage": true,
+    "order": 9,
+    "file": "annex-Se_deplacer.html",
+    "parentFile": "culture.html",
+    "isHub": false,
+    "externalLinks": {
+      "googleMaps": true
+    },
+    "isLeaf": true
+  },
+  {
+    "id": "annex-meilleurs-moments",
+    "title": "Meilleurs moments de visite",
+    "titleI18n": {
+      "fr": "Meilleurs moments de visite",
+      "nl": "Beste momenten voor een bezoek",
+      "en": "Best times to visit",
+      "de": "Beste Besuchszeiten",
+      "it": "Momenti migliori per la visita",
+      "es": "Mejores momentos para visitar",
+      "pl": "Najlepsze pory zwiedzania",
+      "ar": "أفضل أوقات الزيارة",
+      "cn": "最佳游览时段",
+      "ja": "訪問に最適な時期"
+    },
+    "icon": "🌤️",
+    "showOnMainPage": true,
+    "order": 10,
+    "file": "annex-Meilleurs_moments_de_visite.html",
+    "parentFile": "culture.html",
+    "isHub": false,
+    "externalLinks": {
+      "googleMaps": true
+    },
+    "isLeaf": true
+  },
+  {
+    "id": "annex-famille-accessibilite",
+    "title": "Conseils famille et accessibilité",
+    "titleI18n": {
+      "fr": "Conseils famille et accessibilité",
+      "nl": "Tips voor gezinnen en toegankelijkheid",
+      "en": "Family and accessibility tips",
+      "de": "Tipps für Familien und Barrierefreiheit",
+      "it": "Consigli per famiglie e accessibilità",
+      "es": "Consejos para familias y accesibilidad",
+      "pl": "Rodzina i dostępność",
+      "ar": "نصائح للعائلات وإمكانية الوصول",
+      "cn": "亲子与无障碍建议",
+      "ja": "家族連れとアクセシビリティ"
+    },
+    "icon": "♿",
+    "showOnMainPage": true,
+    "order": 11,
+    "file": "annex-Conseils_famille_et_accessibilite.html",
+    "parentFile": "culture.html",
+    "isHub": false,
+    "externalLinks": {
+      "googleMaps": true
+    },
+    "isLeaf": true
+  },
+  {
+    "id": "annex-anecdotes",
+    "title": "Anecdotes fiables et intéressantes",
+    "titleI18n": {
+      "fr": "Anecdotes fiables et intéressantes",
+      "nl": "Betrouwbare en boeiende anekdotes",
+      "en": "Reliable and interesting anecdotes",
+      "de": "Verlässliche und interessante Anekdoten",
+      "it": "Aneddoti affidabili e interessanti",
+      "es": "Anécdotas fiables e interesantes",
+      "pl": "Wiarygodne i ciekawe anegdoty",
+      "ar": "حكايات موثوقة وممتعة",
+      "cn": "可靠有趣的轶事",
+      "ja": "信頼できる興味深い逸話"
+    },
+    "icon": "💡",
+    "showOnMainPage": true,
+    "order": 12,
+    "file": "annex-Anecdotes_fiables_et_interessantes.html",
+    "parentFile": "culture.html",
+    "isHub": false,
+    "externalLinks": {
+      "googleMaps": true
+    },
+    "isLeaf": true
+  }
+]

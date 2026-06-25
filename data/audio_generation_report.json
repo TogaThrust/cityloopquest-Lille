@@ -1,0 +1,14 @@
+{
+  "enabled": true,
+  "generated": 0,
+  "skippedExisting": 200,
+  "skippedEmpty": 0,
+  "skippedDueToTranslationIssues": false,
+  "translationIssuesCount": 0,
+  "regenerateStaleOnly": false,
+  "regenerateAll": false,
+  "errors": [],
+  "failedJobs": [],
+  "total": 0,
+  "resumeMissingOnly": true
+}

@@ -1,0 +1,27 @@
+{
+  "format": "clq-translation-fixes-v1",
+  "version": 1,
+  "exportedAt": "2026-06-25T13:15:48.496Z",
+  "cityName": "Lille",
+  "citySlug": "lille",
+  "sourceLanguage": "fr",
+  "supportedLanguages": [
+    "fr",
+    "nl",
+    "en",
+    "de",
+    "it",
+    "es",
+    "pl",
+    "ar",
+    "cn",
+    "ja"
+  ],
+  "summary": {
+    "total": 0,
+    "audioBlocking": 0,
+    "byLang": {}
+  },
+  "instructions": "Remplis correctedText pour chaque entrée. Conserve id, target, sourceText et currentText inchangés.",
+  "items": []
+}

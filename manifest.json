@@ -1,0 +1,33 @@
+{
+  "name": "CityLoop Quest Lille",
+  "short_name": "CLQ Lille",
+  "start_url": "/index.html?pwa=1",
+  "display": "standalone",
+  "background_color": "#b30000",
+  "theme_color": "#b30000",
+  "description": "CityLoop Quest Lille propose trois parcours à pied dans le centre lillois, du cœur flamand de la Grand-Place jusqu’aux grands repères civiques, aux musées, aux quartiers populaires, aux jardins et à la Citadelle.",
+  "orientation": "landscape",
+  "scope": "./",
+  "categories": [
+    "navigation",
+    "travel"
+  ],
+  "lang": "fr",
+  "dir": "ltr",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "images/cityLoopQuest_Lille_192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/cityLoopQuest_Lille_512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
+
