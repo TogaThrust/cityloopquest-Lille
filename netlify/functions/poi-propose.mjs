@@ -11,7 +11,7 @@ import {
 const REGIONS = {
   lille: {
     city: "Lille",
-    bounds: { minLat: 50.35, maxLat: 50.55, minLon: 3.80, maxLon: 4.05 },
+    bounds: { minLat: 50.34, maxLat: 50.73, minLon: 2.73, maxLon: 3.21 },
   },
   bruxelles: {
     city: "Bruxelles",
@@ -47,10 +47,11 @@ function decodePhoto(dataUrl) {
 }
 
 export async function handler(event) {
-  initBlobs(event);
   if (event.httpMethod === "OPTIONS") {
     return { statusCode: 204, headers: corsHeaders(), body: "" };
   }
+
+  initBlobs(event);
   if (event.httpMethod !== "POST") {
     return json(405, { error: "method_not_allowed" });
   }

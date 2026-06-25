@@ -316,9 +316,12 @@
     });
   }
 
-  function messageForServerError(code) {
+  function messageForServerError(code, data) {
     if (code === "smtp_not_configured" || code === "delivery_failed") return t("errSmtp");
+    if (code === "invalid_photo_jpeg" || code === "photo_too_large") return t("errPhotoConvert");
+    if (code === "blobs_not_configured") return t("errFunctionMissing");
     if (/^coords_outside_/.test(code || "")) return t("errCoords");
+    if (data?.detail && typeof data.detail === "string") return data.detail;
     return t("errGeneric");
   }
 
@@ -411,10 +414,14 @@
         body: JSON.stringify({ name, lat, lng, cityKey: CITY_KEY, description, submitterEmail, sourceLang: lang(), photoBase64 }),
       });
       const { parseError, data } = await readJsonResponse(res);
-      if (res.status === 404 || parseError) {
-        return showError(errEl, res.status === 404 ? t("errFunctionMissing") : t("errBadResponse"));
+      if (res.status === 404) return showError(errEl, t("errFunctionMissing"));
+      if (parseError) {
+        return showError(
+          errEl,
+          res.status >= 500 ? t("errFunctionMissing") : `${t("errBadResponse")} (HTTP ${res.status})`,
+        );
       }
-      if (!res.ok) return showError(errEl, messageForServerError(data.error));
+      if (!res.ok) return showError(errEl, messageForServerError(data.error, data));
       okEl.textContent = t("success");
       okEl.style.display = "block";
       document.getElementById("poi-propose-form").reset();
