@@ -1,4 +1,9 @@
 CityLoop Quest Lille - Release notes
+Version 26.06.44
+----------------------------------------
+- Production build (no tracked content changes since last release).
+
+CityLoop Quest Lille - Release notes
 Version 26.06.43
 ----------------------------------------
 - Unified API base and manual activation flow.

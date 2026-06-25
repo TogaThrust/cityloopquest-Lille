@@ -236,7 +236,16 @@ async function bumpVersion() {
   return newVersion;
 }
 
-
+async function readCurrentVersion() {
+  if (!(await exists(VERSION_JS_PATH))) return null;
+  try {
+    const content = await readFile(VERSION_JS_PATH, "utf8");
+    const match = content.match(/APP_VERSION\s*=\s*'(\d{2}\.\d{2}\.\d+)'/);
+    return match ? match[1] : null;
+  } catch {
+    return null;
+  }
+}
 
 async function clean() {
   log("clean", DIST);
@@ -455,7 +464,10 @@ async function createApiKeyFile() {
 }
 
 (async () => {
-  const newVersion = await bumpVersion();
+  const skipBump = process.env.CLQ_SKIP_VERSION_BUMP === "1";
+  const newVersion = skipBump
+    ? (await readCurrentVersion()) || await bumpVersion()
+    : await bumpVersion();
   await clean();
   await copyAll();
   await createApiKeyFile();
