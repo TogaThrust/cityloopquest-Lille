@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="translations/translationManager.js"></script>
     <script src="translations/languageSelector.js"></script>
+<script src="js/clq-city-config.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     
 <!-- Garde d'accès : bloque l'accès si aucun code d'activation valide (clq_short_code) -->
@@ -191,7 +192,7 @@
         <div id="video-wrapper">
             <video id="video" autoplay playsinline muted style="display:block;"></video>
         </div>
-        <img src="images/selfie-background.svg" class="stgeorges-bg" alt="Fond selfie">
+        <img id="selfie-bg" src="images/fond.png" class="stgeorges-bg" alt="Fond selfie">
         
         <!-- Ajout de l'overlay de texte -->
         <div class="selfie-text-overlay">
@@ -318,6 +319,28 @@ function applyMaxZoomOut() {
     video.style.borderRadius = '0';
 }
 
+function applySelfieBackgroundImage() {
+    const bg = document.getElementById('selfie-bg');
+    if (!bg) return;
+    const candidates = [
+        window.CLQ_CITY?.selfieBackgroundImage,
+        bg.getAttribute('src'),
+        'images/fond.png',
+        'images/selfie-background.svg',
+    ].filter(Boolean);
+    const unique = [...new Set(candidates)];
+    let index = 0;
+    const tryNext = () => {
+        if (index >= unique.length) return;
+        const src = unique[index++];
+        const probe = new Image();
+        probe.onload = () => { bg.src = src; };
+        probe.onerror = tryNext;
+        probe.src = src;
+    };
+    tryNext();
+}
+
 function updateCircuitText() {
     const selectedCircuit = localStorage.getItem('selectedCircuit');
     const selfieTextBottom = document.getElementById('selfie-text-bottom');
@@ -346,6 +369,7 @@ function goBack() {
 
 // Initialiser au chargement
 document.addEventListener('DOMContentLoaded', function() {
+    applySelfieBackgroundImage();
     // Démarrer la caméra
     if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
         startCamera();
