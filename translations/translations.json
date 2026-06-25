@@ -177,7 +177,7 @@
     "quiz_resume_confirm_message": "Voulez-vous reprendre le quiz à ce point ? Les questions seront proposées pour ce lieu et les points suivants.",
     "quiz_stop_confirm_title": "Arrêter le quiz ?",
     "quiz_stop_confirm_message": "Voulez-vous arrêter le quiz maintenant ?",
-    "selfie_top_text": "Souvenir de Lille — briques, beffrois et grand sourire !",
+    "selfie_top_text": "",
     "victory_selfie_invite": "📸 Célébrez votre victoire : prenez un selfie souvenir pour garder une trace de ce parcours !"
   },
   "en": {
@@ -358,7 +358,7 @@
     "quiz_resume_confirm_message": "Do you want to resume the quiz from this point? Questions will be offered for this place and the following ones.",
     "quiz_stop_confirm_title": "Stop the quiz?",
     "quiz_stop_confirm_message": "Do you want to stop the quiz now?",
-    "selfie_top_text": "Souvenir de Lille — briques, beffrois et grand sourire !",
+    "selfie_top_text": "",
     "victory_selfie_invite": "📸 Celebrate your victory: take a commemorative selfie to remember this tour!"
   },
   "nl": {
@@ -535,7 +535,7 @@
     "quiz_resume_confirm_message": "Wilt u de quiz vanaf dit punt hervatten? Vragen worden voorgesteld voor deze plaats en de volgende.",
     "quiz_stop_confirm_title": "Quiz stoppen?",
     "quiz_stop_confirm_message": "Wilt u de quiz nu stoppen?",
-    "selfie_top_text": "Souvenir de Lille — briques, beffrois et grand sourire !",
+    "selfie_top_text": "",
     "victory_selfie_invite": "📸 Vier uw overwinning: neem een souvenir-selfie om deze tocht vast te leggen!"
   },
   "de": {
@@ -712,7 +712,7 @@
     "quiz_resume_confirm_message": "Möchten Sie das Quiz an diesem Punkt fortsetzen? Fragen werden für diesen Ort und die folgenden vorgeschlagen.",
     "quiz_stop_confirm_title": "Quiz beenden?",
     "quiz_stop_confirm_message": "Möchten Sie das Quiz jetzt beenden?",
-    "selfie_top_text": "Souvenir de Lille — briques, beffrois et grand sourire !",
+    "selfie_top_text": "",
     "victory_selfie_invite": "📸 Feiern Sie Ihren Sieg: machen Sie ein Erinnerungs-Selfie von dieser Tour!"
   },
   "it": {
@@ -889,7 +889,7 @@
     "quiz_resume_confirm_message": "Vuoi riprendere il quiz da questo punto? Le domande saranno proposte per questo luogo e i successivi.",
     "quiz_stop_confirm_title": "Fermare il quiz?",
     "quiz_stop_confirm_message": "Vuoi fermare il quiz adesso?",
-    "selfie_top_text": "Souvenir de Lille — briques, beffrois et grand sourire !",
+    "selfie_top_text": "",
     "victory_selfie_invite": "📸 Festeggia la vittoria: scatta un selfie ricordo di questo percorso!"
   },
   "es": {
@@ -1066,7 +1066,7 @@
     "quiz_resume_confirm_message": "¿Quieres reanudar el quiz en este punto? Se propondrán preguntas para este lugar y los siguientes.",
     "quiz_stop_confirm_title": "¿Detener el quiz?",
     "quiz_stop_confirm_message": "¿Quieres detener el quiz ahora?",
-    "selfie_top_text": "Souvenir de Lille — briques, beffrois et grand sourire !",
+    "selfie_top_text": "",
     "victory_selfie_invite": "📸 ¡Celebra tu victoria: haz un selfie recuerdo de este recorrido!"
   },
   "pl": {
@@ -1243,7 +1243,7 @@
     "quiz_resume_confirm_message": "Czy chcesz wznowić quiz od tego punktu? Pytania będą proponowane dla tego miejsca i kolejnych.",
     "quiz_stop_confirm_title": "Zatrzymać quiz?",
     "quiz_stop_confirm_message": "Czy chcesz teraz zatrzymać quiz?",
-    "selfie_top_text": "Souvenir de Lille — briques, beffrois et grand sourire !",
+    "selfie_top_text": "",
     "victory_selfie_invite": "📸 Świętuj zwycięstwo: zrób pamiątkowe selfie tej trasy!"
   },
   "ar": {
@@ -1421,7 +1421,7 @@
     "quiz_resume_confirm_message": "هل تريد استئناف الاختبار من هذه النقطة؟ ستُطرح الأسئلة لهذا المكان والنقاط التالية.",
     "quiz_stop_confirm_title": "إيقاف الاختبار؟",
     "quiz_stop_confirm_message": "هل تريد إيقاف الاختبار الآن؟",
-    "selfie_top_text": "Souvenir de Lille — briques, beffrois et grand sourire !",
+    "selfie_top_text": "",
     "victory_selfie_invite": "📸 احتفل بانتصارك: التقط سيلفي تذكاري لهذه الجولة!"
   },
   "cn": {
@@ -1599,7 +1599,7 @@
     "quiz_resume_confirm_message": "你想从这一点继续测验吗？将为此地点及后续地点提供问题。",
     "quiz_stop_confirm_title": "停止测验？",
     "quiz_stop_confirm_message": "你现在要停止测验吗？",
-    "selfie_top_text": "Souvenir de Lille — briques, beffrois et grand sourire !",
+    "selfie_top_text": "",
     "victory_selfie_invite": "📸 庆祝胜利：拍一张纪念自拍，留住这次旅程！"
   },
   "jp": {
@@ -1782,7 +1782,7 @@
     "quiz_stop_confirm_title": "クイズを停止しますか？",
     "quiz_stop_confirm_message": "今すぐクイズを停止しますか？",
     "selfie_title": "Selfie — Lille",
-    "selfie_top_text": "Souvenir de Lille — briques, beffrois et grand sourire !",
+    "selfie_top_text": "",
     "victory_selfie_invite": "📸 勝利を祝おう：このコースの記念セルフィーを撮りましょう！"
   },
   "zh": {
@@ -1960,6 +1960,6 @@
     "quiz_resume_confirm_message": "你想从这一点继续测验吗？将为此地点及后续地点提供问题。",
     "quiz_stop_confirm_title": "停止测验？",
     "quiz_stop_confirm_message": "你现在要停止测验吗？",
-    "selfie_top_text": "Souvenir de Lille — briques, beffrois et grand sourire !"
+    "selfie_top_text": ""
   }
 }
