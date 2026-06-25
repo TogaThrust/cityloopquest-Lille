@@ -3468,7 +3468,7 @@ function showQuizForCurrentPoint(callback) {
     new Audio(isGood ? 'audio/correct.mp3' : 'audio/incorrect.mp3').play();
 
     const feedbackImg = document.createElement('img');
-    feedbackImg.src = isGood ? 'images/correct.png' : 'images/incorrect.png';
+    feedbackImg.src = isGood ? 'images/quiz-correct.svg' : 'images/incorrect.png';
     feedbackImg.alt = isGood ? 'Bonne réponse' : 'Mauvaise réponse';
     feedbackImg.style.cssText = 'position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);width:120px;height:120px;z-index:10000';
     document.body.appendChild(feedbackImg);
