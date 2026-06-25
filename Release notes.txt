@@ -1,4 +1,9 @@
 CityLoop Quest Lille - Release notes
+Version 26.06.54
+----------------------------------------
+- Quiz coverage updated: 20 tour stop(s) now have quizzes (was 0).
+
+CityLoop Quest Lille - Release notes
 Version 26.06.53
 ----------------------------------------
 - Quiz coverage updated: 20 tour stop(s) now have quizzes (was 0).
