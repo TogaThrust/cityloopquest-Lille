@@ -9,6 +9,7 @@
   const CITY_CONFIG = window.CLQ_POI_CITY_CONFIG || {};
   const DEFAULT_CENTER = CITY_CONFIG.center || { lat: 50.63703288063117, lng: 3.063648139799318 };
   const CITY_KEY = CITY_CONFIG.cityKey || "lille";
+  const PROPOSAL_MAX_RADIUS_KM = Number(CITY_CONFIG.proposalMaxRadiusKm) || 50;
 
   const texts = {
     proposeBtn: {
@@ -32,16 +33,16 @@
     submit: { fr: "Envoyer pour validation", en: "Submit for review", nl: "Verzenden ter controle", de: "Zur Prüfung senden", it: "Invia per revisione", es: "Enviar para revisión", pl: "Wyślij do sprawdzenia", ar: "إرسال للمراجعة", zh: "提交审核", ja: "確認のため送信" },
     cancel: { fr: "Annuler", en: "Cancel", nl: "Annuleren", de: "Abbrechen", it: "Annulla", es: "Cancelar", pl: "Anuluj", ar: "إلغاء", zh: "取消", ja: "キャンセル" },
     hintReview: {
-      fr: "Votre proposition sera traduite en 10 langues et publiée après validation.",
-      en: "Your suggestion will be translated into 10 languages and published after approval.",
-      nl: "Uw voorstel wordt in 10 talen vertaald en na goedkeuring gepubliceerd.",
-      de: "Ihr Vorschlag wird in 10 Sprachen übersetzt und nach Prüfung veröffentlicht.",
-      it: "La proposta sarà tradotta in 10 lingue e pubblicata dopo la verifica.",
-      es: "Tu propuesta se traducirá a 10 idiomas y se publicará tras su validación.",
-      pl: "Twoja propozycja zostanie przetłumaczona na 10 języków i opublikowana po zatwierdzeniu.",
-      ar: "سيُترجم اقتراحك إلى 10 لغات وينشر بعد المراجعة.",
-      zh: "你的建议会被翻译成 10 种语言，并在审核后发布。",
-      ja: "提案は10言語に翻訳され、確認後に公開されます。",
+      fr: "Proposition pour le mode POI Explorer (pas les parcours guidés). Zone acceptée : 50 km autour du centre de la ville. Traduction en 10 langues après validation.",
+      en: "For POI Explorer mode only (not guided tours). Accepted area: 50 km around the city center. Translated into 10 languages after approval.",
+      nl: "Voor de POI Explorer-modus (niet voor begeleide parcoursen). Toegestaan gebied: 50 km rond het stadscentrum. Na goedkeuring in 10 talen vertaald.",
+      de: "Für den POI-Explorer-Modus (nicht für geführte Parcours). Zulässiger Bereich: 50 km um das Stadtzentrum. Nach Prüfung in 10 Sprachen übersetzt.",
+      it: "Per la modalità POI Explorer (non i percorsi guidati). Area ammessa: 50 km dal centro città. Tradotto in 10 lingue dopo la verifica.",
+      es: "Para el modo POI Explorer (no los recorridos guiados). Zona aceptada: 50 km alrededor del centro. Traducido a 10 idiomas tras la validación.",
+      pl: "Dla trybu POI Explorer (nie tras guidowanych). Dozwolony obszar: 50 km od centrum miasta. Po zatwierdzeniu tłumaczenie na 10 języków.",
+      ar: "للوضع POI Explorer (وليس المسارات المرشدة). المنطقة المقبولة: 50 كم حول مركز المدينة. يُترجم إلى 10 لغات بعد الموافقة.",
+      zh: "仅供 POI Explorer 模式（非导览路线）。接受范围：市中心 50 公里内。审核后翻译成 10 种语言。",
+      ja: "POI Explorer 用（ガイド付きコースではありません）。市区中心から 50 km 以内。承認後に 10 言語へ翻訳されます。",
     },
     sending: { fr: "Envoi...", en: "Sending...", nl: "Verzenden...", de: "Wird gesendet...", it: "Invio...", es: "Enviando...", pl: "Wysyłanie...", ar: "جارٍ الإرسال...", zh: "正在发送...", ja: "送信中..." },
     success: {
@@ -79,16 +80,16 @@
     errPhotoConvert: { fr: "Impossible de lire cette photo. Essayez JPG ou une autre image.", en: "Could not read this photo. Try JPG or another image.", nl: "Kan deze foto niet lezen. Probeer JPG of een andere afbeelding.", de: "Foto konnte nicht gelesen werden. Versuchen Sie JPG oder ein anderes Bild.", it: "Impossibile leggere la foto. Prova JPG o un'altra immagine.", es: "No se pudo leer la foto. Prueba JPG u otra imagen.", pl: "Nie można odczytać zdjęcia. Spróbuj JPG lub inny obraz.", ar: "تعذر قراءة الصورة. جرّب JPG أو صورة أخرى.", zh: "无法读取该照片。请尝试 JPG 或其他图片。", ja: "写真を読み取れません。JPG など別の画像をお試しください。" },
     errCoordsInvalid: { fr: "Latitude ou longitude invalide.", en: "Invalid latitude or longitude.", nl: "Ongeldige breedte- of lengtegraad.", de: "Ungültiger Breiten- oder Längengrad.", it: "Latitudine o longitudine non valida.", es: "Latitud o longitud inválida.", pl: "Nieprawidłowa szerokość lub długość geograficzna.", ar: "خط العرض أو الطول غير صالح.", zh: "纬度或经度无效。", ja: "緯度または経度が無効です。" },
     errCoordsOutOfArea: {
-      fr: "Ce point est en dehors de la zone couverte par {city}. Proposez un lieu visible sur la carte de l'application (métropole et environs du parcours), pas un endroit éloigné.",
-      en: "This point is outside the area covered by {city}. Suggest a place shown on the app map (metro area and tour surroundings), not a distant location.",
-      nl: "Dit punt ligt buiten het gebied van {city}. Stel een plaats voor die op de kaart van de app staat (metropool en omgeving van het parcours).",
-      de: "Dieser Punkt liegt außerhalb des Gebiets von {city}. Schlagen Sie einen Ort auf der App-Karte vor (Metropolregion und Parcours-Umgebung).",
-      it: "Questo punto è fuori dall'area coperta da {city}. Proponi un luogo visibile sulla mappa dell'app (metropoli e dintorni del percorso).",
-      es: "Este punto está fuera del área cubierta por {city}. Propón un lugar visible en el mapa de la app (área metropolitana y alrededores del recorrido).",
-      pl: "Ten punkt leży poza obszarem {city}. Zaproponuj miejsce widoczne na mapie aplikacji (obszar metropolitalny i okolice trasy).",
-      ar: "هذه النقطة خارج منطقة {city}. اقترح مكانًا يظهر على خريطة التطبيق (المنطقة الحضرية ومحيط المسار).",
-      zh: "该地点超出 {city} 的覆盖范围。请推荐应用地图上可见的地点（都会区及路线周边）。",
-      ja: "この地点は {city} の対象エリア外です。アプリの地図に表示される場所（都市圏とコース周辺）を提案してください。",
+      fr: "Ce point est à plus de {radius} km du centre de {city}. Les propositions POI Explorer doivent rester dans ce rayon (elles ne concernent pas les parcours guidés).",
+      en: "This point is more than {radius} km from the center of {city}. POI Explorer suggestions must stay within this radius (they are not for guided tours).",
+      nl: "Dit punt ligt meer dan {radius} km van het centrum van {city}. POI Explorer-voorstellen moeten binnen deze straal blijven (niet voor begeleide parcoursen).",
+      de: "Dieser Punkt liegt mehr als {radius} km vom Zentrum von {city} entfernt. POI-Explorer-Vorschläge müssen in diesem Radius bleiben (nicht für geführte Parcours).",
+      it: "Questo punto è a più di {radius} km dal centro di {city}. Le proposte POI Explorer devono restare in questo raggio (non riguardano i percorsi guidati).",
+      es: "Este punto está a más de {radius} km del centro de {city}. Las propuestas POI Explorer deben permanecer en este radio (no son para recorridos guiados).",
+      pl: "Ten punkt jest oddalony o więcej niż {radius} km od centrum {city}. Propozycje POI Explorer muszą pozostać w tym promieniu (nie dotyczą tras guidowanych).",
+      ar: "هذه النقطة على بعد أكثر من {radius} كم من مركز {city}. يجب أن تبقى اقتراحات POI Explorer ضمن هذا النطاق (وليست للمسارات المرشدة).",
+      zh: "该地点距 {city} 中心超过 {radius} 公里。POI Explorer 建议须在此半径内（不用于导览路线）。",
+      ja: "この地点は {city} の中心から {radius} km を超えています。POI Explorer の提案はこの半径内である必要があります（ガイド付きコース用ではありません）。",
     },
     pickMapActive: { fr: "Cliquez sur la carte ci-dessous pour placer le point.", en: "Click the map below to set the location.", nl: "Klik op de kaart hieronder om de locatie te plaatsen.", de: "Klicken Sie auf die Karte unten, um den Punkt zu setzen.", it: "Clicca sulla mappa qui sotto per posizionare il punto.", es: "Haz clic en el mapa inferior para colocar el punto.", pl: "Kliknij mapę poniżej, aby ustawić punkt.", ar: "انقر على الخريطة أدناه لتحديد النقطة.", zh: "点击下方地图放置地点。", ja: "下の地図をクリックして地点を設定してください。" },
     pickMapUnavailable: { fr: "Carte indisponible. Attendez le chargement ou utilisez Ma position.", en: "Map unavailable. Wait for loading or use My location.", nl: "Kaart niet beschikbaar. Wacht tot ze geladen is of gebruik Mijn locatie.", de: "Karte nicht verfügbar. Warten Sie auf das Laden oder nutzen Sie Mein Standort.", it: "Mappa non disponibile. Attendi il caricamento o usa La mia posizione.", es: "Mapa no disponible. Espera a que cargue o usa Mi ubicación.", pl: "Mapa niedostępna. Poczekaj na załadowanie albo użyj Mojej lokalizacji.", ar: "الخريطة غير متاحة. انتظر التحميل أو استخدم موقعي.", zh: "地图不可用。请等待加载或使用我的位置。", ja: "地図を利用できません。読み込みを待つか現在地を使用してください。" },
@@ -117,22 +118,31 @@
   }
 
   function tCity(key) {
-    return t(key).replace(/\{city\}/g, cityLabel());
+    return t(key)
+      .replace(/\{city\}/g, cityLabel())
+      .replace(/\{radius\}/g, String(PROPOSAL_MAX_RADIUS_KM));
   }
 
-  function getProposalBounds() {
-    return CITY_CONFIG.proposalBounds || CITY_CONFIG.bounds || null;
+  function getProposalCenter() {
+    return CITY_CONFIG.center || DEFAULT_CENTER;
   }
 
-  function isInProposalBounds(lat, lng) {
-    const bounds = getProposalBounds();
-    if (!bounds) return true;
-    return (
-      lat >= bounds.minLat &&
-      lat <= bounds.maxLat &&
-      lng >= bounds.minLon &&
-      lng <= bounds.maxLon
-    );
+  function distanceKm(lat1, lng1, lat2, lng2) {
+    const R = 6371;
+    const dLat = ((lat2 - lat1) * Math.PI) / 180;
+    const dLng = ((lng2 - lng1) * Math.PI) / 180;
+    const a =
+      Math.sin(dLat / 2) ** 2 +
+      Math.cos((lat1 * Math.PI) / 180) *
+        Math.cos((lat2 * Math.PI) / 180) *
+        Math.sin(dLng / 2) ** 2;
+    return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  }
+
+  function isWithinProposalRadius(lat, lng) {
+    const center = getProposalCenter();
+    if (!center || !Number.isFinite(center.lat) || !Number.isFinite(center.lng)) return true;
+    return distanceKm(lat, lng, center.lat, center.lng) <= PROPOSAL_MAX_RADIUS_KM;
   }
 
   function applyLabels() {
@@ -433,7 +443,7 @@
 
     if (!name) return showError(errEl, t("errRequired"));
     if (!Number.isFinite(lat) || !Number.isFinite(lng)) return showError(errEl, t("errCoordsInvalid"));
-    if (!isInProposalBounds(lat, lng)) return showError(errEl, tCity("errCoordsOutOfArea"));
+    if (!isWithinProposalRadius(lat, lng)) return showError(errEl, tCity("errCoordsOutOfArea"));
     if (description.length < 10) return showError(errEl, t("errDescShort"));
     if (!isImageFile(file)) return showError(errEl, t("errPhotoRequired"));
 

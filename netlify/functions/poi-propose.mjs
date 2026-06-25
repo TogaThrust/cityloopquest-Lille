@@ -8,25 +8,40 @@ import {
   slugFromName,
 } from "./_lib/store.mjs";
 
+const MAX_PROPOSAL_RADIUS_KM = 50;
+const MAX_B64 = 3_500_000;
+
 const REGIONS = {
   lille: {
     city: "Lille",
-    bounds: { minLat: 50.34, maxLat: 50.73, minLon: 2.73, maxLon: 3.21 },
+    center: { lat: 50.63703288063117, lng: 3.063648139799318 },
   },
   bruxelles: {
     city: "Bruxelles",
-    bounds: { minLat: 50.39, maxLat: 51.30, minLon: 3.65, maxLon: 4.95 },
+    center: { lat: 50.8503, lng: 4.3517 },
   },
 };
-const MAX_B64 = 3_500_000;
 
 function regionFor(key) {
   return REGIONS[String(key || "lille").toLowerCase()] || REGIONS.lille;
 }
 
+function distanceKm(lat1, lng1, lat2, lng2) {
+  const R = 6371;
+  const dLat = ((lat2 - lat1) * Math.PI) / 180;
+  const dLng = ((lng2 - lng1) * Math.PI) / 180;
+  const a =
+    Math.sin(dLat / 2) ** 2 +
+    Math.cos((lat1 * Math.PI) / 180) *
+      Math.cos((lat2 * Math.PI) / 180) *
+      Math.sin(dLng / 2) ** 2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+}
+
 function inRegion(lat, lng, region) {
-  const bounds = region.bounds;
-  return lat >= bounds.minLat && lat <= bounds.maxLat && lng >= bounds.minLon && lng <= bounds.maxLon;
+  const center = region.center;
+  if (!center || !Number.isFinite(center.lat) || !Number.isFinite(center.lng)) return true;
+  return distanceKm(lat, lng, center.lat, center.lng) <= MAX_PROPOSAL_RADIUS_KM;
 }
 
 function parseBody(event) {

@@ -8,12 +8,7 @@
     defaultCenter: { lat: Number("50.63703288063117"), lng: Number("3.063648139799318") },
     lastPosKey: "lille_lastKnownPosition",
     cityKey: "lille",
-    proposalBounds: {
-      minLat: 50.34,
-      maxLat: 50.73,
-      minLon: 2.73,
-      maxLon: 3.21,
-    },
+    proposalMaxRadiusKm: 50,
   };
   const DEFAULT_CENTER = CITY_CONFIG.defaultCenter;
   const FALLBACK_LANG = "fr";
@@ -24,7 +19,7 @@
     label: CITY_CONFIG.label,
     datasetUrl: CITY_CONFIG.datasetUrl,
     cityKey: CITY_CONFIG.cityKey,
-    proposalBounds: { ...CITY_CONFIG.proposalBounds },
+    proposalMaxRadiusKm: CITY_CONFIG.proposalMaxRadiusKm,
   };
   /** Zoom lorsqu'un POI est choisi (liste ou marqueur). */
   const ZOOM_POI_FOCUS = 17;
@@ -180,7 +175,7 @@
       label: CITY_CONFIG.label,
       datasetUrl: CITY_CONFIG.datasetUrl,
       cityKey: CITY_CONFIG.cityKey,
-      proposalBounds: { ...CITY_CONFIG.proposalBounds },
+      proposalMaxRadiusKm: CITY_CONFIG.proposalMaxRadiusKm,
     };
   }
 
@@ -429,7 +424,7 @@
   function isWalkInProgress() {
     return (
       localStorage.getItem("walkInProgress") === "true" ||
-      localStorage.getItem("lille_walkInProgress") === "true" ||
+      localStorage.getItem("mons_walkInProgress") === "true" ||
       localStorage.getItem("museumMode") === "true"
     );
   }
@@ -904,8 +899,8 @@
   function updateTourSavedSummary() {
     const el = document.getElementById("tour-saved-summary");
     if (!el) return;
-    const idxRaw = localStorage.getItem("lille_currentIndex");
-    const scoreRaw = localStorage.getItem("lille_score");
+    const idxRaw = localStorage.getItem("mons_currentIndex");
+    const scoreRaw = localStorage.getItem("mons_score");
     const idxNum = idxRaw !== null && idxRaw !== "" ? parseInt(idxRaw, 10) : NaN;
     const step = !Number.isNaN(idxNum) ? String(idxNum + 1) : "?";
     const scoreNum = scoreRaw !== null && scoreRaw !== "" ? parseInt(scoreRaw, 10) : NaN;
