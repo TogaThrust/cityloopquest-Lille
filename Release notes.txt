@@ -1,4 +1,14 @@
 CityLoop Quest Lille - Release notes
+Version 26.06.43
+----------------------------------------
+- Unified API base and manual activation flow.
+- Preserve access session when resetting tour from home button.
+- Disable service worker in local dev (Vite).
+- Google Maps script loads with loading=async.
+- Added Lille deployment guide (DEPLOY.md).
+- Quiz coverage updated: 20 tour stop(s) now have quizzes (was 0).
+
+CityLoop Quest Lille - Release notes
 Version 26.06.42
 ----------------------------------------
 - Quiz coverage updated: 20 tour stop(s) now have quizzes (was 0).
