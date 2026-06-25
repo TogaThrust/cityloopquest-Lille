@@ -7,7 +7,13 @@
     datasetUrl: "data/pois_explorer.json",
     defaultCenter: { lat: Number("50.63703288063117"), lng: Number("3.063648139799318") },
     lastPosKey: "lille_lastKnownPosition",
-    cityKey: "lille"
+    cityKey: "lille",
+    proposalBounds: {
+      minLat: 50.34,
+      maxLat: 50.73,
+      minLon: 2.73,
+      maxLon: 3.21,
+    },
   };
   const DEFAULT_CENTER = CITY_CONFIG.defaultCenter;
   const FALLBACK_LANG = "fr";
@@ -17,7 +23,8 @@
     center: { ...CITY_CONFIG.defaultCenter },
     label: CITY_CONFIG.label,
     datasetUrl: CITY_CONFIG.datasetUrl,
-    cityKey: CITY_CONFIG.cityKey
+    cityKey: CITY_CONFIG.cityKey,
+    proposalBounds: { ...CITY_CONFIG.proposalBounds },
   };
   /** Zoom lorsqu'un POI est choisi (liste ou marqueur). */
   const ZOOM_POI_FOCUS = 17;
@@ -172,7 +179,8 @@
       center: { ...CITY_CONFIG.defaultCenter },
       label: CITY_CONFIG.label,
       datasetUrl: CITY_CONFIG.datasetUrl,
-      cityKey: CITY_CONFIG.cityKey
+      cityKey: CITY_CONFIG.cityKey,
+      proposalBounds: { ...CITY_CONFIG.proposalBounds },
     };
   }
 

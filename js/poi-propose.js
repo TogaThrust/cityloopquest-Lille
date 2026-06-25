@@ -78,7 +78,18 @@
     errPhotoRequired: { fr: "Photo requise (JPG, PNG ou HEIC).", en: "Photo required (JPG, PNG or HEIC).", nl: "Foto verplicht (JPG, PNG of HEIC).", de: "Foto erforderlich (JPG, PNG oder HEIC).", it: "Foto obbligatoria (JPG, PNG o HEIC).", es: "Foto obligatoria (JPG, PNG o HEIC).", pl: "Zdjęcie wymagane (JPG, PNG lub HEIC).", ar: "الصورة مطلوبة (JPG أو PNG أو HEIC).", zh: "需要照片（JPG、PNG 或 HEIC）。", ja: "写真が必要です（JPG、PNG、HEIC）。" },
     errPhotoConvert: { fr: "Impossible de lire cette photo. Essayez JPG ou une autre image.", en: "Could not read this photo. Try JPG or another image.", nl: "Kan deze foto niet lezen. Probeer JPG of een andere afbeelding.", de: "Foto konnte nicht gelesen werden. Versuchen Sie JPG oder ein anderes Bild.", it: "Impossibile leggere la foto. Prova JPG o un'altra immagine.", es: "No se pudo leer la foto. Prueba JPG u otra imagen.", pl: "Nie można odczytać zdjęcia. Spróbuj JPG lub inny obraz.", ar: "تعذر قراءة الصورة. جرّب JPG أو صورة أخرى.", zh: "无法读取该照片。请尝试 JPG 或其他图片。", ja: "写真を読み取れません。JPG など別の画像をお試しください。" },
     errCoordsInvalid: { fr: "Latitude ou longitude invalide.", en: "Invalid latitude or longitude.", nl: "Ongeldige breedte- of lengtegraad.", de: "Ungültiger Breiten- oder Längengrad.", it: "Latitudine o longitudine non valida.", es: "Latitud o longitud inválida.", pl: "Nieprawidłowa szerokość lub długość geograficzna.", ar: "خط العرض أو الطول غير صالح.", zh: "纬度或经度无效。", ja: "緯度または経度が無効です。" },
-    errCoords: { fr: "Coordonnées hors région.", en: "Coordinates outside the region.", nl: "Coördinaten buiten de regio.", de: "Koordinaten außerhalb der Region.", it: "Coordinate fuori regione.", es: "Coordenadas fuera de la región.", pl: "Współrzędne poza regionem.", ar: "الإحداثيات خارج المنطقة.", zh: "坐标超出区域。", ja: "座標が対象地域外です。" },
+    errCoordsOutOfArea: {
+      fr: "Ce point est en dehors de la zone couverte par {city}. Proposez un lieu visible sur la carte de l'application (métropole et environs du parcours), pas un endroit éloigné.",
+      en: "This point is outside the area covered by {city}. Suggest a place shown on the app map (metro area and tour surroundings), not a distant location.",
+      nl: "Dit punt ligt buiten het gebied van {city}. Stel een plaats voor die op de kaart van de app staat (metropool en omgeving van het parcours).",
+      de: "Dieser Punkt liegt außerhalb des Gebiets von {city}. Schlagen Sie einen Ort auf der App-Karte vor (Metropolregion und Parcours-Umgebung).",
+      it: "Questo punto è fuori dall'area coperta da {city}. Proponi un luogo visibile sulla mappa dell'app (metropoli e dintorni del percorso).",
+      es: "Este punto está fuera del área cubierta por {city}. Propón un lugar visible en el mapa de la app (área metropolitana y alrededores del recorrido).",
+      pl: "Ten punkt leży poza obszarem {city}. Zaproponuj miejsce widoczne na mapie aplikacji (obszar metropolitalny i okolice trasy).",
+      ar: "هذه النقطة خارج منطقة {city}. اقترح مكانًا يظهر على خريطة التطبيق (المنطقة الحضرية ومحيط المسار).",
+      zh: "该地点超出 {city} 的覆盖范围。请推荐应用地图上可见的地点（都会区及路线周边）。",
+      ja: "この地点は {city} の対象エリア外です。アプリの地図に表示される場所（都市圏とコース周辺）を提案してください。",
+    },
     pickMapActive: { fr: "Cliquez sur la carte ci-dessous pour placer le point.", en: "Click the map below to set the location.", nl: "Klik op de kaart hieronder om de locatie te plaatsen.", de: "Klicken Sie auf die Karte unten, um den Punkt zu setzen.", it: "Clicca sulla mappa qui sotto per posizionare il punto.", es: "Haz clic en el mapa inferior para colocar el punto.", pl: "Kliknij mapę poniżej, aby ustawić punkt.", ar: "انقر على الخريطة أدناه لتحديد النقطة.", zh: "点击下方地图放置地点。", ja: "下の地図をクリックして地点を設定してください。" },
     pickMapUnavailable: { fr: "Carte indisponible. Attendez le chargement ou utilisez Ma position.", en: "Map unavailable. Wait for loading or use My location.", nl: "Kaart niet beschikbaar. Wacht tot ze geladen is of gebruik Mijn locatie.", de: "Karte nicht verfügbar. Warten Sie auf das Laden oder nutzen Sie Mein Standort.", it: "Mappa non disponibile. Attendi il caricamento o usa La mia posizione.", es: "Mapa no disponible. Espera a que cargue o usa Mi ubicación.", pl: "Mapa niedostępna. Poczekaj na załadowanie albo użyj Mojej lokalizacji.", ar: "الخريطة غير متاحة. انتظر التحميل أو استخدم موقعي.", zh: "地图不可用。请等待加载或使用我的位置。", ja: "地図を利用できません。読み込みを待つか現在地を使用してください。" },
   };
@@ -99,6 +110,29 @@
     const d = texts[key];
     if (!d) return "";
     return d[lang()] || d[FALLBACK] || "";
+  }
+
+  function cityLabel() {
+    return CITY_CONFIG.label || CITY_CONFIG.cityName || CITY_KEY;
+  }
+
+  function tCity(key) {
+    return t(key).replace(/\{city\}/g, cityLabel());
+  }
+
+  function getProposalBounds() {
+    return CITY_CONFIG.proposalBounds || CITY_CONFIG.bounds || null;
+  }
+
+  function isInProposalBounds(lat, lng) {
+    const bounds = getProposalBounds();
+    if (!bounds) return true;
+    return (
+      lat >= bounds.minLat &&
+      lat <= bounds.maxLat &&
+      lng >= bounds.minLon &&
+      lng <= bounds.maxLon
+    );
   }
 
   function applyLabels() {
@@ -320,7 +354,7 @@
     if (code === "smtp_not_configured" || code === "delivery_failed") return t("errSmtp");
     if (code === "invalid_photo_jpeg" || code === "photo_too_large") return t("errPhotoConvert");
     if (code === "blobs_not_configured") return t("errFunctionMissing");
-    if (/^coords_outside_/.test(code || "")) return t("errCoords");
+    if (/^coords_outside_/.test(code || "")) return tCity("errCoordsOutOfArea");
     if (data?.detail && typeof data.detail === "string") return data.detail;
     return t("errGeneric");
   }
@@ -399,6 +433,7 @@
 
     if (!name) return showError(errEl, t("errRequired"));
     if (!Number.isFinite(lat) || !Number.isFinite(lng)) return showError(errEl, t("errCoordsInvalid"));
+    if (!isInProposalBounds(lat, lng)) return showError(errEl, tCity("errCoordsOutOfArea"));
     if (description.length < 10) return showError(errEl, t("errDescShort"));
     if (!isImageFile(file)) return showError(errEl, t("errPhotoRequired"));
 
