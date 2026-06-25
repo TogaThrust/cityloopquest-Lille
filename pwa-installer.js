@@ -34,7 +34,7 @@ class PWAInstaller {
             this.checkIfInstalled();
         });
         
-        // �0couter l'événement beforeinstallprompt (non supporté sur iOS)
+        // 0couter l'événement beforeinstallprompt (non supporté sur iOS)
         if (!this.isIOS) {
             window.addEventListener('beforeinstallprompt', (e) => {
                 e.preventDefault();
@@ -43,7 +43,7 @@ class PWAInstaller {
             });
         }
 
-        // �0couter l'événement appinstalled
+        // 0couter l'événement appinstalled
         window.addEventListener('appinstalled', (evt) => {
             this.isInstalled = true;
             localStorage.setItem('pwa-installed', 'true');
@@ -52,7 +52,7 @@ class PWAInstaller {
             this.showInstallationSuccess();
         });
 
-        // �0couter les changements de display-mode
+        // 0couter les changements de display-mode
         if (window.matchMedia) {
             const mediaQuery = window.matchMedia('(display-mode: standalone)');
             mediaQuery.addEventListener('change', (e) => {
@@ -330,7 +330,7 @@ class PWAInstaller {
                 
                 this.deferredPrompt = null;
             } catch (error) {
-                console.error('�xa� Erreur lors de l\'installation:', error);
+                console.error('Erreur lors de l\'installation:', error);
             }
         } else {
             // Fallback pour les navigateurs qui ne supportent pas beforeinstallprompt
@@ -349,7 +349,7 @@ class PWAInstaller {
         successMessage.className = 'pwa-success-message';
         successMessage.innerHTML = `
             <div class="pwa-success-content">
-                <div class="pwa-success-icon">�S&</div>
+                <div class="pwa-success-icon" aria-hidden="true">&#9989;</div>
                 <div class="pwa-success-text">
                     <h3>Installation réussie !</h3>
                     <p>L'application a été installée avec succès.</p>
@@ -417,20 +417,20 @@ class PWAInstaller {
                 <p><span data-translate="install_intro">Pour installer CityLoop Quest Lille sur votre appareil :</span></p>
                 <div class="install-steps">
                     <div class="step">
-                        <div class="step-icon">�x�</div>
+                        <div class="step-icon" aria-hidden="true">&#128241;</div>
                         <div class="step-text">
                             <strong>1. <span data-translate="step1">Trouvez l'icône d'installation ou confirmez l'installation automatique</span></strong><br>
                             <span class="browser-specific" id="browser-instructions">Chargement...</span>
                         </div>
                     </div>
                     <div class="step">
-                        <div class="step-icon">�x </div>
+                        <div class="step-icon" aria-hidden="true">&#128230;</div>
                         <div class="step-text">
                             <strong>2. <span data-translate="step2">Appuyez sur "Installer" ou "Ajouter"</span></strong>
                         </div>
                     </div>
                     <div class="step">
-                        <div class="step-icon">�S&</div>
+                        <div class="step-icon" aria-hidden="true">&#9989;</div>
                         <div class="step-text">
                             <strong>3. <span data-translate="step3">Confirmez l'installation</span></strong>
                         </div>
@@ -439,9 +439,9 @@ class PWAInstaller {
                 <div class="install-benefits">
                     <h4><span data-translate="benefits_title">Avantages de l'installation :</span></h4>
                     <ul>
-                        <li><span data-translate="benefit1">�x}� Accès rapide depuis l'écran d'accueil</span></li>
-                        <li><span data-translate="benefit2">�xa� Performance optimisée</span></li>
-                        <li><span data-translate="benefit3">�x Notifications push (si activées)</span></li>
+                        <li><span data-translate="benefit1">Acces rapide depuis l'ecran d'accueil</span></li>
+                        <li><span data-translate="benefit2">Performance optimisee</span></li>
+                        <li><span data-translate="benefit3">Notifications push (si activees)</span></li>
                     </ul>
                 </div>
             </div>
@@ -566,25 +566,25 @@ class PWAInstaller {
         instructions.className = 'pwa-manual-instructions ios-instructions';
         instructions.innerHTML = `
             <div class="pwa-manual-content">
-                <h3>�x�} <span data-translate="ios_title">Installation sur iPhone/iPad</span></h3>
-                <p><span data-translate="ios_intro">Pour installer CityLoop Quest Lille sur votre appareil iOS :</span></p>
+                <h3><span data-translate="ios_title">Installation sur iPhone/iPad</span></h3>
+                <p><span data-translate="ios_intro">Pour installer CityLoop Quest {{CITY_NAME}} sur votre appareil iOS :</span></p>
                 <div class="install-steps">
                     <div class="step">
-                        <div class="step-icon">�x�</div>
+                        <div class="step-icon"><img src="images/partager_ios.png" alt="" aria-hidden="true" style="height:1.8em;width:auto;"></div>
                         <div class="step-text">
                             <strong>1. <span data-translate="ios_step1">Appuyez sur le bouton "Partager"</span></strong><br>
                             <span class="ios-detail"><span data-translate="ios_step1_detail">Trouvez le bouton carré avec une flèche vers le haut dans la barre d'outils Safari</span></span>
                         </div>
                     </div>
                     <div class="step">
-                        <div class="step-icon">�x��</div>
+                        <div class="step-icon" aria-hidden="true">&#127968;</div>
                         <div class="step-text">
                             <strong>2. <span data-translate="ios_step2">Sélectionnez "Sur l'écran d'accueil"</span></strong><br>
                             <span class="ios-detail"><span data-translate="ios_step2_detail">Faites défiler dans le menu et appuyez sur cette option</span></span>
                         </div>
                     </div>
                     <div class="step">
-                        <div class="step-icon">�~"</div>
+                        <div class="step-icon" aria-hidden="true">&#10133;</div>
                         <div class="step-text">
                             <strong>3. <span data-translate="ios_step3">Appuyez sur "Ajouter"</span></strong><br>
                             <span class="ios-detail"><span data-translate="ios_step3_detail">Confirmez l'ajout de l'application</span></span>
@@ -592,7 +592,7 @@ class PWAInstaller {
                     </div>
                 </div>
                 <div class="ios-tips">
-                    <h4>�x� <span data-translate="ios_tips_title">Conseils pour iOS :</span></h4>
+                    <h4><span data-translate="ios_tips_title">Conseils pour iOS :</span></h4>
                     <ul>
                         <li><span data-translate="ios_tip1">L'application apparaîtra sur votre écran d'accueil</span></li>
                         <li><span data-translate="ios_tip2">Vous pouvez la déplacer et organiser comme les autres apps</span></li>
@@ -644,6 +644,13 @@ class PWAInstaller {
                 margin: 5px 0;
                 color: #424242;
             }
+
+            .ios-instructions .step-icon {
+                font-size: 1.6rem;
+                line-height: 1;
+                min-width: 2rem;
+                text-align: center;
+            }
         `;
         document.head.appendChild(style);
 
@@ -665,11 +672,11 @@ class PWAInstaller {
         if (userAgent.includes('Chrome') || userAgent.includes('Edg')) {
             instructions = 'Cherchez l\'icône <img src="images/partager_ios.png" alt="Installer" style="height:1.3em;vertical-align:-0.2em;"> ou "Installer" dans la barre d\'adresse (en haut à droite)';
         } else if (userAgent.includes('Safari') && userAgent.includes('Mobile')) {
-            instructions = 'Appuyez sur le bouton "Partager" (�x�) puis "Sur l\'écran d\'accueil"';
+            instructions = 'Appuyez sur le bouton "Partager" (x) puis "Sur l\'écran d\'accueil"';
         } else if (userAgent.includes('Firefox')) {
             instructions = 'Cherchez l\'icône <img src="images/partager_ios.png" alt="Installer" style="height:1.3em;vertical-align:-0.2em;"> ou "Installer" dans la barre d\'adresse';
         } else if (userAgent.includes('SamsungBrowser')) {
-            instructions = 'Appuyez sur Menu (�9�) puis "Ajouter à l\'écran d\'accueil"';
+            instructions = 'Appuyez sur Menu (9) puis "Ajouter à l\'écran d\'accueil"';
         } else {
             instructions = 'Cherchez l\'icône d\'installation dans la barre d\'adresse ou le menu du navigateur';
         }

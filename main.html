@@ -41,11 +41,11 @@
   <script src="translations/translationManager.js"></script>
   <script src="translations/languageSelector.js"></script>
 
-  <!-- �a�️ Wrapper géolocalisation : popup si la géoloc échoue / ne répond pas -->
+  <!-- Wrapper geolocalisation : popup si la geoloc echoue -->
   <script>
     (function () {
       if (!('geolocation' in navigator)) {
-        // Pas de géoloc dispo �  on laisse l'app gérer
+        // Pas de geoloc dispo - on laisse l'app gerer
         return;
       }
 
@@ -129,7 +129,7 @@
         btn.textContent = okLabel;
 
         btn.addEventListener('click', () => {
-          overlay.remove();        // �S& ferme réellement le popup
+          overlay.remove();        // S& ferme réellement le popup
         });
 
         btnRow.appendChild(btn);
@@ -140,7 +140,7 @@
 
         overlay.addEventListener('click', (e) => {
           if (e.target === overlay) {
-            overlay.remove();      // �S& clic hors popup le ferme aussi
+            overlay.remove();      // S& clic hors popup le ferme aussi
           }
         });
 
@@ -173,7 +173,7 @@
 
       function wrapErrorCallback(cb) {
         return function (err) {
-          // Erreurs typiques de géoloc �  on affiche le popup tout de suite
+          // Erreurs typiques de géoloc   on affiche le popup tout de suite
           try {
             if (err && (
               err.code === err.PERMISSION_DENIED ||

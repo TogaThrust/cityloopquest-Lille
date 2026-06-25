@@ -14,7 +14,7 @@ function getCityStoragePrefix() {
   return 'murcia';
 }
 
-// �x� Helper : savoir si on est sur la page d'accueil / sélection de langue
+// x Helper : savoir si on est sur la page d'accueil / sélection de langue
 function isLandingPage() {
   const path = window.location.pathname || '';
   const file = path.split('/').pop() || 'index.html';
@@ -252,7 +252,7 @@ class AccessControl {
 
     popup.innerHTML = `
       <div class="popup-title" style="margin-bottom:18px;">
-        <div style="font-size:48px;margin-bottom:16px;">�x</div>
+        <div style="font-size:48px;margin-bottom:16px;" aria-hidden="true">&#128274;</div>
         ${title}
       </div>
       <p style="margin:0 0 20px;color:#2b6cb0;font-size:14px;line-height:1.5;">${message}</p>
@@ -281,7 +281,7 @@ class AccessControl {
     return overlay;
   }
 
-  // �x� NOUVELLE VERSION de getApiBase : respecte API_BASE_URL / Render
+  // x NOUVELLE VERSION de getApiBase : respecte API_BASE_URL / Render
   getApiBase() {
     // 1) API_BASE via config globale (api-base.js)
     if (window.APP_CONFIG && window.APP_CONFIG.API_BASE) {
@@ -319,7 +319,7 @@ class AccessControl {
     }
   }
 
-  // Gérer l'upgrade depuis le mode LITE �  plan UPGRADE_FULL (appel direct Stripe)
+  // Gérer l'upgrade depuis le mode LITE   plan UPGRADE_FULL (appel direct Stripe)
   async handleUpgradeFromLite(contextKey = null) {
     this.saveUserState(contextKey);                    // on mémorise l'état exact
     localStorage.setItem('upgrade_type', 'UPGRADE_FULL'); // pour savoir qu'on a une upgrade en cours
@@ -332,7 +332,7 @@ class AccessControl {
       }
       await this.startUpgradeToFullFromLite();
     } catch (e) {
-      console.error('�R Erreur lors de l\'upgrade FULL depuis LITE:', e);
+      console.error('R Erreur lors de l\'upgrade FULL depuis LITE:', e);
       const msg = this.getFriendlyUpgradeError(e);
       if (window.alert) {
         alert(msg);
@@ -361,7 +361,7 @@ class AccessControl {
     });
 
     if (!whoamiResp.ok) {
-      console.error('�R /whoami a échoué avec le statut', whoamiResp.status);
+      console.error('R /whoami a échoué avec le statut', whoamiResp.status);
       throw new Error('whoami_failed');
     }
 
@@ -369,7 +369,7 @@ class AccessControl {
     try {
       me = await whoamiResp.json();
     } catch (e) {
-      console.error('�R Erreur de parsing JSON sur /whoami:', e);
+      console.error('R Erreur de parsing JSON sur /whoami:', e);
       throw new Error('whoami_parse_error');
     }
 
@@ -377,7 +377,7 @@ class AccessControl {
     const activation_code = (me.short_code || '').toLowerCase(); // short_code de la licence LITE
 
     if (!activation_code) {
-      console.error('�R Aucun short_code trouvé dans /whoami');
+      console.error('R Aucun short_code trouvé dans /whoami');
       throw new Error('no_short_code_found');
     }
 
@@ -439,7 +439,7 @@ class AccessControl {
       data = rawText ? JSON.parse(rawText) : {};
     } catch (e) {
       console.error(
-        '�R Erreur de parsing JSON sur /checkout/session:',
+        'R Erreur de parsing JSON sur /checkout/session:',
         e,
         rawText,
       );
@@ -447,7 +447,7 @@ class AccessControl {
     }
 
     if (!checkoutResp.ok || !data?.url) {
-      console.error('�R Réponse /checkout/session invalide:', data);
+      console.error('R Réponse /checkout/session invalide:', data);
       throw new Error(data?.error || 'stripe_error');
     }
 
@@ -526,7 +526,7 @@ class AccessControl {
       localStorage.removeItem('user_state_before_upgrade');
       return true;
     } catch (e) {
-      console.error('�R Erreur restauration état:', e);
+      console.error('R Erreur restauration état:', e);
       return false;
     }
   }
@@ -587,7 +587,7 @@ class AccessControl {
         // rien, l'upgrade n'est pas encore prise en compte
       }
     } catch (e) {
-      console.error('�R Erreur checkPostUpgradeOnLoad:', e);
+      console.error('R Erreur checkPostUpgradeOnLoad:', e);
     }
   }
 
@@ -648,7 +648,7 @@ class AccessControl {
 window.accessControl = new AccessControl();
 
 // Vérifier automatiquement après retour de Stripe si un upgrade vient d'avoir lieu
-// �x0 On peut laisser ça actif même sur index.html, ça ne montre pas de popup "payant"
+// x0 On peut laisser ça actif même sur index.html, ça ne montre pas de popup "payant"
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', () => {
     window.accessControl.checkPostUpgradeOnLoad();
@@ -670,7 +670,7 @@ window.checkCircuitAccess = function (type) {
 
 // === Hooks de navigation protégée ===
 document.addEventListener('DOMContentLoaded', function () {
-  // �:️ Si on est sur la page d'accueil / sélection de langue, on ne met AUCUNE protection LITE/FULL
+  // :️ Si on est sur la page d'accueil / sélection de langue, on ne met AUCUNE protection LITE/FULL
   if (isLandingPage()) {
     return;
   }

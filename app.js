@@ -1,4 +1,4 @@
-// �x� Debug orientation overlay � true = popup visible, false = jamais affiché
+// x Debug orientation overlay  true = popup visible, false = jamais affiché
 const DEBUG_ORIENTATION_OVERLAY = false;
 
 // PROTECTION CRITIQUE : Ne JAMAIS exécuter app.js sur la page de sélection de langue
@@ -23,7 +23,7 @@ const DEBUG_ORIENTATION_OVERLAY = false;
             // Empêcher toute exécution ultérieure
             window.__APP_JS_DISABLED__ = true;
             if (isAndroid && window.androidDebug) {
-                window.androidDebug('APP.JS: D�0SACTIV�0 (page language-selection)');
+                window.androidDebug('APP.JS: D0SACTIV0 (page language-selection)');
             }
             return;
         }
@@ -194,7 +194,7 @@ function markAudioHeardForIndex(idx) {
     } catch (_) { /* quota / mode privé */ }
 }
 
-/** Débloque « suivant » dès que le descriptif du point a été démarré (�x}�). */
+/** Débloque « suivant » dès que le descriptif du point a été démarré (icone haut-parleur). */
 function unlockPointNavigationAfterAudioStart(idx) {
     markAudioHeardForIndex(idx);
     ensureNextButtonRef();
@@ -289,7 +289,7 @@ function isPointUnlockedForNext(idx) {
     return getAudioHeardIndices().includes(Number(idx));
 }
 
-/** Quiz autorisé dès que le descriptif a été démarré (�x}�), pas besoin d�"attendre la fin. */
+/** Quiz autorisé dès que le descriptif a été démarré (icone haut-parleur), pas besoin d"attendre la fin. */
 function canStartQuizAtCurrentPoint() {
     return isPointUnlockedForNext(currentIndex);
 }
@@ -299,7 +299,7 @@ function showQuizListenBeforePopup(onClose) {
         translateClq('quiz_listen_before_title', 'Descriptif audio'),
         translateClq(
             'quiz_listen_before_message',
-            "Appuyez sur le bouton audio (�x}�) pour démarrer le descriptif de ce point avant de poursuivre avec le quiz."
+            "Appuyez sur le bouton audio (icone haut-parleur) pour demarrer le descriptif de ce point avant de poursuivre avec le quiz."
         ),
         onClose || null
     );
@@ -472,7 +472,7 @@ async function attachActivationForm() {
       const code = input.value;
       const res = await activateLicense(code);
       msg.style.color = 'green';
-      msg.textContent = 'Activation réussie �S&';
+      msg.textContent = 'Activation reussie !';
       // Ici, tu peux rediriger ou charger le contenu chiffré
       // location.href = 'main.html';
     } catch (err) {
@@ -924,7 +924,7 @@ function updateGeoOverlayWaitingMessage(position) {
             : null;
     if (acc !== null && acc > 900) {
         msg.textContent =
-            'Position trop imprécise ou localisation refusée. Réglages �  Confidentialité �  Localisation �  Safari �  « Lors de l�"utilisation de l�"app », puis réessayez.';
+            'Position trop imprécise ou localisation refusée. Réglages   Confidentialité   Localisation   Safari   « Lors de l"utilisation de l"app », puis réessayez.';
         return;
     }
     msg.textContent =
@@ -992,7 +992,7 @@ window.clqStartGeolocationWatchFromGesture = function () {
     startGeolocationWatch();
 };
 
-/** Suivi GPS continu (watchPosition) � appelé après autorisation. */
+/** Suivi GPS continu (watchPosition)  appelé après autorisation. */
 function startGeolocationWatch() {
     if (!document.getElementById('map') || !canUseDeviceGeolocation()) {
         return false;
@@ -1108,7 +1108,7 @@ function startGeolocationWatch() {
             }
         },
         (error) => {
-            console.error('�R Erreur watchPosition :', error);
+            console.error('R Erreur watchPosition :', error);
             geoFixConfirmed = false;
             localStorage.removeItem('geoPermissionGranted');
             sessionStorage.removeItem('clq_geo_session_ok');
@@ -1119,7 +1119,7 @@ function startGeolocationWatch() {
             if (msg && isMainGeoPromptVisible()) {
                 if (error && error.code === 1) {
                     msg.textContent =
-                        'Accès refusé. Réglages �  Confidentialité �  Localisation �  Safari �  Autoriser, puis réessayez.';
+                        'Accès refusé. Réglages   Confidentialité   Localisation   Safari   Autoriser, puis réessayez.';
                 } else {
                     msg.textContent =
                         'GPS indisponible. Activez la localisation pour Safari et réessayez.';
@@ -1175,7 +1175,7 @@ function isMainGeoPromptVisible() {
     return !!(overlay && !overlay.hasAttribute('hidden'));
 }
 
-/** Affiche le popup parchemin ; la géoloc ne démarre qu�"au clic (iOS). */
+/** Affiche le popup parchemin ; la géoloc ne démarre qu"au clic (iOS). */
 function requestGeolocationWithUserGesture() {
     if (!document.getElementById('map')) {
         return;
@@ -1320,7 +1320,7 @@ let smoothedAndroidHeading = null; // Heading lissé pour Android (éviter les s
 let magnetometerOffset = null; // Offset calibré entre magnétomètre et GPS (pour fusion hybride)
 let lastGPSCalibrationTime = 0; // Timestamp de la dernière calibration GPS
 
-// ANDROID : �0tat hybride avec hystérésis
+// ANDROID : 0tat hybride avec hystérésis
 let androidMode = 'STATIONARY'; // 'MOVING' ou 'STATIONARY'
 let movingVotes = 0;
 let stillVotes = 0;
@@ -1335,7 +1335,7 @@ let userPositionMarker = null; // Marqueur pour la position de l'utilisateur
 let routeMarkers = []; // Pour stocker les marqueurs de départ/arrivée
 let lastRouteCalculationPos = null; // Dernière position utilisée pour le calcul de route
 let lastRouteCalculationTime = 0; // Timestamp du dernier calcul de route
-let lastRouteFitKey = null; // �0vite de recadrer la carte à chaque recalcul GPS
+let lastRouteFitKey = null; // 0vite de recadrer la carte à chaque recalcul GPS
 const ROUTE_RECALC_MIN_DIST_M = 60;
 const ROUTE_RECALC_MIN_INTERVAL_MS = 45000;
 const MONS_LAST_KNOWN_POSITION_KEY = 'lille_lastKnownPosition';
@@ -1364,7 +1364,7 @@ if (localStorage.getItem("geoPermissionGranted") === "true") {
 // --- Détection et redirection PWA ---
 // Vérifier si l'app est installée et forcer le point d'entrée sur index.html
 function checkPWAEntryPoint() {
-    // D�0SACTIV�0 - Cette fonction causait des redirections en boucle
+    // D0SACTIV0 - Cette fonction causait des redirections en boucle
     // La logique de redirection PWA est maintenant gérée dans index.html
     return false;
 }
@@ -1440,7 +1440,7 @@ document.addEventListener('DOMContentLoaded', () => {
     try {
         initApp();
     } catch (error) {
-        console.error('�R Erreur lors de l\'initialisation de l\'app:', error);
+        console.error('R Erreur lors de l\'initialisation de l\'app:', error);
     }
 
 });
@@ -1537,7 +1537,7 @@ function normalizeFileName(name) {
         .toLowerCase();
 }
 
-/** Variante fichier image Lille : espaces �  underscores, casse conservée. */
+/** Variante fichier image Lille : espaces   underscores, casse conservée. */
 function poiImageBaseFromName(name) {
     if (!name) return "";
     return name
@@ -1739,7 +1739,7 @@ async function loadDescriptions() {
         
         descriptionsData = await response.json();
     } catch (error) {
-        console.error('�R Erreur lors du chargement des descriptions:', error);
+        console.error('R Erreur lors du chargement des descriptions:', error);
         descriptionsData = null;
     }
 }
@@ -1747,7 +1747,7 @@ async function loadDescriptions() {
 // Fonction pour obtenir la description selon la langue
 function getDescription(locationName, language = null) {
     if (!descriptionsData) {
-        console.warn('�a�️ Descriptions non chargées, utilisation du fichier texte');
+        console.warn('a️ Descriptions non chargées, utilisation du fichier texte');
         return null; // Retourner null pour utiliser l'ancien système
     }
     
@@ -1761,7 +1761,7 @@ function getDescription(locationName, language = null) {
     if (description) {
         return description;
     } else {
-        console.warn(`�a�️ Aucune description trouvée pour ${locationName} en ${lang}`);
+        console.warn(`a️ Aucune description trouvée pour ${locationName} en ${lang}`);
         return null;
     }
 }
@@ -1862,10 +1862,10 @@ function playExclusiveAudio(src, textFile = null, imageElement = null, originalI
             const continueAudioPath = `audio/continue_${currentLang}.mp3`;
             const continueAudio = new Audio(continueAudioPath);
             continueAudio.addEventListener('error', () => {
-                console.warn(`�a�️ Fichier continue ${continueAudioPath} non trouvé`);
+                console.warn(`a️ Fichier continue ${continueAudioPath} non trouvé`);
             });
             continueAudio.play().catch(() => {
-                console.warn(`�a�️ Lecture audio continue ignorée: ${continueAudioPath}`);
+                console.warn(`a️ Lecture audio continue ignorée: ${continueAudioPath}`);
             });
         }
     }
@@ -1883,7 +1883,7 @@ function playExclusiveAudio(src, textFile = null, imageElement = null, originalI
 
     // Gestion d'erreur si le fichier audio n'existe pas
     currentAudio.addEventListener('error', () => {
-        console.warn(`�a�️ Fichier audio ${audioPath} non trouvé, utilisation du fichier original`);
+        console.warn(`a️ Fichier audio ${audioPath} non trouvé, utilisation du fichier original`);
         const fallback = new Audio(src);
         currentAudio = fallback;
         bindEndedHandler(fallback);
@@ -1896,14 +1896,14 @@ function playExclusiveAudio(src, textFile = null, imageElement = null, originalI
             }, { once: true });
         }
         fallback.play().catch(() => {
-            console.warn(`�a�️ Aucun fichier audio lisible pour ${src}`);
+            console.warn(`a️ Aucun fichier audio lisible pour ${src}`);
         });
     });
 
     bindEndedHandler(currentAudio);
     bindPoiDescriptionStartedUnlock(currentAudio);
     currentAudio.play().catch(() => {
-        console.warn(`�a�️ Lecture audio ignorée: ${audioPath}`);
+        console.warn(`a️ Lecture audio ignorée: ${audioPath}`);
     });
 
     // Mettre à jour le bouton play/pause
@@ -2124,7 +2124,7 @@ function setupTransitButton(locationsList, getIndexFn) {
     const destLng = poi.lng;
 
     openModal();
-    statusEl.textContent = t('transit_status_preparing', 'Récupération de ta position⬦');
+    statusEl.textContent = t('transit_status_preparing', 'Récupération de ta position...');
     linkEl.href = buildDestinationOnlyUrl(destLat, destLng);
     linkEl.classList.remove("transit-disabled");
 
@@ -2291,7 +2291,7 @@ function startMap() {
             }
         });
         
-        // �0couter les événements de déplacement manuel de la carte
+        // 0couter les événements de déplacement manuel de la carte
         map.addListener('dragstart', () => {
             map.set('userHasPanned', true);
         });
@@ -2491,15 +2491,15 @@ function updateLocation() {
 }
 
 // --- Filtres pour stabiliser la boussole ---
-let lastRawHeading = null;      // Dernière valeur brute du capteur (0�360)
+let lastRawHeading = null;      // Dernière valeur brute du capteur (0360)
 let filteredHeading = null;     // Valeur lissée utilisée pour la carte/flèche
 let lastHeadingUpdateTime = 0;  // Pour limiter la fréquence d'update
 
 // Paramètres de filtrage
 const HEADING_DEADBAND = 2;     // Ignore les variations < 3° (anti-tremblement)
 const HEADING_MAX_STEP = 15;
-const HEADING_SMOOTHING = 0.15; // 0.1�0.3 : plus grand = plus réactif mais moins stable
-const HEADING_MIN_INTERVAL = 80; // ms entre deux updates (80�120ms conseillé)
+const HEADING_SMOOTHING = 0.15; // 0.10.3 : plus grand = plus réactif mais moins stable
+const HEADING_MIN_INTERVAL = 80; // ms entre deux updates (80120ms conseillé)
 const SMOOTHING_ALPHA = 0.2;    // 0.1 = très lisse, 0.3 = plus réactif
 
 function angularDiff(target, current) {
@@ -2573,7 +2573,7 @@ function calculateRouteFromPosition(pos, fromName = "Votre position") {
 
 // Rayon en mètres en dessous duquel on zoome pour le guidage (points proches, ex. Grand-Place)
 const GUIDANCE_ZOOM_RADIUS_M = 150;
-const ZOOM_LEVEL_NEAR = 17;   // zoom quand distance <= 150 m (~100�150 m visibles)
+const ZOOM_LEVEL_NEAR = 17;   // zoom quand distance <= 150 m (~100150 m visibles)
 const ZOOM_LEVEL_DEFAULT = 16;
 
 // Centre la carte sur l'utilisateur et adapte le zoom selon la distance au point suivant
@@ -3569,7 +3569,7 @@ async function initApp() {
             console.error('Erreur lors du démarrage de la carte:', e);
         }
     } catch (error) {
-        console.error('�R Erreur critique dans initApp():', error);
+        console.error('R Erreur critique dans initApp():', error);
     }
 }
 
@@ -3607,7 +3607,7 @@ function initializeMainLogic() {
         try {
             completedQuizQuestions = JSON.parse(savedCompletedQuizQuestions);
         } catch (error) {
-            console.error("�R Erreur lors de la restauration des questions de quiz:", error);
+            console.error("R Erreur lors de la restauration des questions de quiz:", error);
             completedQuizQuestions = {};
         }
     } else {
@@ -3643,7 +3643,7 @@ function initializeMainLogic() {
             const lat = Number(museum.lat);
             const lng = Number(museum.lng);
             if (!museum.name || !Number.isFinite(lat) || !Number.isFinite(lng)) {
-                console.error("�R Données du musée incomplètes:", museum);
+                console.error("R Données du musée incomplètes:", museum);
             } else {
                 const museumPayload = {
                     ...museum,
@@ -3668,7 +3668,7 @@ function initializeMainLogic() {
                     imageElement.src = museumPayload.image;
                     imageElement.alt = museumPayload.name;
                 } else {
-                    console.warn("�a�️ Image du musée non trouvée ou élément image non trouvé");
+                    console.warn("a️ Image du musée non trouvée ou élément image non trouvé");
                 }
                 
                 // Désactiver les boutons du footer (sauf Home)
@@ -3764,14 +3764,14 @@ function initializeMainLogic() {
     // Vérifier l'orientation au démarrage
     checkOrientationAndShowPopup();
     
-    // �0couter les changements d'orientation
+    // 0couter les changements d'orientation
     window.addEventListener('orientationchange', () => {
         setTimeout(() => {
             checkOrientationAndShowPopup();
         }, 100); // Petit délai pour laisser le temps à l'orientation de se stabiliser
     });
     
-    // �0couter les changements de taille d'écran (fallback)
+    // 0couter les changements de taille d'écran (fallback)
     window.addEventListener('resize', () => {
         setTimeout(() => {
             checkOrientationAndShowPopup();
@@ -3840,7 +3840,7 @@ function disableFooterButtons() {
             }
         };
     } else {
-        console.warn("�a�️ Bouton Home non trouvé");
+        console.warn("a️ Bouton Home non trouvé");
     }
     
 }
@@ -3855,10 +3855,10 @@ let lastHeadingRaw = null;              // Dernier heading accepté (après snap
 let lastOrientationUpdateTime = 0;      // Dernier timestamp utilisé
 
 // Quand on bouge : réactif, mais pas hystérique
-const ORIENT_MIN_DELTA_MOVING = 5;      // � minimal (en °) si on bouge
+const ORIENT_MIN_DELTA_MOVING = 5;      //  minimal (en °) si on bouge
 
 // Quand on est à l'arrêt : beaucoup plus de tolérance
-const ORIENT_MIN_DELTA_STOPPED = 25;    // � minimal (en °) si on est à l'arrêt
+const ORIENT_MIN_DELTA_STOPPED = 25;    //  minimal (en °) si on est à l'arrêt
 
 // Intervalle minimal entre deux updates
 const ORIENT_MIN_INTERVAL_MS = 300;     // ms
@@ -3950,7 +3950,7 @@ function checkOrientationAndShowPopup() {
     }
     const isLandscape = isLandscapeNow();
 
-    // �x� Debug (à garder tant que tu testes sur tablette)
+    // x Debug (à garder tant que tu testes sur tablette)
     console.log('[ORIENT] isLandscape=', isLandscape,
         ' size=', window.innerWidth + 'x' + window.innerHeight,
         ' mqLandscape=', (window.matchMedia ? window.matchMedia('(orientation: landscape)').matches : 'n/a')
@@ -3959,12 +3959,12 @@ function checkOrientationAndShowPopup() {
     const existingPopup = document.getElementById('landscape-required-popup');
 
     if (!isLandscape) {
-        // Portrait �  popup obligatoire
+        // Portrait   popup obligatoire
         if (!existingPopup) {
             showLandscapeRequiredPopup();
         }
     } else {
-        // Paysage �  on supprime le popup s'il existe
+        // Paysage   on supprime le popup s'il existe
         if (existingPopup) {
             existingPopup.remove(); // ou document.body.removeChild(existingPopup);
         }
@@ -4003,7 +4003,7 @@ function showLandscapeRequiredPopup() {
     popup.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.5)';
     
     const icon = document.createElement('div');
-    icon.innerHTML = '<img src="images/partager_ios.png" alt="Rotation" style="height:3em;width:auto;"><span style="font-size:3em;">� �</span>';
+    icon.innerHTML = '<img src="images/partager_ios.png" alt="Rotation" style="height:3em;width:auto;"><span style="font-size:3em;" aria-hidden="true">&#8635;</span>';
     icon.style.fontSize = '4em';
     icon.style.marginBottom = '20px';
     popup.appendChild(icon);
@@ -4024,7 +4024,7 @@ function showLandscapeRequiredPopup() {
     popup.appendChild(message);
     
     const instruction = document.createElement('div');
-    instruction.innerHTML = '�x <strong>Tournez votre appareil horizontalement</strong>';
+    instruction.innerHTML = '&#8635; <strong>Tournez votre appareil horizontalement</strong>';
     instruction.style.fontSize = '1.1em';
     instruction.style.color = '#666';
     instruction.style.marginBottom = '30px';
@@ -4059,7 +4059,7 @@ function correctRotationForDeviceOrientation(baseRotation) {
 }
 
 /**
- * Reçoit un heading brut (0�360) venant du capteur, corrige l'orientation
+ * Reçoit un heading brut (0360) venant du capteur, corrige l'orientation
  * de l'appareil, filtre le bruit et applique la rotation à la carte / flèche.
  */
 function handleCompassHeading(rawHeading) {
@@ -4073,7 +4073,7 @@ function handleCompassHeading(rawHeading) {
     }
     lastHeadingUpdateTime = now;
 
-    // Normalisation de base 0�360
+    // Normalisation de base 0360
     let heading = rawHeading % 360;
     if (heading < 0) heading += 360;
 
@@ -4173,7 +4173,7 @@ window.clqEnsureCompassPermission = ensureCompassPermission;
         // Re-check à chaque changement de taille (rotation, split screen, etc.)
         window.addEventListener('resize', checkOrientationAndShowPopup);
 
-        // Re-check spécifique aux changements d�"orientation (si supporté)
+        // Re-check spécifique aux changements d"orientation (si supporté)
         window.addEventListener('orientationchange', checkOrientationAndShowPopup);
     }
 
@@ -4186,7 +4186,7 @@ window.clqEnsureCompassPermission = ensureCompassPermission;
 })();
 
 
-// ========== FONCTION UNIFI�0E POUR CALCULER LE COMPASS HEADING ==========
+// ========== FONCTION UNIFI0E POUR CALCULER LE COMPASS HEADING ==========
 // Cette fonction calcule correctement le heading à partir des données d'orientation
 // Fonctionne de manière identique sur iOS et Android
 function computeCompassHeading(alpha, beta, gamma) {
@@ -4210,7 +4210,7 @@ function computeCompassHeading(alpha, beta, gamma) {
     let heading = Math.atan2(Vx, Vy);
     if (heading < 0) heading += 2 * Math.PI;
     
-    return heading * 180 / Math.PI; // �  degrés [0, 360)
+    return heading * 180 / Math.PI; //   degrés [0, 360)
 }
 
 
@@ -4229,7 +4229,7 @@ if (typeof window.lastCompassHeading === 'undefined') {
   
 
 
-// Petite fonction utilitaire pour normaliser un angle 0�360
+// Petite fonction utilitaire pour normaliser un angle 0360
 function normalizeAngle(angle) {
     if (angle == null || isNaN(angle)) return null;
     let a = angle % 360;
@@ -4241,7 +4241,7 @@ function normalizeAngle(angle) {
 // quelque part dans ton watchPosition (position.coords.heading)
 let lastAndroidHeading = null;
 
-/** iOS : offset boussole (rotation .gm-style ; +90° vs ancien ��90° sur le conteneur). */
+/** iOS : offset boussole (rotation .gm-style ; +90° vs ancien 90° sur le conteneur). */
 const IOS_COMPASS_NAV_OFFSET = 90;
 
 /**
@@ -4399,7 +4399,7 @@ function handleOrientation(event) {
         }
     }
     
-    // �0viter la récursion infinie
+    // 0viter la récursion infinie
     if (window.isHandlingOrientation) {
         return;
     }
@@ -4411,7 +4411,7 @@ function handleOrientation(event) {
 
     // On sépare :
     // - mapBearing   = orientation de la CARTE (Android : POI vers le haut)
-    // - arrowBearing = orientation de la FL��CHE (direction de l'utilisateur)
+    // - arrowBearing = orientation de la FLCHE (direction de l'utilisateur)
     let mapBearing = null;
     let arrowBearing = null;
 
@@ -4453,7 +4453,7 @@ function handleOrientation(event) {
             applyMapViewForGuidance(userPos);
         }
     } catch (error) {
-        console.error('�R Erreur rotation carte:', error);
+        console.error('R Erreur rotation carte:', error);
     } finally {
         window.isHandlingOrientation = false;
     }
@@ -4587,7 +4587,7 @@ function updateAndroidPoiUpGuidance() {
         androidPoiBearingSmoothed = emaAngle(androidPoiBearingSmoothed, poiBearing, 0.2);
     }
 
-    // �~S Carte tournée de façon à mettre le POI vers le haut
+    // ~S Carte tournée de façon à mettre le POI vers le haut
     const mapDiv = document.getElementById('map');
     if (mapDiv) {
         const gmStyle = mapDiv.querySelector('.gm-style') || mapDiv;
@@ -4599,7 +4599,7 @@ function updateAndroidPoiUpGuidance() {
             'deg)';
     }
 
-    // �~S Flèche = direction de marche (heading GPS lissé)
+    // ~S Flèche = direction de marche (heading GPS lissé)
     if (gpsHeading != null && !isNaN(gpsHeading)) {
         if (androidHeadingSmoothed === null) {
             androidHeadingSmoothed = gpsHeading;
@@ -4643,7 +4643,7 @@ function getUserPosition(successCallback, errorCallback, options) {
                     localStorage.setItem('geoPermissionGranted', 'false');
                     errorCallback(new Error('Autorisation de géolocalisation refusée'));
                 } else {
-                    // �0tat 'prompt' - demander l'autorisation
+                    // 0tat 'prompt' - demander l'autorisation
                     navigator.geolocation.getCurrentPosition(
                         (position) => {
                             // Autorisation accordée, mémoriser
@@ -4990,7 +4990,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // --- Ajout des écouteurs d'événements ---
     
-    // �0couteur pour le bouton selfie
+    // 0couteur pour le bouton selfie
     if (selfieBtn) {
         selfieBtn.addEventListener('click', () => {
             // Arrêter tous les flux caméra ouverts
@@ -5007,7 +5007,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
     
-    // �0couteur pour le bouton d'installation PWA
+    // 0couteur pour le bouton d'installation PWA
     if (pwaInstallBtn) {
         pwaInstallBtn.addEventListener('click', () => {
             if (window.showManualInstructions) {
@@ -5029,7 +5029,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const msgTranslated = window.translationManager ? window.translationManager.translate(msgKey) : null;
             showStyledPopup(
                 (titleTranslated && titleTranslated !== titleKey) ? titleTranslated : "Audio requis",
-                (msgTranslated && msgTranslated !== msgKey) ? msgTranslated : "Avant de passer au point suivant, appuie sur le bouton audio (�x}�).",
+                (msgTranslated && msgTranslated !== msgKey) ? msgTranslated : "Avant de passer au point suivant, appuie sur le bouton audio (icone haut-parleur).",
                 null
             );
             return;
@@ -5420,7 +5420,7 @@ function showUniversalPopup({
 
 /** Guidage carte : itinéraire Google à pied intégré ; pas de popup boussole automatique. */
 function scheduleCompassHelpPopup() {
-    /* L'itinéraire est affiché via DirectionsRenderer ; le bouton �x�️ ouvre Google Maps pour le guidage vocal. */
+    /* L'itinéraire est affiché via DirectionsRenderer ; le bouton x️ ouvre Google Maps pour le guidage vocal. */
 }
 
 // --- Correction du popup boussole - style unifié ---
@@ -5479,7 +5479,7 @@ function showCompassHelpPopup() {
 
     // Bouton boussole - style unifié
     const compassBtnPopup = document.createElement('button');
-    compassBtnPopup.innerHTML = '�x��';
+    compassBtnPopup.innerHTML = '&#128505;';
     compassBtnPopup.style.background = '#14365c';
     compassBtnPopup.style.color = 'white';
     compassBtnPopup.style.fontWeight = '600';
@@ -5517,7 +5517,7 @@ function showCompassHelpPopup() {
                 } else {
                 }
             } catch (error) {
-                console.error("�x�� Erreur lors de la fermeture du popup:", error);
+                console.error("x Erreur lors de la fermeture du popup:", error);
             }
         }, 100); // Petit délai pour s'assurer que l'événement est traité
         
@@ -5595,7 +5595,7 @@ document.addEventListener('DOMContentLoaded', function() {
         window.languageSelector.updateSelectorValue && window.languageSelector.updateSelectorValue();
     }
     
-    // �0couter les changements de langue via un événement personnalisé
+    // 0couter les changements de langue via un événement personnalisé
     document.addEventListener('languageChanged', function(event) {
         
         // Réinitialiser l'audio si un audio est en cours de lecture
@@ -5696,7 +5696,7 @@ function updateCurrentDisplay() {
             // On ne peut pas retrouver la durée et la distance sans recalcul, donc on laisse le texte existant traduit
             const currentText = display.textContent;
             const parts = currentText.split(/\s-\s|\s\uFFFD\s/);
-            const museumName = parts[0].replace('Musée : ', '').replace('�x}� Musée : ', '');
+            const museumName = parts[0].replace('Musée : ', '').replace('Musee : ', '');
             const timePart = parts[1] || '';
             const distancePart = parts[2] || '';
             if (timePart && distancePart) {
@@ -5738,7 +5738,7 @@ async function loadQuizTranslations() {
         
         window.quizTranslations = await response.json();
     } catch (error) {
-        console.error('�R Erreur lors du chargement des traductions du quiz:', error);
+        console.error('R Erreur lors du chargement des traductions du quiz:', error);
         window.quizTranslations = {};
     }
 }
@@ -6011,7 +6011,7 @@ window.clqDumpNavRotation = function () {
 // La fonction deactivateCompass n'est plus nécessaire car la boussole reste toujours active
 
 // === DEBUG ORIENTATION / ANDROID & iOS ===
-// D�0SACTIV�0 : Ce listener de debug peut causer des problèmes sur Android
+// D0SACTIV0 : Ce listener de debug peut causer des problèmes sur Android
 // en appelant handleOrientation trop tôt avant l'initialisation complète
 // Le listener deviceorientation est déjà géré par activateCompass() et restoreCompassState()
 /*

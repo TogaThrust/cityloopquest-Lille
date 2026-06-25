@@ -12,7 +12,7 @@
   
   <title>CityLoop Quest Lille</title>
   <script>(function(){var u=navigator.userAgent||'';document.write('<link rel="manifest" href="'+(/android/i.test(u)?'manifest-android.json':'manifest.json')+'">');})();</script>
-  <!-- Android : manifest-android.json utilise display:fullscreen � persister le flag PWA au lancement -->
+  <!-- Android : manifest-android.json utilise display:fullscreen  persister le flag PWA au lancement -->
   <script>
     (function () {
       if (!/android/i.test(navigator.userAgent || '')) return;
@@ -337,12 +337,12 @@
               }
               
               if (localStorage.getItem('debug_mode') === 'true') {
-                alert(`�S& Code récupéré depuis cookie et réactivé !\nLangue: ${localStorage.getItem('selectedLanguage')}`);
+                alert(` Code récupéré depuis cookie et réactivé !\nLangue: ${localStorage.getItem('selectedLanguage')}`);
               }
             }
           }
         } catch (error) {
-          console.error('[bootRouteGuard] �R Erreur lors de la réactivation depuis cookie:', error);
+          console.error('[bootRouteGuard] R Erreur lors de la réactivation depuis cookie:', error);
         }
       }
       
@@ -361,19 +361,19 @@
           const restored = await window.storageHelper.restorePurchaseData();
           if (restored) {
             if (localStorage.getItem('debug_mode') === 'true') {
-              alert('�S& Données restaurées depuis IndexedDB\n\nLe code et le token ont été récupérés.');
+              alert(' Données restaurées depuis IndexedDB\n\nLe code et le token ont été récupérés.');
             }
           } else {
             // Essayer la restauration directe
             await restoreFromIndexedDBDirect();
           }
         } catch (error) {
-          console.error('[bootRouteGuard] �R Erreur lors de la restauration via storageHelper:', error);
+          console.error('[bootRouteGuard] R Erreur lors de la restauration via storageHelper:', error);
           // Essayer la restauration directe en cas d'erreur
           await restoreFromIndexedDBDirect();
         }
       } else {
-        console.warn('[bootRouteGuard] �a�️ storageHelper non disponible, tentative de restauration directe...');
+        console.warn('[bootRouteGuard] a️ storageHelper non disponible, tentative de restauration directe...');
         await restoreFromIndexedDBDirect();
       }
       
@@ -412,7 +412,7 @@
                 restoredKeys.push(key);
               }
             } catch (error) {
-              console.error(`[bootRouteGuard] �R Erreur restauration ${key}:`, error);
+              console.error(`[bootRouteGuard] R Erreur restauration ${key}:`, error);
             }
           }
           
@@ -421,17 +421,17 @@
               sessionStorage.setItem('webLanguageSelected', 'true');
             }
             if (localStorage.getItem('debug_mode') === 'true') {
-              alert(`�S& Données restaurées depuis IndexedDB (direct)\n\nClés restaurées: ${restoredKeys.join(', ')}`);
+              alert(` Données restaurées depuis IndexedDB (direct)\n\nClés restaurées: ${restoredKeys.join(', ')}`);
             }
           } else {
             if (localStorage.getItem('debug_mode') === 'true') {
-              alert('�a�️ Aucune donnée trouvée dans IndexedDB\n\nLes données n\'ont peut-être pas été sauvegardées lors de l\'achat.');
+              alert('a️ Aucune donnée trouvée dans IndexedDB\n\nLes données n\'ont peut-être pas été sauvegardées lors de l\'achat.');
             }
           }
         } catch (error) {
-          console.error('[bootRouteGuard] �R Erreur lors de la restauration directe:', error);
+          console.error('[bootRouteGuard] R Erreur lors de la restauration directe:', error);
           if (localStorage.getItem('debug_mode') === 'true') {
-            alert(`�R Erreur lors de la restauration directe:\n${error.message}`);
+            alert(`R Erreur lors de la restauration directe:\n${error.message}`);
           }
         }
       }
@@ -454,14 +454,14 @@
       
       // Si le mode debug est activé, afficher une alerte
       if (localStorage.getItem('debug_mode') === 'true') {
-        alert(`�x� �0TAT AU D�0MARRAGE:\n\nCode: ${debugState.clq_short_code}\nToken: ${debugState.clq_token}\nJWT: ${debugState.jwt}\nAccès: ${debugState.clq_has_access}\nLangue: ${debugState.selectedLanguage}\nLangue sélectionnée: ${debugState.webLanguageSelected}`);
+        alert(`x 0TAT AU D0MARRAGE:\n\nCode: ${debugState.clq_short_code}\nToken: ${debugState.clq_token}\nJWT: ${debugState.jwt}\nAccès: ${debugState.clq_has_access}\nLangue: ${debugState.selectedLanguage}\nLangue sélectionnée: ${debugState.webLanguageSelected}`);
       }
       
       const isPWAInstalled = isLikelyInstalledPwa();
       const isAndroid = /android/i.test(navigator.userAgent || '');
       
       if (localStorage.getItem('debug_mode') === 'true') {
-        alert(`�xa� D�0TECTION PWA:\n\nPWA active: ${isPWAInstalled}\nFlag localStorage: ${localStorage.getItem('pwa-installed') || 'absent'}`);
+        alert(` DETECTION PWA:\n\nPWA active: ${isPWAInstalled}\nFlag localStorage: ${localStorage.getItem('pwa-installed') || 'absent'}`);
       }
       
       // On vérifie le code si l'app est installée OU si l'on dispose déjà d'un code/token stocké (localStorage/cookie)
@@ -469,7 +469,7 @@
       
       if (hasCode && !isPWAInstalled) {
         if (localStorage.getItem('debug_mode') === 'true') {
-          alert('Code présent mais app non installée\n�  Affichage de l\'écran d\'avertissement');
+          alert('Code présent mais app non installee\nAffichage de l\'écran d\'avertissement');
         }
       }
       
@@ -514,7 +514,7 @@
         // Dans ce cas, rediriger vers la page d'activation manuelle
         if (!token && !shortCode && !hasAccess) {
           if (showDebugAlert) {
-            alert('�a�️ App installée détectée mais aucune donnée trouvée.\n\n�  Redirection vers la page d\'activation pour entrer le code depuis l\'email.');
+            alert('a️ App installée détectée mais aucune donnée trouvée.\n\n  Redirection vers la page d\'activation pour entrer le code depuis l\'email.');
           }
           
           if (isPWAInstalled) {
@@ -565,7 +565,7 @@
                     localStorage.setItem('user_version', version);
                   }
                 } catch (planError) {
-                  console.warn('�a�️ Impossible de déterminer le plan depuis whoami:', planError);
+                  console.warn('a️ Impossible de déterminer le plan depuis whoami:', planError);
                 }
                 
                 // Récupérer la langue sauvegardée (depuis cookie, localStorage ou défaut)
@@ -628,9 +628,9 @@
                   signal: AbortSignal.timeout(10000) // 10 secondes max
                 });
               } catch (fetchError) {
-                console.error('�R Erreur réseau lors de l\'activation:', fetchError);
+                console.error('R Erreur réseau lors de l\'activation:', fetchError);
                 if (localStorage.getItem('debug_mode') === 'true') {
-                  alert(`Erreur réseau: ${fetchError.message}\n\nLe code est présent mais la vérification a échoué.\n�  Flux normal vers sélection de langue`);
+                  alert(`Erreur réseau: ${fetchError.message}\n\nLe code est présent mais la vérification a échoué.\n  Flux normal vers sélection de langue`);
                 }
                 // En cas d'erreur réseau, on ne peut pas vérifier, donc on continue le flux normal
                 throw fetchError; // Re-lancer pour être capturé par le catch externe
@@ -655,7 +655,7 @@
                       localStorage.setItem('user_version', version);
                     }
                   } catch (planError) {
-                    console.warn('�a�️ Impossible de déterminer le plan depuis activate-code:', planError);
+                    console.warn('a️ Impossible de déterminer le plan depuis activate-code:', planError);
                   }
                   
                   // Récupérer la langue sauvegardée (depuis cookie, localStorage ou défaut)
@@ -685,7 +685,7 @@
                     await routePwaToParcours();
                     return;
                   } else {
-                    // non-PWA : on continue l�"écran d�"avertissement
+                    // non-PWA : on continue l"écran d"avertissement
                   }
                 } else {
                   if (localStorage.getItem('debug_mode') === 'true') {
@@ -701,9 +701,9 @@
             
             // Si ni token ni code ne sont valides, continuer le flux normal
             if (localStorage.getItem('debug_mode') === 'true') {
-              alert('Accès invalide ou expiré\n�  Redirection vers page paiements');
+              alert('Accès invalide ou expiré\n  Redirection vers page paiements');
             }
-            // PWA installée mais accès expiré/invalide �  redirection directe vers choose-access (évite la boucle popup)
+            // PWA installée mais accès expiré/invalide   redirection directe vers choose-access (évite la boucle popup)
             if (isPWAInstalled) {
               try {
                 await routePwaToChooseAccess();
@@ -711,12 +711,12 @@
               } catch (_) {}
             }
           } catch (error) {
-            console.error('�R Erreur lors de la vérification de l\'accès PWA:', error);
+            console.error('R Erreur lors de la vérification de l\'accès PWA:', error);
             
             if (localStorage.getItem('debug_mode') === 'true') {
-              alert(`Erreur lors de la vérification:\n${error.message}\n�  Redirection vers page paiements`);
+              alert(`Erreur lors de la vérification:\n${error.message}\n  Redirection vers page paiements`);
             }
-            // PWA installée mais vérification en erreur (accès expiré) �  redirection directe vers choose-access
+            // PWA installée mais vérification en erreur (accès expiré)   redirection directe vers choose-access
             if (isPWAInstalled) {
               try {
                 await routePwaToChooseAccess();
@@ -728,7 +728,7 @@
         } else {
           // Pas de code/token, flux normal vers sélection de langue
           if (localStorage.getItem('debug_mode') === 'true') {
-            alert('Pas d\'accès détecté dans PWA\nToken: absent\nCode: absent\nAccès: non\n�  Flux normal vers sélection de langue');
+            alert('Pas d\'accès détecté dans PWA\nToken: absent\nCode: absent\nAccès: non\n  Flux normal vers sélection de langue');
           }
         }
       }
@@ -824,19 +824,19 @@
     // Attendre que le DOM soit prêt
     document.addEventListener('DOMContentLoaded', function() {
       
-      // SUPPRESSION RADICALE DE TOUS LES S�0LECTEURS EXISTANTS AU CHARGEMENT
+      // SUPPRESSION RADICALE DE TOUS LES S0LECTEURS EXISTANTS AU CHARGEMENT
       const allSelectors = document.querySelectorAll('select, .language-selector, .flag-selector, #language-selector, [data-language]');
       allSelectors.forEach((selector, index) => {
         selector.remove();
       });
       
-      // CR�0ATION DU S�0LECTEUR
+      // CR0ATION DU S0LECTEUR
       if (window.languageSelector) {
         setTimeout(() => {
           try {
             window.languageSelector.createSelector();
           } catch (err) {
-            console.error('�R ERREUR CR�0ATION S�0LECTEUR:', err);
+            console.error('R ERREUR CR0ATION S0LECTEUR:', err);
           }
         }, 1000);
         
@@ -881,7 +881,7 @@
       }
     }
     
-    // Fonction pour ajouter le bouton d'activation manuelle - D�0SACTIV�0E
+    // Fonction pour ajouter le bouton d'activation manuelle - D0SACTIV0E
     function addManualActivationButton() {
       return; // Ne jamais ajouter le bouton
     }
@@ -902,7 +902,7 @@
       position: relative;
     }
     
-    /* �0cran d'avertissement - style unifié */
+    /* 0cran d'avertissement - style unifié */
     #warning-screen {
       position: fixed; top: 0; left: 0; width: 100%; height: 100%;
       background: rgba(0,0,0,0.5); z-index: 100000;
@@ -1014,7 +1014,7 @@
       animation: warningPulse 2s infinite;
     }
     
-    /* ADAPTATIONS SP�0CIFIQUES MOBILE */
+    /* ADAPTATIONS SP0CIFIQUES MOBILE */
     @media (max-width: 768px) {
       #warning-continue-btn {
         font-size: clamp(0.9em, 4vw, 1.2em);
@@ -1038,7 +1038,7 @@
       }
     }
     
-    /* ADAPTATIONS SP�0CIFIQUES IPHONE */
+    /* ADAPTATIONS SP0CIFIQUES IPHONE */
     @supports (-webkit-touch-callout: none) {
       #warning-screen {
         padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
@@ -1066,7 +1066,7 @@
       background: #14365c; color: #fff; font-weight: 600; cursor: pointer; font-size: 16px;
     }
 
-    /* MASQUAGE FORC�0 DU BOUTON D'ACTIVATION */
+    /* MASQUAGE FORC0 DU BOUTON D'ACTIVATION */
     #manual-activation-btn {
       display: none !important;
       visibility: hidden !important;
@@ -1090,7 +1090,7 @@
     </div>
   </div>
 
-  <!-- �0CRAN D'AVERTISSEMENT INTERM�0DIAIRE -->
+  <!-- 0CRAN D'AVERTISSEMENT INTERM0DIAIRE -->
   <div id="warning-screen">
     <button id="warning-continue-btn" onclick="continueToSplash()">
       <span id="warning-text" data-translate="warning_button_text">Certaines plateformes n'acceptent pas l'installation en tant que app. Si tel est le cas, vous pouvez utiliser le système en tant que page web. Le choix vous est donné dans l'écran suivant.<br><br><strong>Pour continuer, cliquez ici.</strong></span>
@@ -1110,13 +1110,13 @@
   <!-- Bouton "Utilisation en page web" -->
   <button id="web-usage-btn" title="Utilisation en page web" onclick="handleWebUsageClick(event)">
     <div style="display: flex; flex-direction: column; align-items: center; width: 100%; line-height: 1.5;">
-      <span data-translate="web_usage_button" style="display: block; word-wrap: break-word; max-width: 100%;">�xR� Pas d'installation, utilisation en page web</span>
+      <span data-translate="web_usage_button" style="display: block; word-wrap: break-word; max-width: 100%;">xR Pas d'installation, utilisation en page web</span>
     </div>
   </button>
 
 
   <script>
-    // SYST��ME SIMPLIFI�0 - SPLASHSCREEN UNIQUEMENT POUR LES PWA
+    // SYSTME SIMPLIFI0 - SPLASHSCREEN UNIQUEMENT POUR LES PWA
     document.addEventListener('DOMContentLoaded', function() {
       syncPwaInstalledFlag();
 
@@ -1137,7 +1137,7 @@
       const isAndroid = /android/i.test(navigator.userAgent);
       
       // Android : si bootRouteGuard a posé ce flag (PWA détectée mais accès expiré/invalide, pas de redirection),
-      // on force l�"affichage du premier écran d�"accueil (popup) comme en non-PWA. Ne pas toucher à iOS.
+      // on force l"affichage du premier écran d"accueil (popup) comme en non-PWA. Ne pas toucher à iOS.
       const androidForceShowWelcome = isAndroid && sessionStorage.getItem('android_pwa_show_welcome') === '1';
       if (androidForceShowWelcome) {
         try { sessionStorage.removeItem('android_pwa_show_welcome'); } catch (_) {}
@@ -1153,7 +1153,7 @@
       let selectedLang = localStorage.getItem('selectedLanguage');
       let webLanguageSelected = sessionStorage.getItem('webLanguageSelected');
       
-      // V�0RIFICATION D'ACC��S - Si l'utilisateur a un accès valide, forcer l'avertissement
+      // V0RIFICATION D'ACCS - Si l'utilisateur a un accès valide, forcer l'avertissement
       const hasAccess = localStorage.getItem('clq_has_access') === '1' || 
                        localStorage.getItem('clq_token') || 
                        localStorage.getItem('jwt') ||
@@ -1200,14 +1200,14 @@
             return;
           }
         } catch (error) {
-          console.error('�R Erreur lors de la gestion de l\'activation:', error);
+          console.error('R Erreur lors de la gestion de l\'activation:', error);
           // En cas d'erreur, essayer quand même d'afficher l'avertissement
           if (!isPWA) {
             setTimeout(() => {
               try {
                 showWarningScreen();
               } catch (e) {
-                console.error('�R Erreur lors de l\'affichage de l\'avertissement:', e);
+                console.error('R Erreur lors de l\'affichage de l\'avertissement:', e);
               }
             }, 100);
           }
@@ -1236,7 +1236,7 @@
         }
       }
       
-      // MODIFIER LES MESSAGES SELON L'�0TAT D'INSTALLATION
+      // MODIFIER LES MESSAGES SELON L'0TAT D'INSTALLATION
       if (isAppInstalled) {
         
         // Modifier le message d'avertissement
@@ -1255,7 +1255,7 @@
       }
       
       // CAS 1: Pas de langue sélectionnée OU pas de confirmation de sélection (même en PWA)
-      // �  Redirection vers sélection de langue
+      //   Redirection vers sélection de langue
       if (!selectedLang || !webLanguageSelected) {
         function redirectToLanguageSelection() {
           // Cache-busting pour forcer le rechargement sur Android
@@ -1265,18 +1265,18 @@
             window.location.replace(url);
             return;
           } catch (err1) {
-            console.error('�R Erreur avec replace:', err1);
+            console.error('R Erreur avec replace:', err1);
           }
           try {
             window.location.href = url;
             return;
           } catch (err2) {
-            console.error('�R Erreur avec href:', err2);
+            console.error('R Erreur avec href:', err2);
           }
           try {
             window.location.assign(url);
           } catch (err3) {
-            console.error('�R Erreur avec assign:', err3);
+            console.error('R Erreur avec assign:', err3);
             alert('Erreur de redirection. Veuillez naviguer manuellement vers language-selection.html');
           }
         }
@@ -1287,7 +1287,7 @@
         return;
       }
       
-      // CAS 2: PWA installée avec langue sélectionnée �  parcours si accès valide
+      // CAS 2: PWA installée avec langue sélectionnée   parcours si accès valide
       if (isPWA && selectedLang) {
         const pwaHasAccess = localStorage.getItem('clq_has_access') === '1' ||
           localStorage.getItem('clq_token') ||
@@ -1301,7 +1301,7 @@
       }
       
       // CAS 3: Non-PWA avec langue sélectionnée ET confirmation via webLanguageSelected
-      // �  �0cran d'avertissement
+      //   0cran d'avertissement
       if (!isPWA && selectedLang && webLanguageSelected) {
         if (sessionStorage.getItem('warningScreenShown') === 'true') {
           showButtonsDirectly();
@@ -1315,7 +1315,7 @@
       if (window.languageSelector) {
         window.languageSelector.createSelector();
       } else {
-        console.error('�R INDEX.HTML - window.languageSelector n\'existe pas!');
+        console.error('R INDEX.HTML - window.languageSelector n\'existe pas!');
       }
     });
 
@@ -1326,7 +1326,7 @@
       if (warningScreen) {
         warningScreen.style.display = 'flex';
         
-        // MARQUER QUE L'�0CRAN D'AVERTISSEMENT A �0T�0 AFFICH�0 (éviter la boucle)
+        // MARQUER QUE L'0CRAN D'AVERTISSEMENT A 0T0 AFFICH0 (éviter la boucle)
         sessionStorage.setItem('warningScreenShown', 'true');
         
         // Appliquer les traductions au bouton d'avertissement
@@ -1535,7 +1535,7 @@
       }
       
       popupContent.innerHTML = `
-        <div style="margin: 0 0 20px 0; font-size: 48px;">�S&</div>
+        <div style="margin: 0 0 20px 0; font-size: 48px;"></div>
         <p style="margin: 0; color: #333; font-size: 16px; line-height: 1.6;">
           ${message}
         </p>
@@ -1587,7 +1587,7 @@
       `;
       
       popupContent.innerHTML = `
-        <div style="margin: 0 0 20px 0; font-size: 48px;">�xR�</div>
+        <div style="margin: 0 0 20px 0; font-size: 48px;">xR</div>
         <h2 style="margin: 0 0 20px 0; color: #d32f2f; font-size: 1.8em;">${title}</h2>
         <p style="margin: 0 0 20px 0; color: #333; font-size: 16px; line-height: 1.6;">
           ${message}
@@ -1656,7 +1656,7 @@
       `;
       
       popupContent.innerHTML = `
-        <h3 style="margin: 0 0 20px 0; color: #333;">�S&</h3>
+        <h3 style="margin: 0 0 20px 0; color: #333;"></h3>
         <p style="margin: 0 0 20px 0; color: #333; font-size: 16px; line-height: 1.4;">
           Vous pouvez fermer cette fenêtre !
         </p>
@@ -1700,7 +1700,7 @@
     window.addEventListener('appinstalled', (evt) => {
       localStorage.setItem('pwa-installed', 'true');
       if (localStorage.getItem('debug_mode') === 'true') {
-        alert('�xa� Application installée !\nFlag pwa-installed sauvegardé.');
+        alert(' Application installée !\nFlag pwa-installed sauvegardé.');
       }
       const isAndroid = /Android/i.test(navigator.userAgent);
       if (isAndroid) {
@@ -1731,7 +1731,7 @@
             text-align: center; box-shadow: 0 10px 40px rgba(0,0,0,0.5);
           ">
             <h2 style="color: #c8102e; margin-bottom: 25px; font-size: 1.5em;">
-              �x�} ${t.ios_title || 'Installation sur iPhone/iPad'}
+              ${t.ios_title || 'Installation sur iPhone/iPad'}
             </h2>
             
             <p style="margin-bottom: 20px; color: #333; font-size: 1.1em;">
@@ -1821,7 +1821,7 @@
       }
     }
 
-    // �0couter les changements de langue
+    // 0couter les changements de langue
     document.addEventListener('languageChanged', function(event) {
       updateInstallTranslations();
     });
