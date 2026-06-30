@@ -422,9 +422,21 @@ async function obfuscateTargets() {
 }
 
 async function createApiKeyFile() {
-  // RÃ©cupÃ©rer la clÃ© API depuis les variables d'environnement
+  // Récupérer la clé API depuis les variables d'environnement
   const apiKey = process.env.GOOGLE_MAPS_API_KEY;
   
+  function assertValidGoogleMapsKey(key, source) {
+    if (!key || typeof key !== "string") {
+      throw new Error(`[build] Missing GOOGLE_MAPS_API_KEY (${source}).`);
+    }
+    if (key.includes("*")) {
+      throw new Error(`[build] Invalid GOOGLE_MAPS_API_KEY (${source}): placeholder/masked value detected.`);
+    }
+    if (!/^AIza[A-Za-z0-9_-]{35}$/.test(key)) {
+      throw new Error(`[build] Invalid GOOGLE_MAPS_API_KEY (${source}): expected 39-char AIza key, got length ${key.length}.`);
+    }
+  }
+
   if (!apiKey) {
     // Fallback : essayer de lire depuis le fichier ClÃ© API.txt si .env n'existe pas
     const apiKeyFilePath = path.join(ROOT, "ClÃ© API.txt");
@@ -432,6 +444,7 @@ async function createApiKeyFile() {
       const content = await readFile(apiKeyFilePath, "utf8");
       const match = content.match(/AIza[A-Za-z0-9_-]+/);
       if (match) {
+        assertValidGoogleMapsKey(match[0], "Clé API.txt");
         // CrÃ©er un fichier JavaScript obfusquÃ© avec la clÃ©
         const apiKeyJs = `window.__GOOGLE_MAPS_API_KEY__='${match[0]}';`;
         const obfuscated = JavaScriptObfuscator.obfuscate(apiKeyJs, {
@@ -449,6 +462,8 @@ async function createApiKeyFile() {
     console.warn("[warn] No GOOGLE_MAPS_API_KEY in .env and ClÃ© API.txt not found. Google Maps may not work.");
     return;
   }
+  
+  assertValidGoogleMapsKey(apiKey, ".env / Netlify");
   
   // CrÃ©er un fichier JavaScript obfusquÃ© avec la clÃ© depuis .env
   const apiKeyJs = `window.__GOOGLE_MAPS_API_KEY__='${apiKey}';`;

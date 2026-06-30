@@ -1,4 +1,10 @@
 CityLoop Quest Lille - Release notes
+Version 26.06.57
+----------------------------------------
+- Fix Google Maps on main page: rebuild api-key.js with valid API key (previous deploy had a masked placeholder).
+- Build now rejects invalid or placeholder GOOGLE_MAPS_API_KEY values.
+
+CityLoop Quest Lille - Release notes
 Version 26.06.56
 ----------------------------------------
 - Quiz coverage updated: 20 tour stop(s) now have quizzes (was 0).
