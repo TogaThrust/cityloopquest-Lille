@@ -258,14 +258,16 @@ function isTourFreeRoam() {
     return localStorage.getItem('tourCompleted') === 'true';
 }
 
+function forceTargetStorageKey() {
+    const prefix = (window.CLQ_CITY && window.CLQ_CITY.storagePrefix) || 'lille';
+    return prefix + '_forceTarget';
+}
+
 function clearPoiTourMuseumState() {
     localStorage.removeItem('museumMode');
     localStorage.removeItem('museumData');
     localStorage.removeItem('selectedMuseum');
-    localStorage.removeItem('lille_forceTarget');
-    try {
-        sessionStorage.removeItem('clq_museum_guidance');
-    } catch (_) { /* ignore */ }
+    localStorage.removeItem(forceTargetStorageKey());
 }
 
 function isPointUnlockedForNext(idx) {
@@ -3641,7 +3643,7 @@ function initializeMainLogic() {
         enableTourExplorationMode();
     }
     
-    const forceTarget = localStorage.getItem("lille_forceTarget");
+    const forceTarget = localStorage.getItem(forceTargetStorageKey());
 
     if (forceTarget) {
         try {
@@ -3650,18 +3652,11 @@ function initializeMainLogic() {
             if (!museum.name || museum.lat == null || museum.lng == null) {
                 console.error("Données du musée incomplètes:", museum);
             } else {
-                const museumPayload = {
-                    ...museum,
-                    lat: Number(museum.lat),
-                    lng: Number(museum.lng),
-                    image: resolveMuseumImage(museum),
-                };
                 localStorage.setItem("museumMode", "true");
-                localStorage.setItem("selectedMuseum", museumPayload.name);
-                localStorage.setItem("museumData", JSON.stringify(museumPayload));
-                localStorage.removeItem("lille_forceTarget");
+                localStorage.setItem("selectedMuseum", museum.name);
+                localStorage.setItem("museumData", JSON.stringify(museum));
 
-                if (!showMuseumPointImage(museumPayload)) {
+                if (!showMuseumPointImage(museum)) {
                     console.warn("Image du musée non trouvée ou élément image non trouvé");
                 }
 
@@ -3669,16 +3664,6 @@ function initializeMainLogic() {
             }
         } catch (e) {
             console.error("Erreur lors du traitement du mode musée:", e);
-        }
-    } else if (localStorage.getItem("museumMode") === "true") {
-        try {
-            const museum = JSON.parse(localStorage.getItem("museumData") || "null");
-            if (museum) {
-                showMuseumPointImage(museum);
-                disableFooterButtons();
-            }
-        } catch (e) {
-            console.error("Erreur restauration mode musée:", e);
         }
     } else {
 
