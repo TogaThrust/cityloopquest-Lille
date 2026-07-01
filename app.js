@@ -199,7 +199,7 @@ function unlockPointNavigationAfterAudioStart(idx) {
     markAudioHeardForIndex(idx);
     ensureNextButtonRef();
     syncNextButtonState();
-    if (!nextButton || isMuseumGuidanceActive()) return;
+    if (!nextButton || localStorage.getItem('museumMode') === 'true') return;
     const tourLen = filteredLocations ? filteredLocations.length : 0;
     const i = Number(idx);
     const atLastPoint = tourLen > 0 && i >= tourLen - 1;
@@ -268,22 +268,6 @@ function clearPoiTourMuseumState() {
     } catch (_) { /* ignore */ }
 }
 
-function beginMuseumGuidanceSession() {
-    try {
-        sessionStorage.setItem('clq_museum_guidance', '1');
-    } catch (_) { /* ignore */ }
-}
-
-function isMuseumGuidanceActive() {
-    if (localStorage.getItem('museumMode') !== 'true') return false;
-    if (!localStorage.getItem('museumData')) return false;
-    try {
-        return sessionStorage.getItem('clq_museum_guidance') === '1';
-    } catch (_) {
-        return false;
-    }
-}
-
 function isPointUnlockedForNext(idx) {
     if (isTourFreeRoam()) return true;
     return getAudioHeardIndices().includes(Number(idx));
@@ -336,7 +320,7 @@ function syncNextButtonState() {
             ? atLastPoint
             : !isPointUnlockedForNext(currentIndex);
 
-        if (isMuseumGuidanceActive()) {
+        if (localStorage.getItem('museumMode') === 'true') {
             shouldDisable = true;
         } else if (
             isPointUnlockedForNext(currentIndex) &&
@@ -3627,28 +3611,19 @@ function initializeMainLogic() {
         enableTourExplorationMode();
     }
     
-    let forceTarget = localStorage.getItem("lille_forceTarget");
-    if (!forceTarget) {
-        const fromUrl = new URLSearchParams(window.location.search).get('forceTarget');
-        if (fromUrl) {
-            forceTarget = decodeURIComponent(fromUrl);
-            localStorage.setItem("lille_forceTarget", forceTarget);
-        }
-    }
+    const forceTarget = localStorage.getItem("lille_forceTarget");
 
     if (forceTarget) {
         try {
             const museum = JSON.parse(forceTarget);
 
-            const lat = Number(museum.lat);
-            const lng = Number(museum.lng);
-            if (!museum.name || !Number.isFinite(lat) || !Number.isFinite(lng)) {
-                console.error("R Données du musée incomplètes:", museum);
+            if (!museum.name || museum.lat == null || museum.lng == null) {
+                console.error("Données du musée incomplètes:", museum);
             } else {
                 const museumPayload = {
                     ...museum,
-                    lat,
-                    lng,
+                    lat: Number(museum.lat),
+                    lng: Number(museum.lng),
                     image:
                         museum.image ||
                         museum.imagePath ||
@@ -3661,26 +3636,21 @@ function initializeMainLogic() {
                 localStorage.setItem("selectedMuseum", museumPayload.name);
                 localStorage.setItem("museumData", JSON.stringify(museumPayload));
                 localStorage.removeItem("lille_forceTarget");
-                beginMuseumGuidanceSession();
-                
+
                 const imageElement = document.getElementById("point-image");
                 if (imageElement && museumPayload.image) {
                     imageElement.src = museumPayload.image;
                     imageElement.alt = museumPayload.name;
                 } else {
-                    console.warn("a️ Image du musée non trouvée ou élément image non trouvé");
+                    console.warn("Image du musée non trouvée ou élément image non trouvé");
                 }
-                
-                // Désactiver les boutons du footer (sauf Home)
+
                 disableFooterButtons();
             }
         } catch (e) {
             console.error("Erreur lors du traitement du mode musée:", e);
         }
-    } else if (isMuseumGuidanceActive()) {
-        disableFooterButtons();
     } else {
-        clearPoiTourMuseumState();
 
         // Restaurer l'état du bouton selfie
         const selfieBtn = document.getElementById('selfie-btn');
@@ -3793,7 +3763,12 @@ function initializeMainLogic() {
 function disableFooterButtons() {
     
     const buttonsToDisable = [
-        nextButton, prevButton, audioBtn, pauseBtn, stopBtn, restartBtn
+        nextButton || document.getElementById('next-btn'),
+        prevButton || document.getElementById('prev-btn'),
+        audioBtn || document.getElementById('audio-btn'),
+        pauseBtn || document.getElementById('pause-btn'),
+        stopBtn || document.getElementById('stop-btn'),
+        restartBtn || document.getElementById('restart-btn'),
     ];
     
     buttonsToDisable.forEach(button => {
@@ -4955,11 +4930,6 @@ function showEndOfTourPopup() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    try {
-        if (sessionStorage.getItem('clq_museum_guidance') !== '1') {
-            clearPoiTourMuseumState();
-        }
-    } catch (_) { /* ignore */ }
     nextButton = document.getElementById('next-btn');
     prevButton = document.getElementById('prev-btn');
     homeButton = document.getElementById('home-btn');
