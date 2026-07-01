@@ -76,7 +76,7 @@
         "size": 820101,
         "slot": "quiz-correct"
       },
-      "selfieTopText": "Souvenir de {{CITY_NAME}} — briques, beffrois et grand sourire !",
+      "selfieTopText": "",
       "selfieBackgroundImage": "images/fond.png",
       "selfieBackgroundImageFile": {
         "name": "fond.png",
