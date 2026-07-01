@@ -1,4 +1,11 @@
 CityLoop Quest Lille - Release notes
+Version 26.07.02
+----------------------------------------
+- Fix museum mode: show museum image on main.html (display was hidden).
+- Quiz coverage updated: 20 tour stop(s) now have quizzes (was 0).
+- Updated main tour app logic.
+
+CityLoop Quest Lille - Release notes
 Version 26.07.01
 ----------------------------------------
 - Fix museum mode from Culture > Museums: guidance and image target the selected museum on main.html (aligned with Mons).

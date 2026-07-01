@@ -1560,6 +1560,36 @@ function encodeAssetPath(assetPath) {
         .join("/");
 }
 
+function resolveMuseumImage(museum) {
+    if (!museum) return "";
+    const photo = museum.photos?.[0] || {};
+    return (
+        museum.image ||
+        museum.imagePath ||
+        photo.directImageUrl ||
+        photo.downloadUrl ||
+        photo.fileUrl ||
+        photo.imageUrl ||
+        photo.url ||
+        photo.savedPath ||
+        photo.sourcePath ||
+        photo.dataUrl ||
+        ""
+    );
+}
+
+function showMuseumPointImage(museum) {
+    const imageElement = document.getElementById("point-image");
+    const imagePath = resolveMuseumImage(museum);
+    if (!imageElement || !imagePath) return false;
+    const textContainer = document.getElementById("media-display");
+    imageElement.src = encodeAssetPath(imagePath);
+    imageElement.alt = museum.name || "";
+    imageElement.style.display = "block";
+    if (textContainer) textContainer.style.display = "none";
+    return true;
+}
+
 /** Liste ordonnée de chemins images à essayer (local d'abord, URLs distantes en dernier). */
 function getPointImagePathCandidates(location) {
     if (!location) return [];
@@ -3624,24 +3654,14 @@ function initializeMainLogic() {
                     ...museum,
                     lat: Number(museum.lat),
                     lng: Number(museum.lng),
-                    image:
-                        museum.image ||
-                        museum.imagePath ||
-                        museum.photos?.[0]?.savedPath ||
-                        museum.photos?.[0]?.sourcePath ||
-                        museum.photos?.[0]?.dataUrl ||
-                        "",
+                    image: resolveMuseumImage(museum),
                 };
                 localStorage.setItem("museumMode", "true");
                 localStorage.setItem("selectedMuseum", museumPayload.name);
                 localStorage.setItem("museumData", JSON.stringify(museumPayload));
                 localStorage.removeItem("lille_forceTarget");
 
-                const imageElement = document.getElementById("point-image");
-                if (imageElement && museumPayload.image) {
-                    imageElement.src = museumPayload.image;
-                    imageElement.alt = museumPayload.name;
-                } else {
+                if (!showMuseumPointImage(museumPayload)) {
                     console.warn("Image du musée non trouvée ou élément image non trouvé");
                 }
 
@@ -3649,6 +3669,16 @@ function initializeMainLogic() {
             }
         } catch (e) {
             console.error("Erreur lors du traitement du mode musée:", e);
+        }
+    } else if (localStorage.getItem("museumMode") === "true") {
+        try {
+            const museum = JSON.parse(localStorage.getItem("museumData") || "null");
+            if (museum) {
+                showMuseumPointImage(museum);
+                disableFooterButtons();
+            }
+        } catch (e) {
+            console.error("Erreur restauration mode musée:", e);
         }
     } else {
 
